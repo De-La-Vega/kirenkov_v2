@@ -1,5 +1,6 @@
 {
   "name": "kirenkov.me_v2",
+  "homepage": "https://de-La-Vega.github.io/kirenkov_v2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-i18next": "^14.1.0",
     "react-scripts": "5.0.1",
     "sass": "^1.72.0",
@@ -35,7 +37,9 @@
     "build": "react-scripts build && rm -rf docs && mv build docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:css": "stylelint '**/*.scss'"
+    "lint:css": "stylelint '**/*.scss'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs"
   },
   "eslintConfig": {
     "extends": [
@@ -57,8 +61,10 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.17.0",
+    "@types/react-helmet": "^6.1.11",
     "@types/scroll-to-element": "^2.0.5",
     "eslint": "^8.57.0",
+    "gh-pages": "^6.1.1",
     "stylelint": "^16.2.1",
     "stylelint-config-recess-order": "^5.0.0",
     "stylelint-config-standard": "^36.0.0",
