@@ -1,0 +1,35 @@
+@use "../../styles/global" as *;
+
+.follow-me {
+    &__label {
+        margin-bottom: $base * 2;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-600;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        gap: $base * 5;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__link {
+        display: block;
+        font-size: $font-size-m;
+        color: inherit;
+        transition: $transition-duration;
+
+        &:hover,
+        &:focus {
+            color: var(--primary);
+            transform: scale(1.1);
+        }
+    }
+
+    &__icon {
+        display: block;
+    }
+}

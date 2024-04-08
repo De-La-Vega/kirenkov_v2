@@ -1,0 +1,182 @@
+@use "sass:list";
+@use "../../styles/global" as *;
+
+$types: (
+    management: (var(--color-border-management), var(--color-text-management)),
+    programming: (var(--color-border-programming), var(--color-text-programming)),
+    blogging: (var(--color-border-blogging), var(--color-text-blogging)),
+    consulting: (var(--color-border-consulting), var(--color-text-consulting))
+);
+
+.section-portfolio {
+    @include section-indent;
+}
+
+.portfolio {
+    display: flex;
+    gap: $base * 10;
+}
+
+.portfolio-skills-list,
+.portfolio-projects-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.portfolio-skills-list,
+.portfolio-projects-list,
+.portfolio-content,
+.portfolio-project {
+    flex-basis: 24%;
+}
+
+.portfolio-content,
+.portfolio-project {
+    flex-grow: 1;
+    font-size: $font-size-s;
+    line-height: $line-height-s;
+}
+
+.portfolio-tab {
+    $this: &;
+
+    position: relative;
+    display: flex;
+    gap: $base * 2;
+    padding: $base * 3 $base * 4;
+    margin-bottom: -2px;
+    font-size: $font-size-s;
+    font-weight: $font-weight-500;
+    line-height: $line-height-s;
+    cursor: pointer;
+    border-top: 2px solid var(--primary);
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid var(--primary);
+    transition: background-color $transition-duration;
+
+    &:not(&_status-active):hover {
+        background-color: var(--color-bg-level-1);
+    }
+
+    &__icon {
+        transform-origin: center bottom;
+    }
+
+    &_status-active {
+        border-right-color: var(--primary);
+
+        #{$this}__icon { animation: wiggle-animation 1s ease; }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            display: block;
+            width: 10px;
+            height: 10px;
+            content: "";
+            background: var(--color-bg-level-0);
+            border-top: 2px solid var(--primary);
+            border-right: 2px solid var(--primary);
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+}
+
+.portfolio-content {
+    &__paragraph + &__paragraph {
+        margin-top: $base * 3;
+    }
+
+    &__video-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: $base * 5 5%;
+        margin-top: $gap;
+    }
+
+    &__video-item {
+        background-color: var(--primary);
+        border: 2px solid var(--color-text-primary);
+
+        video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__image {
+        float: right;
+        margin-bottom: $gap;
+        margin-left: $gap;
+    }
+}
+
+.portfolio-project {
+    &__section:not(:first-child) {
+        margin-top: $base * 4;
+    }
+
+    &__title {
+        font-weight: $font-weight-600;
+    }
+
+    &__completed-objectives {
+        padding: 0 0 0 $base * 5;
+        margin: 0;
+    }
+
+    &__technologies,
+    &__tools {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li:not(:last-child)::after {
+            content: "-";
+        }
+    }
+}
+
+@each $type, $colors in $types {
+    .portfolio_#{$type} .portfolio-tab_status-active {
+        z-index: 2;
+        color: list.nth($colors, 2);
+
+        &, &::before {
+            border-color: list.nth($colors, 1);
+        }
+    }
+}
+
+@keyframes wiggle-animation {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-7deg); }
+    40% { transform: rotate(7deg); }
+    60% { transform: rotate(-3deg); }
+    80% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media (max-width: $screen-md-max) {
+    .portfolio-content__video {
+        width: auto !important;
+        max-width: 50%;
+        height: auto !important;
+
+        iframe { height: auto !important; }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .portfolio { gap: $base * 5; }
+    .portfolio-skills-list { flex-basis: auto; }
+    .portfolio-skills-list .portfolio-tab__label { display: none; }
+}

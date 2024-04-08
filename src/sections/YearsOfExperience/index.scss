@@ -1,0 +1,82 @@
+@use "../../styles/global" as *;
+
+.years-of-experience {
+    @include section-indent($base * 25);
+    
+    overflow: hidden;
+    color: var(--color-text-primary);
+    text-align: center;
+    background-color: var(--color-bg-level-1);
+
+    &__container {
+        position: relative;
+    }
+
+    &__num,
+    &__years,
+    &__experience {
+        position: relative;
+        z-index: 5;
+    }
+
+    &__num {
+        position: relative;
+        margin-bottom: $base * 20;
+    }
+
+    &__num-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(600px);
+        line-height: rem(450px);
+        letter-spacing: -2rem;
+
+        span {
+            font-size: rem(100px);
+        }
+    }
+
+    &__years {
+        font-size: rem(130px);
+        font-weight: $font-weight-500;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    &__experience {
+        font-size: rem(70px);
+        font-weight: $font-weight-500;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    &__marquee {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        font-size: rem(300px);
+        font-weight: $font-weight-500;
+        text-transform: uppercase;
+        white-space: nowrap;
+        opacity: .05;
+        animation: marquee 20s linear infinite;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        &__num-text {
+            font-size: rem(400px);
+            line-height: rem(250px);
+    
+            span { font-size: rem(70px); }
+        }
+        &__years { font-size: rem(80px); }
+        &__experience { font-size: rem(45px); }
+        &__marquee { font-size: rem(200px); }
+    }
+}
+
+@keyframes marquee {
+    from { transform: translate(100%, -50%); }
+    to { transform: translate(-100%, -50%); }
+}

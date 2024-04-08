@@ -1,0 +1,30 @@
+@use "./variables.scss" as *;
+
+@mixin border-btm($color, $hcolor) {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        content: "";
+        background: $color;
+        transition: $transition-duration;
+    }
+
+    &:hover {
+        color: $hcolor;
+
+        &::after {
+            width: 0%;
+            background: $hcolor;
+        }
+    }
+}
+
+@mixin section-indent($indent: $base * 15) {
+    padding-top: $indent;
+    padding-bottom: $indent;
+}

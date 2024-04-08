@@ -1,0 +1,540 @@
+{
+    "navigation": {
+        "timeline": "My way",
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "viewsAndIdeas": "Views and Ideas"
+    },
+
+    "hero": {
+        "name": "Vitaliy \nKirenkov",
+        "position": ["Project Manager", "Technical Leader", "Youtuber", "Consultant"]
+    },
+
+    "yearsOfExperience": {
+        "years": "years",
+        "experience": "of experience",
+        "aboutMe": "about me"
+    },
+
+    "timeline": {
+        "description": "Дополнительное описание.",
+        "tabs": {
+            "all": "All",
+            "work": "Work",
+            "education": "Education",
+            "hobby": "Hobby"
+        },
+        "list": {
+            "timeline-id-1": {
+                "heading": "Родильный дом №7",
+                "description": "Первые годы жизни: больше ползал, чем ходил, исследуя каждый уголок дома. Это было время первых открытий и маленьких приключений под столом."
+            },
+            "timeline-id-2": {
+                "heading": "Школа №214",
+                "description": "Школьные годы: футбол во дворе, баскетбол и волейбол в зале, школьные предметы (кроме химии и истории, с которыми так и не подружился). Все 11 лет отучился в Школе №214."
+            },
+            "timeline-id-3": {
+                "heading": "АГЭУ",
+                "subheading": "Бакалавр",
+                "description": "Студенческие годы в Азербайджанском Государственном Экономическом Университете. Специальность \"Общая экономика\", направление \"Финансы и кредит\". Заочное обучение дало старт карьере и научило жонглировать между работой и учёбой."
+            },
+            "timeline-id-4": {
+                "heading": "Работа в студиях",
+                "description": "Погружение в мир веба: стартапы и студии открыли мне двери в место, где код - это искусство, а дедлайны - неизбежность. Обучение у мастеров и пара косяков на пути. Хотя, кого я обманываю? Много косяков! :-)"
+            },
+            "timeline-id-5": {
+                "heading": "Фриланс",
+                "description": "Мир фриланса: верстка сайтов стала моим хобби и работой. Более 100 сайтов за плечами."
+            },
+            "timeline-id-6": {
+                "heading": "Консалтинг",
+                "description": "Консалтинговый переезд на \"темную сторону\" – больше дедлайнов, больше ответственности и, конечно, больше кофе. Новый уровень в моей карьере, где каждый день – это не как в фильме, а лучше."
+            },
+            "timeline-id-7": {
+                "heading": "РАНХиГС",
+                "description": "Первые шаги в сторону перехода управления проектами начались тут. Я поступил в РАНХиГС на программу \"IT-Менеджер: менеджер проектов, бизнес-аналитик\"."
+            },
+            "timeline-id-8": {
+                "heading": "YouTube",
+                "description": "Выгорание заставило меня переосмыслить жизнь и начать что-то новое. Так появился мой YouTube-канал, где я делился тем, что люблю, и, оказывается, учился у своих подписчиков гораздо большему."
+            },
+            "timeline-id-9": {
+                "heading": "Telegram боты",
+                "description": "Погрузился в разработку телеграм-ботов для изучения и развлечения: от игры \"Камень, Ножницы, Бумага\" до бота-переводчика в азбуку Морзе. Эти мини-проекты стали отличным способом объединить обучение с удовольствием, открывая новые горизонты творчества."
+            },
+            "timeline-id-10": {
+                "heading": "Пазлы",
+                "description": "А потом я открыл для себя пазлы. Отличный способ забыть о коде, багах и сроках. Просто ты, 1000 кусочков и вечный вопрос: \"Как это всё укладывается вместе?\""
+            },
+            "timeline-id-11": {
+                "heading": "Сертификация",
+                "description": "Принял решение подтвердить свою квалификацию, получив сертификаты PMP и PMI-ACP, подчеркивая тем самым мою приверженность к профессиональному росту и развитию в управлении проектами."
+            },
+            "timeline-id-12": {
+                "heading": "Беззаботное детство",
+                "description": "Тут уж ничего не добавить -) Начало моего пути: от первых шагов до первых слов."
+            },
+            "timeline-id-13": {
+                "heading": "Начальные классы",
+                "description": "Начальные классы. Беззаботное время, когда летние каникулы казались вечностью, особенно в пансионате у моря. Школьные друзья, первые уроки и долгожданные перемены."
+            },
+            "timeline-id-14": {
+                "heading": "Средние классы",
+                "description": "Средние классы: время спорта и первых серьезных увлечений. Капитан баскетбольной команды, несколько поясов в карате и волейбол. А ещё появился первый компьютер – Pentium 100. Разбирал, собирал, учился HTML и CSS. Флоппи диски на 1.44 MB были моими лучшими друзьями."
+            },
+            "timeline-id-15": {
+                "heading": "Старшие классы",
+                "description": "Подготовка к поступлению: учеба с репетиторами и временный перерыв в спорте. Всё внимание было сосредоточено на цели – поступление в университет."
+            },
+            "timeline-id-16": {
+                "heading": "Первая работа",
+                "description": "Заочное обучение давало много свободного времени, которое я решил провести с пользой – работая с отцом. Не только помогал семье, но и учился ценным навыкам."
+            },
+            "timeline-id-17": {
+                "description": "<strong>Благодаря маминой поддержке прошел курс по веб-разработке, который стал основой для дальнейшей жизни.</strong>"
+            },
+            "timeline-id-18": {
+                "heading": "DreamArt",
+                "subheading": "Контент-менеджер / Верстальщик",
+                "description": "DreamArt – моя первая официальная работа. Начал с заполнения сайтов контентом, постепенно перешел к верстке. Был первым, кто сделал полноценный сайт на div'ах в студии, отойдя от таблиц. В это время почти все мои рабочие часы были посвящены HTML и CSS."
+            },
+            "timeline-id-19": {
+                "heading": "QB",
+                "subheading": "Верстальщик",
+                "description": "Релокация в Москву – новый этап. После получения диплома поехал в Москву, где прозвонил Топ-100 студий и встретился с руководителем студии QB. Вскоре начал работать верстальщиком, полный новых идей и решимости расти."
+            },
+            "timeline-id-20": {
+                "heading": "DEFA",
+                "subheading": "Junior Frontend developer",
+                "description": "В DEFA мне повезло пройти в студию, занимавшую 3-е место в рейтинге по России. К этому моменту я быстро верстал, но в JavaScript был профессиональный пробел. Огромная благодарность техническому директору и коллегам-программистам, которые помогли мне освоить jQuery, хотя с чистым JS были трудности. Работал в основном над сайтами для заводов и автодилеров, в тандеме с бэкендерами, интегрирующими верстку на Bitrix."
+            },
+            "timeline-id-21": {
+                "heading": "Продуктовые компании",
+                "subheading": "Middle Frontend developer",
+                "description": "Искал новые вызовы за пределами студийной работы и нашел их в продуктовых компаниях Dialoggy, Росконтроль, Бизнес-Молодость. Несмотря на кажущуюся монотонность, я нашел простор для творчества: создал слайдер с уникальной анимацией для каждого слайда и конструктор для стандартизации многочисленных лендингов."
+            },
+            "timeline-id-22": {
+                "heading": "Media-Storm",
+                "subheading": "Middle Frontend developer",
+                "description": "Возврат в студийную работу в Media-Storm стал новым витком развития. Работа над проектами для застройщиков открыла мне мир векторной графики и анимаций, позволив заниматься действительно интересными и креативными задачами."
+            },
+            "timeline-id-23": {
+                "description": "Пришло время для перезагрузки: выгорание привело к творческому кризису. Принял решение сделать паузу – уволился, продал ненужные вещи, съехал с квартиры и отправился в Дубай на два месяца."
+            },
+            "timeline-id-24": {
+                "heading": "IBM Russia",
+                "subheading": "Senior Frontend developer",
+                "description": "IBM Russia. После двух месяцев в Дубае с головой окунулся в работу в Москве. Огромная благодарность коллеге из DEFA за временный приют. Собеседование в IBM стало неожиданным поворотом: сначала по телефону, затем очное. Когда узнал о том, что принят, не мог сдержать восторга - момент искреннего \"Дааа!!!\" на весь дом. IBM предложила мне позицию мидла, что было точным попаданием по моим навыкам. Вызов с React превратился в возможность быстро расти и через год я уже чувствовал себя на уровне сеньора, успешно справляясь с задачами для банковской сферы."
+            },
+            "timeline-id-25": {
+                "description": "\"Релокация\" в Баку на проект оказалась краткосрочной, но невероятно полезной. Этот опыт принес новые вызовы и впечатления."
+            },
+            "timeline-id-26": {
+                "heading": "IBM Caspian",
+                "subheading": "Technical Leader",
+                "description": "Повышение до технического лидера было неожиданным, но волнующим. Этот период стал ключевым для моего перехода на менеджерскую роль. От руководства проектами до управления командами и ведения переговоров – я стал участником всех процессов, работая над проектом для одного из крупнейших банков Азербайджана."
+            },
+            "timeline-id-27": {
+                "description": "Возвращение в Москву после успешно завершенного проекта в Баку. Набравшись новых идей и энергии, я был готов к следующим профессиональным испытаниям."
+            },
+            "timeline-id-28": {
+                "heading": "IBM Russia",
+                "subheading": "Project Manager",
+                "description": "IBM Russia. Разнообразие консалтинговых проектов стало отличным полигоном для развития. Сначала техлидом в нефтегазовой отрасли, затем – новая роль Project Manager с командой из 6-8 человек. Управление ИТ-стратегией оказалось новым вызовом, но благодаря поддержке куратора, я смог успешно справиться и продолжить работать уже с меньшим количеством консультаций."
+            },
+            "timeline-id-29": {
+                "description": "Вынужденный перерыв после закрытия подразделения в IBM Russia. Использовал это время для отдыха, спорта и восстановления сил, чтобы вернуться еще более продуктивным."
+            },
+            "timeline-id-30": {
+                "heading": "PwC",
+                "subheading": "Project Manager",
+                "description": "Переход в PwC открыл новую страницу в карьере. Управление проектами в нефтегазовой и девелоперской сферах с новыми вызовами. Project Management во всей красе: от бюджетирования до подписания документов. Работа над проектами с использованием AI и ML и командами до 15 человек стала значительным шагом в моем профессиональном росте."
+            },
+            "timeline-id-31": {
+                "heading": "Саморазвитие",
+                "description": "Фокус на совершенствовании навыков и освоении новых областей. Продолжаю учиться и расти профессионально, адаптируясь к изменениям и исследуя новые горизонты в динамично развивающемся мире."
+            }
+        }
+    },
+
+    "skills": {
+        "description": "EN. Переходя от обзора Моего пути, я приглашаю вас углубиться в каждую из ключевых сфер моей экспертизы. ",
+        "list": {
+            "management": {
+                "label": "EN. Управление проектами",
+                "content": [
+                    "Моя карьера в управлении проектами началась с глубокой трансформации, заложенной обучением в РАНХиГС в 2017 году на программе \"IT-Менеджер: менеджер проектов, бизнес-аналитик\". Особенно значимым стал 2018 год, когда мне предоставилась возможность работать техническим лидером на важном проекте в Баку для одного из крупнейших банков Азербайджана. Проект был организован в несколько команд, которые занимались ключевыми операциями банка: ежедневными операциями клиентов, онбордингом и факторингом. Этот опыт позволил мне не только применять и развивать полученные навыки управления и коммуникации, но и познакомиться с уникальными аспектами работы крупных финансовых организаций.",
+                    "Возвращение в Москву в 2019 году стало новым этапом в моем профессиональном развитии, где я продолжил развивать свои управленческие навыки, уже более активно занимаясь бюджетированием, подбором команд и работой с документацией. Руководство командами до 15 человек на различных проектах позволило мне погрузиться в сложные и разнообразные задачи управления.",
+                    "Мои проекты охватывали широкий спектр секторов, такие как нефтегаз, банковское дело, недвижимость и ритейл, демонстрируя мою способность адаптироваться к различным областям и успешно руководить многоаспектными задачами. Технологические стеки, с которыми мне приходилось работать, включали Python, Java, и Node.js для бэкенда, а также React, Redux, MobX, и Typescript для фронтенда, демонстрируя мою гибкость и способность к работе с разнообразными технологиями. Все проекты реализовывались по принципам Agile, с использованием гибрида Scrum и Kanban, что я знал еще с 2015 года.",
+                    "В 2023 году, уже обладая значительным опытом в управлении проектами, я не только успешно сдал экзамены на сертификаты PMP и PMI-ACP, но и самостоятельно подготовился к этому, тщательно изучая PMBOK и проходя различные тесты. До этого, в 2019 году, я также прошел обучение в Лондоне и получил сертификат A-CSM. После получения сертификатов, мне стало интересно изучить другие методологии, такие как PRINCE2, Six Sigma, и ITIL. Я прошел ряд обучений, чтобы получить максимальное представление о каждом из этих направлений, что позволило мне расширить свой профессиональный горизонт и повысить гибкость в применении различных подходов к управлению проектами.",
+                    "Таким образом, мой путь от разработчика к руководителю проектов отражает не только мой профессиональный рост и развитие управленческих навыков, но и постоянное стремление к самосовершенствованию. Благодаря этому, я успешно применяю свои знания на практике, ведя разнообразные проекты и адаптируясь к новым вызовам в динамично развивающемся мире IT."
+                ]
+            },
+            "programming": {
+                "label": "Разработка",
+                "content": [
+                    "Мой путь в мире IT начался в раннем детстве, когда первый компьютер Pentium 100 стал окном в мир технологий. Те годы, когда флоппи-диски на 1.44 MB были на грани чуда, а HTML и CSS стали моими первыми шагами в веб-разработку. Изучение HTML тегов началось с файликов в формате *.chm, знакомого многим начинающим технологам того времени. Это были первые важные шаги, которые зажгли мой интерес к технологиям и определили мою будущую карьеру.",
+                    "Переломным моментом стало мое решение пройти курс по веб-разработке, поддержанное моей мамой. Это вложение в образование открыло дверь к моей первой официальной работе в DreamArt, где началось мое знакомство с JavaScript через библиотеку jQuery. В те времена jQuery был вершиной веб-разработки, позволяя создавать как логику работы сайта, так и различные анимации.",
+                    "На протяжении моей карьеры как разработчика большая часть времени пришлась на работу в веб-студиях, но также я успел попробовать свои силы и в стартапах, и в продуктовых компаниях. Этот опыт дал мне широкое представление о различных аспектах веб-разработки и управления проектами.",
+                    "С течением времени мой технологический стэк эволюционировал, отражая динамичное развитие веб-технологий. jQuery, который когда-то был на вершине популярности за свою универсальность и простоту в создании анимаций и логики, постепенно уступал место новым, более современным технологиям и подходам в разработке. Это был период, когда на сцену вышли MVC фреймворки, такие как Angular, Vue, а также Ember и Backbone, каждый из которых предлагал свои уникальные возможности для решения задач веб-разработки. В погоне за совершенством и в ответ на потребности проектов, я прошел обучение по ряду этих фреймворков, чтобы на практике определить наиболее эффективные инструменты для работы. В итоге, мой выбор остановился на React, когда я начал работать в IBM, где этот инструмент стал основой многих проектов. В дополнение к React, мой стэк включал Redux, TypeScript, а также Webpack, GIT и ряд других технологий.",
+                    "Моя карьера в разработке прошла путь от контент-менеджера до технического лидера, пройдя через этапы джуниора, мидла и сеньора в фронтенде. В какой-то момент началась моя фрилансерская деятельность, которая стала не только хобби, но и важной частью профессионального роста. За несколько лет я сверстал более 200 сайтов, прекратив вести учет, когда понял, что многие проекты быстро устаревают или меняются.",
+                    "В сфере веб-разработки мне довелось работать над проектами для застройщиков, автодилеров, заводов, а на фрилансе создавать интернет-магазины и персональные сайты. В консалтинге, работая в IBM, я занимался крупными проектами для банковской и нефтегазовой отрасли, что стало значимым этапом в моей карьере.",
+                    "Повышение до технического лидера в IBM Caspian стало кульминацией многих лет усердной работы и стремления."
+                ]
+            },
+            "blogging": {
+                "label": "YouTube и Видеопродакшн",
+                "content": [
+                    "Мой путь в мире YouTube и видеопродакшна начался в период поиска новых вызовов и способов творческого самовыражения. Выгорание и желание переосмыслить свою деятельность привели меня к запуску собственного YouTube-канала, открыв новый мир возможностей для обмена знаниями, идеями и увлечениями с широкой аудиторией. Создание контента стало моим способом делиться опытом в IT и разработке, превратив канал в платформу для обучения и взаимодействия с подписчиками. Каждый выпуск направлен на предоставление ценной информации, будь то технические руководства, обзоры инструментов или личный опыт. Взаимодействие со зрителями, их комментарии и обратная связь стали источником новых идей и дополнительной мотивацией к развитию.",
+                    "Для того чтобы начать съемку качественного контента, мне пришлось освоить абсолютно новые для себя области. Я прошел около 60 часов обучения по фильммейкингу, изучая композицию, освещение, выбор оборудования и настройки аппаратуры. Это обучение позволило мне овладеть Adobe Premiere Pro, Adobe Audition, After Effects и CapCut, а также повысить уровень владения Photoshop. Изучение всех этих аспектов видеопроизводства позволило мне кардинально изменить подход к созданию видеоконтента.",
+                    "Осознавая важность профессионального оборудования, я выбрал для съемок камеру Panasonic Lumix GH-5 с объективом Sigma, дополнил ее различными аксессуарами для улучшения качества съемки, включая лампу Godox и микрофон Rode SmartLav+. Эти инструменты помогли мне создавать высококачественный контент, который превосходил ожидания аудитории и давал мне простор для творчества.",
+                    "Хотя активное ведение канала осталось в прошлом, его успех, отраженный в 2 миллионах просмотров, 50 тысячах подписчиков и более чем 100 опубликованных видео, продолжает вдохновлять. Работа над каналом также углубила мои знания в области маркетинга и продвижения в социальных сетях, открыла тонкости SEO для YouTube и научила создавать привлекательный визуальный контент.",
+                    "Навыки, полученные в процессе создания видео, я продолжаю применять, создавая фан-ролики для различных социальных сетей. Этот опыт обогатил мою карьеру и расширил мои творческие горизонты, позволяя по-новому взглянуть на способы взаимодействия с аудиторией."
+                ]
+            },
+            "consulting": {
+                "label": "Обучение и Консультации",
+                "content": [
+                    "Моя деятельность в области обучения и консультаций тесно переплетена с моим опытом ведения YouTube-канала, который стал мостом между мной и множеством людей, стремящихся к развитию в сфере IT. Видео, посвященные вопросам разработки, не только собирали тысячи просмотров, но и привлекали к моему каналу людей с конкретными образовательными и техническими запросами. От код-ревью до глубокого анализа специфических технических проблем, от советов по карьерному росту до детализированных рекомендаций по изучению фронтенд-разработки – я старался охватить широкий спектр вопросов, с которыми ко мне обращались.",
+                    "Консультационные сессии, которые я проводил, были нацелены на решение самых разнообразных задач: от помощи в разборе сложностей с конкретными технологиями до разработки индивидуального плана обучения и развития в сфере веб-разработки. Мое стремление помочь каждому найти свой путь в IT привело к тому, что многие из обратившихся находили ответы уже после первой встречи, в то время как другие нуждались в более длительном сопровождении и менторстве.",
+                    "В процессе моих вебинаров и консультаций, я также акцентирую внимание на важности мягких навыков в IT, таких как коммуникативные способности, умение работать в команде и решать конфликты. Это направление обучения стало ответом на растущий спрос в индустрии на развитых не только технически, но и эмоционально-интеллектуально специалистов. Интеграция этих аспектов в образовательный процесс не только улучшает качество взаимодействия в профессиональной среде, но и способствует созданию более гармоничных рабочих отношений, что, в свою очередь, ведет к повышению производительности и общего уровня удовлетворенности работой.",
+                    "Среди моих задач было не только предоставление актуальной информации и практических советов, но и поддержка моих клиентов на их пути к достижению профессиональных целей в IT. Долгосрочное сотрудничество с некоторыми из них позволило мне наблюдать значительный прогресс и вклад в их карьерное развитие, что является одной из самых вдохновляющих частей моей работы.",
+                    "Эта образовательная деятельность и возможность консультировать открыли для меня уникальную возможность влиять на развитие специалистов в сфере фронтенд-разработки и IT в целом. Взаимодействие с аудиторией YouTube не только обогатило мою профессиональную жизнь, но и позволило мне по-новому взглянуть на обучение и менторство, делая его более персонализированным и ориентированным на конкретные нужды и запросы. Отражая этот опыт в моем портфолио, я стремлюсь подчеркнуть глубину и разнообразие моего вклада в развитие профессионального сообщества, вдохновляя других на обучение и постоянное самосовершенствование."
+                ]
+            }
+        }
+    },
+
+    "portfolio": {
+        "description": "Наличие перечисленных выше навыков позволило добиться следующих результатов.",
+        "project": {
+            "goal": "Goal",
+            "team": "Team",
+            "completed-objectives": "Completed objectives",
+            "technologies": "Technologies",
+            "tools": "Tools"
+        },
+        "list": {
+            "management": {
+                "label": "Управление проектами",
+                "content": [
+                    {
+                        "id": "management-project-1",
+                        "label": "The Geologist's Intellectual Assistant and a Unified Database",
+                        "goal": "Develop and implement an advanced tool for calculating probabilities of geological hypotheses using Knowledge Templates and Analogs.",
+                        "team": "Scrum team comprised of a Business Architect, Business Analyst, Frontend and Backend Developers, UI Designer, QA, DevOps Engineer along with other experts specific to geological exploration.",
+                        "completedObjectives": [
+                            "Developed an advanced tool capable of calculating the probabilities of geological hypotheses based on approved Knowledge Templates.",
+                            "Implemented a unified Database of Geological Analogs ensuring real-time data access and accurate analog-based calculations.",
+                            "Integrated a system for calculating weights of alternative geological scenarios, enhancing prediction accuracy.",
+                            "Established a recommendation system that guides further studies, minimizing risks associated with low-level object exploration.",
+                            "Ensured continuous integration with other geological systems, allowing for seamless data transfer and collaboration.",
+                            "Met the required quality standards and passed rigorous testing protocols, confirming the tool's reliability and effectiveness.",
+                            "Achieved a positive feedback loop from initial user groups, validating the tool's user-friendliness and efficiency."
+                        ],
+                        "technologies": ["JavaScript", "TypeScript", "Node.js", "Python", "React", "Redux"],
+                        "tools": ["Jira", "Confluence", "Git"]
+                    },
+
+                    {
+                        "id": "management-project-2",
+                        "label": "The Expert System Selects Technical Solutions for Oil Reservoir Development & Study",
+                        "goal": "Develop and implement an advanced AI and ML-powered tool to optimize the planning and management of geological projects, providing project managers with strategic insights for project success and integrating the tool with current software and systems for seamless project management.",
+                        "team": "Scrum team, which included a Business Architect, Business Analyst, Frontend and Backend Developers, UI Designer, and DevOps Engineer, QA complemented by domain-specific experts in geological exploration.",
+                        "completedObjectives": [
+                            "Developed an AI and ML algorithm capable of analyzing intricate geological data.",
+                            "Integrated the advanced tool with existing software and systems for seamless user experience.",
+                            "Conducted multiple quality assurance tests to ensure tool's reliability and accuracy in data processing.",
+                            "Created comprehensive user manuals and training materials to aid in the client's adoption of the tool.",
+                            "Successfully generated insights into effective strategies for geological project success using the developed tool.",
+                            "Streamlined the workflow for planning and managing geological projects, ensuring project managers can easily adopt and utilize the tool.",
+                            "Enhanced the client's ability to optimize resources, improve project timelines, and reduce the risk of project failures using the new tool."
+                        ],
+                        "technologies": ["AI (Artificial Intelligence)", "ML (Machine Learning)", "JavaScript", "TypeScript", "Node.js", "Python", "React", "MobX"],
+                        "tools": ["Jira", "Confluence", "Git"]
+                    },
+
+                    {
+                        "id": "management-project-3",
+                        "label": "Tool for Effective Exploration Project Planning & Management",
+                        "goal": "Develop a comprehensive tool that enhances and streamlines the planning and management processes within geological exploration, integrating multiple facets like geological knowledge, project administration, scenario modeling, risk analysis, Gantt charting, cost engineering, and others.",
+                        "team": "Scrum team, which included a Business Architect, Business Analyst, Frontend and Backend Developers, UI Designer, and DevOps Engineer. This team was complemented by domain-specific experts in geological exploration.",
+                        "completedObjectives": [
+                            "Created a unified platform merging geological data, project administration tools, scenario modeling functions, and more.",
+                            "Integrated an intuitive Gantt chart detailing mechanism, optimizing the visualization of project timelines.",
+                            "Implemented a robust risk and event planning module, ensuring contingencies are effectively addressed.",
+                            "Incorporated a cost engineering function, allowing precise financial planning and forecasting.",
+                            "Designed an interface and backend that prioritized user-friendliness and operational efficiency.",
+                            "Successfully conducted rigorous testing and fine-tuning phases, ensuring the tool's reliability and efficacy in real-world scenarios.",
+                            "Launched the tool with adherence to industry's best practices, receiving positive feedback for its transformative impact on geological exploration planning and management."
+                        ],
+                        "technologies": ["JavaScript", "TypeScript", "Node.js", "React", "Redux"],
+                        "tools": ["Jira", "Confluence", "Git"]
+                    },
+
+                    {
+                        "id": "management-project-4",
+                        "label": "Web application for Real Estate Investment Evaluation",
+                        "goal": "Create a geoinformation software system to manage a database of existing construction projects and provide automated spatial analysis of land parcels' investment attractiveness for constructing multi-apartment residential complexes in the customer's regions of presence.",
+                        "team": "1 Scrum team comprised of a Project Manager, Business Analyst, Data Engineer, Frontend and Backend developers, DevOps Engineer, UX/UI Designers and a Business Architect.",
+                        "completedObjectives": [
+                            "Enabled the display of construction projects on a map and maintained updated databases of the customer's and competitors' construction projects across multiple cities.",
+                            "Facilitated automated spatial analysis of land parcels integrating data from various sources including internal and external datasets, attribute information, and both public and commercial map services.",
+                            "Provided automated analysis of efficient land use based on urban planning, location assessment, competitive analysis, sales forecasting, and financial modeling.",
+                            "Developed a user-friendly web application for real-time visualization and analysis of land parcels for investment.",
+                            "Enabled users to assess the attractiveness of potential construction projects, decide on development types, and explore sales strategies."
+                        ],
+                        "technologies": ["Python", ".NET", "JavaScript"],
+                        "tools": ["Jira", "Confluence", "Git", "Microsoft Teams"]
+                    },
+
+                    {
+                        "id": "management-project-5",
+                        "label": "IT Strategy for the Fashion House",
+                        "goal": "Optimize the company's IT infrastructure, systems, and processes in alignment with the Fashion House's business goals.",
+                        "team": "Scrum team comprised of a Solution Architect, Information Security Expert, Business Analyst, Data Engineers, and a Business Architect.",
+                        "completedObjectives": [
+                            "Developed a high-level map of business processes, identified areas for improvement, and analyzed the client's digital maturity against international best practices.",
+                            "Conducted a comprehensive evaluation of the current IT landscape, provided quick-win recommendations, and defined a target IT architecture following IBM standards.",
+                            "Assessed the maturity of critical processes and recommended an optimal target operational model for the IT department.",
+                            "Delivered an infrastructure assessment report and suggested improvements aligned with business goals.",
+                            "Evaluated the current data management model and developed an advancement plan for data management practices.",
+                            "Offered a brief description of the current and target states of information security using the 10 EP reference model and provided strategic-level recommendations.",
+                            "Concluded on IT processes' alignment with IT department goals, evaluated IT processes, identified improvement areas, and developed a roadmap for implementation."
+                        ],
+                        "technologies": [
+                            "IBM standard IT architecture",
+                            "Data management systems",
+                            "10 EP reference model for information security"
+                        ],
+                        "tools": ["Jira", "Confluence"]
+                    }
+                ]
+            },
+            "programming": {
+                "label": "Разработка",
+                "content": [
+                    {
+                        "id": "programming-project-1",
+                        "label": "Cognitive Cost Metrics Optimization System",
+                        "goal": "Enhancing the efficiency of managing capital projects by deploying automated optimization tools and cost analysis of construction objects.",
+                        "team": "1 scrum team (12 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI and UX Designers, QA Engineer, DevOps Engineers, Solution Architect)",
+                        "completedObjectives": [
+                            "Automated generation of multiple cost-reduction variants for the project and construction objects, considering priority changes in parameters.",
+                            "Manual and automated searching for optimal values of construction object parameters.",
+                            "Automated dependency analysis of the cost of construction objects based on various parameters.",
+                            "Comparison of construction object cost calculations with templates in the Information System."
+                        ],
+                        "technologies": ["TypeScript", "React", "Node.js", "Redux"],
+                        "tools": ["Jira", "Confluence", "Git"]
+                    },
+
+                    {
+                        "id": "programming-project-2",
+                        "label": "Cognitive Planning and Control System",
+                        "goal": "Enhance the efficiency of project execution by leveraging historical project information and cognitive functions.",
+                        "team": "1 scrum team (13 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI and UX Designers, QA Engineers, DevOps Engineers, Business Architect)",
+                        "completedObjectives": [
+                            "Processed and systematized historical data from completed projects.",
+                            "Enabled swift recalculations of alternative project trajectories based on historical insights.",
+                            "Introduced a \"hints\" feature to assist during project implementation, backed by ontology.",
+                            "Addressed challenges like overcoming fragmented data repositories, integrating cognitive functionalities into software, and incorporating \"what-if\" analysis.",
+                            "Contributed towards challenges by enriching data, developing a product for fragmented data analysis, and creating optimal project implementation algorithms.",
+                            "Set KPIs including streamlined project implementation timelines and reduced time spent on project data processing/analysis, even as data volume increases."
+                        ],
+                        "technologies": ["TypeScript", "React", "Node.js", "Redux"],
+                        "tools": ["Jira", "Confluence", "Git"]
+                    },
+
+                    {
+                        "id": "programming-project-3",
+                        "label": "Workplace For a Bank Employee",
+                        "goal": "Streamline the loan application process by automating decision-making based on clients' data, facilitating swift and efficient loan approvals.",
+                        "team": "2 scrum team (20 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI and UX Designers, QA Engineers, DevOps Engineers, Business and Solution Architects)",
+                        "completedObjectives": [
+                            "Transformed the loan application process to require only an identity card from clients.",
+                            "Automated evaluation of critical client data, including salary and credit history, to derive loan conditions.",
+                            "Drastically reduced the loan issuance time, with approvals now taking just 10-15 minutes."
+                        ],
+                        "technologies": ["TypeScript", "React", "Java", "Redux"],
+                        "tools": ["Jira", "Confluence", "BitBucket", "Webpack"]
+                    },
+
+                    {
+                        "id": "programming-project-4",
+                        "label": "Digital Laboratory and IT-Architecture Development",
+                        "goal": "Develop a comprehensive three-year business, digital, and IT transformation strategy to transform the client's bank into a leading digital player in the financial industry, enabling it to double its loan portfolio, tap into the SME market, and transition the majority of its customers' operations to digital channels.",
+                        "team": "In-house Digital Lab with 4 Scrum teams (40 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI and UX Designers, QA Engineers, DevOps Engineers, Business and Solution Architects).",
+                        "completedObjectives": [
+                            "Successfully established an in-house Digital Lab, fostering innovation using Design Thinking, Agile, and DevOps methodologies.",
+                            "Launched several MVPs for the bank's newest digital products.",
+                            "Achieved a 400% faster time-to-market.",
+                            "Saw a 16% increase in active digital customers.",
+                            "Managed an 18% reduction in operations costs.",
+                            "Positioned the client's bank as a leader in digital innovation within the financial industry."
+                        ],
+                        "technologies": ["TypeScript", "React", "Java", "Redux"],
+                        "tools": ["Jira", "Confluence", "Git", "Slack"]
+                    },
+
+                    {
+                        "id": "programming-project-5",
+                        "label": "MVP Development of Digital and IT-architecture",
+                        "goal": "To pave the way for the bank's digital transformation by developing and piloting a MVP (Minimum Viable Product) of the digital and IT-architecture.",
+                        "team": "1 scrum team (10 employees: Project Manager, Business Analyst, Frontend and Backend developers, UI Designer, QA, DevOps Engineer)",
+                        "completedObjectives": [
+                            "Designed and developed a clickable prototype simulating the bank's future digital platform.",
+                            "Successfully launched an MVP of the digital and IT-architecture, meeting the initial requirements and objectives set by stakeholders.",
+                            "Facilitated seamless integration with existing bank systems, ensuring data integrity and security.",
+                            "Conducted user testing sessions, gathering feedback to refine and optimize the digital platform for better user experience.",
+                            "Established a continuous integration/continuous deployment (CI/CD) pipeline for efficient development and deployment cycles.",
+                            "Addressed critical bugs and challenges post-launch, ensuring platform stability and user satisfaction.",
+                            "Delivered comprehensive documentation and user manuals for bank staff, ensuring smooth onboarding and adoption of the platform."
+                        ],
+                        "technologies": ["TypeScript", "React", "Java", "Redux"],
+                        "tools": ["Jira", "Confluence", "Git"]
+                    },
+
+                    {
+                        "id": "programming-project-6",
+                        "label": "Component Library for Customer",
+                        "goal": "To create a robust UI library that streamlines development, ensures consistency across applications, and maintains compatibility with legacy systems.",
+                        "team": "In-house developers experienced with frontend technologies, actively collaborating with application developers for feedback and improvement.",
+                        "completedObjectives": [
+                            "Established browser support for IE8 and newer versions.",
+                            "Transitioned majority of components to be \"stateless\" for performance improvements.",
+                            "Facilitated smooth integration for application developers using TypeScript.",
+                            "Broke down large applications into modular units for on-demand loading."
+                        ],
+                        "technologies": ["TypeScript", "React", "Redux"],
+                        "tools": ["Jira", "Confluence", "BitBucket"]
+                    },
+
+                    {
+                        "id": "programming-project-7",
+                        "label": "Internal Components Library",
+                        "goal": "To create a robust and scalable components library that aligns with the business architecture, streamlining the process of product prototyping and development.",
+                        "team": "1 scrum team (8 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI Designer, QA, DevOps Engineer)",
+                        "completedObjectives": [
+                            "Development and documentation of a component architecture that corresponds to the business architecture.",
+                            "Effective decomposition, allocation, and prioritization of tasks to ensure timely completion and optimal resource utilization.",
+                            "Creation of a comprehensive framework that aids in prototyping new products, ensuring consistency and reducing the time-to-market."
+                        ],
+                        "technologies": ["TypeScript", "React"],
+                        "tools": ["Jira", "Storybook", "GitHub"]
+                    },
+
+                    {
+                        "id": "programming-project-8",
+                        "label": "Banking Business Online",
+                        "goal": "Transformation and development of a new-generation online bank for corporate clients, catering specifically to small and medium-sized businesses, by Sberbank in collaboration with IBM's Interactive Experience (iX) subdivision.",
+                        "team": "Joint effort between Sberbank and IBM's iX team, including Frontend and Backend developers, QA, Business Analysts, and UX and UI Designers, DevOps Engineers.",
+                        "completedObjectives": [
+                            "Prototyping products and altering their parameters according to business needs.",
+                            "Developing the architecture for components and services.",
+                            "Decomposing, allocating, and prioritizing tasks.",
+                            "Maintaining the work schedule and ensuring timely completion.",
+                            "Collaborative development of the UX concept, offering a simplified interaction method for users with key banking products and services.",
+                            "Creation of a new-generation online bank alongside a store of both banking and non-banking services within the system."
+                        ],
+                        "technologies": ["TypeScript", "React", "Java"],
+                        "tools": ["Jira", "Confluence", "GitHub", "Slack", "Figma", "Jenkins"]
+                    },
+
+                    {
+                        "id": "programming-project-9",
+                        "label": "Various design studios projects",
+                        "goal": "TBD",
+                        "team": "TBD",
+                        "completedObjectives": [
+                            "TBD"
+                        ],
+                        "technologies": ["JavaScript", "jQuery", "PHP"],
+                        "tools": ["GitHub", "Photoshop"]
+                    },
+
+                    {
+                        "id": "programming-project-10",
+                        "label": "Freelance projects",
+                        "goal": "TBD",
+                        "team": "TBD",
+                        "completedObjectives": [
+                            "TBD"
+                        ],
+                        "technologies": ["JavaScript", "jQuery"],
+                        "tools": ["GitHub", "Photoshop"]
+                    }
+                ]
+            },
+            "blogging": {
+                "label": "EN. YouTube & Видеопродакшн",
+                "content": [
+                    "В этой секции представлены избранные работы с моего канала \"<strong>Просто: разработка</strong>\", где я делюсь знаниями по верстке и фронтенд разработке. Эти видео демонстрируют не только глубину моих технических знаний, но и внимание к качеству съемки и монтажа, создавая содержательный и визуально привлекательный контент. Для более полного погружения и ознакомления с широким спектром тем, предлагаю посетить мой YouTube-канал по ссылке.",
+                    "Кроме того, в портфолио вы найдете уникальные фан видео для социальных сетей, подчеркивающие мое мастерство в создании захватывающего визуального контента с применением спецэффектов. Эти проекты иллюстрируют мою способность к креативному подходу и экспериментам в видеопродакшне.",
+                    "Достижения моего канала, включая более 2 миллионов просмотров и 50 тысяч подписчиков, подчеркивают мою способность создавать контент, который находит отклик у аудитории. Особое внимание заслуживают ролики, собравшие более 100 тысяч просмотров, демонстрирующие высокую степень вовлеченности и интереса со стороны зрителей.",
+                    "В процессе создания видео я освоил продвинутые инструменты видеопродакшна, такие как Adobe Premiere Pro, Adobe Audition, и After Effects, что позволяет мне гарантировать высокое качество и профессионализм в каждом проекте. Эта секция дает лишь намек на масштаб и разнообразие моего портфолио, приглашая вас ознакомиться с более широким диапазоном моих работ через YouTube."
+                ]
+            },
+            "consulting": {
+                "label": "Обучение & Консультации",
+                "content": [
+                    "Моя деятельность охватывает широкий спектр тем — от веб-разработки и фронтенд технологий до карьерного развития в IT. Активно делясь своим опытом и знаниями, я предлагаю онлайн консультации, вебинары и мастер-классы, нацеленные на поддержку и развитие навыков как у начинающих, так и у опытных специалистов в этой динамичной индустрии.",
+                    "Особое внимание в моих онлайн консультациях и вебинарах уделяется практическим аспектам работы. Я провожу детальный разбор реальных проектов по верстке, демонстрируя лучшие практики и подходы к решению задач в фронтенде. Это не только способствует углублению знаний, но и обеспечивает участникам ценный опыт применения теории на практике.",
+                    "Отдельно хочется выделить мои выступления и мастер-классы в МГТУ им. Баумана и различных дизайн-студиях. Эти мероприятия создают уникальную возможность для обмена опытом и идеями, стимулируя участников к активному взаимодействию и сотрудничеству. Привлекая от 30 до 100 специалистов и студентов, эти выступления помогают формировать сообщество единомышленников, заинтересованных в развитии и обмене знаниями.",
+                    "Каждая личная консультация, проведенная мной, нацелена на достижение конкретных целей учеников, обеспечивая персонализированный подход и внимание к индивидуальным потребностям каждого. Этот индивидуальный подход позволяет мне глубже понять уникальные запросы и цели моих учеников, что в свою очередь способствует более эффективному обучению и развитию."
+                ]
+            }
+        }
+    },
+
+    "viewsAndIdeas": {
+        "tags": {
+            "management": "Management",
+            "productivity": "Productivity",
+            "publication": "Publication",
+            "development": "Development",
+            "ui": "UI",
+            "article": "Article",
+            "consulting": "Consulting",
+            "interview": "Interview",
+            "blogging": "Blogging"
+        },
+        "list": {
+            "views-and-ideas-id-1": {
+                "label": "Максимизация Продуктивности: Шаблон Бэклога в Excel"
+            },
+            "views-and-ideas-id-2": {
+                "label": "Навигатор Сертификаций: Карта Пути для Менеджеров и Разработчиков"
+            },
+            "views-and-ideas-id-3": {
+                "label": "Искусство UI: Разработка Плавающей Линии Под Меню"
+            },
+            "views-and-ideas-id-4": {
+                "label": "От HTML до Team Lead: Путь в Frontend и UX"
+            },
+            "views-and-ideas-id-5": {
+                "label": "Самообучение vs Платные Курсы в IT: Путь к Мастерству"
+            },
+            "views-and-ideas-id-6": {
+                "label": "HTML и CSS в Современной Веб-Разработке: Необходимость или Выбор?"
+            }
+        }
+    },
+
+    "systemInformation": {
+        "videoSupport": "Ваш браузер не поддерживает тег video.",
+        "language": {
+            "label": "Language",
+            "ru": "РУ",
+            "en": "EN"
+        },
+        "theme": {
+            "label": "Theme",
+            "dark": "Dark",
+            "light": "Light"
+        },
+        "subscribe": "Subscribe",
+        "writeToMe": "Write to me"
+    }
+}

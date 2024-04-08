@@ -1,0 +1,22 @@
+
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-standard",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "media-query-no-invalid": null,
+    "import-notation": null,
+    "selector-class-pattern": "^[a-z0-9\\-]+(__[a-z0-9\\-]+)?(_[a-z0-9\\-]+)?$",
+    "block-no-empty": null,
+    "unit-allowed-list": ["px", "%", "deg", "s", "ms", "em", "vh", "vw", "rem"],
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["include", "mixin", "function", "return", "each", "use", "forward", "if", "else"]
+    }]
+  }
+}

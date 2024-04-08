@@ -1,0 +1,45 @@
+@use "./functions.scss" as *;
+
+// Global vars
+$base: rem(4px);
+$gap: $base * 5;
+$font-family-base: "Inter", sans-serif;
+$font-family-heading: "Roboto", sans-serif;
+$transition-duration: .2s;
+
+// Font size
+$font-size-xxs: rem(12px);
+$font-size-xs: rem(14px);
+$font-size-s: rem(16px);
+$font-size-m: rem(24px);
+$font-size-l: rem(30px);
+$font-size-xl: rem(40px);
+$font-size-xxl: rem(90px);
+
+// Line height
+$line-height-xxs: $font-size-xxs * 1.5;
+$line-height-xs: $font-size-xs * 1.5;
+$line-height-s: $font-size-s * 1.5;
+$line-height-m: $font-size-m * 1.5;
+$line-height-l: $font-size-l * 1.5;
+$line-height-xl: $font-size-xl * 1.5;
+$line-height-xxl: 1;
+
+// Font weight
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+
+// Media
+$screen-xs-min: null; // <576
+$screen-sm-min: 36em; // >576
+$screen-md-min: 48em; // >768
+$screen-lg-min: 62em; // >992
+$screen-xl-min: 75em; // >1200
+$screen-xxl-min: 87.5em; // >1400
+
+$screen-xs-max: 35.9375em; // <576
+$screen-sm-max: 47.9375em; // <768
+$screen-md-max: 61.9375em; // <992
+$screen-lg-max: 74.9375em; // <1200
+$screen-xl-max: 87.4375em; // <1400

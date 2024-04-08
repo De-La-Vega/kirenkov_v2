@@ -1,0 +1,71 @@
+@use "../../styles/global" as *;
+
+.section-views-and-ideas {
+    @include section-indent;
+
+    background-color: var(--color-bg-level-1);
+}
+
+.views-and-ideas-list {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 30%);
+    gap: $base * 10 5%;
+
+    &,
+    &__badges {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__link {
+        color: var(--color-text-primary);
+        text-decoration: none;
+        transition: $transition-duration;
+
+        &:hover {
+            color: var(--color-text-secondary);
+        }
+    }
+
+    &__image {
+        height: $base * 50;
+        margin-bottom: $base * 2;
+        overflow: hidden;
+        background-color: var(--color-bg-level-2);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $base * 2;
+        margin-bottom: $base * 4;
+        
+        li {
+            padding: $base $base * 2;
+            font-size: $font-size-xxs;
+            font-weight: $font-weight-500;
+            line-height: $line-height-xxs;
+            color: var(--color-text-badge);
+            text-transform: uppercase;
+            background-color: var(--color-bg-badge);
+        }
+    }
+
+    &__label {
+        font-size: $font-size-m;
+        font-weight: $font-weight-600;
+        line-height: $line-height-m;
+    }
+
+    @media (max-width: $screen-md-max) {
+        grid-template-columns: repeat(2, 47.5%);
+    }
+}

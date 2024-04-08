@@ -1,0 +1,18 @@
+@use "../../styles/global" as *;
+
+.image {
+    box-sizing: content-box;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: $transition-duration ease-out;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+}

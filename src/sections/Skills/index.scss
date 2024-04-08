@@ -1,0 +1,154 @@
+@use "sass:list";
+@use "../../styles/global" as *;
+
+$types: (
+    management: (var(--color-border-management), var(--color-text-management)),
+    programming: (var(--color-border-programming), var(--color-text-programming)),
+    blogging: (var(--color-border-blogging), var(--color-text-blogging)),
+    consulting: (var(--color-border-consulting), var(--color-text-consulting))
+);
+
+.section-skills {
+    @include section-indent;
+
+    background-color: var(--color-bg-level-1);
+}
+
+.skills__tabs {
+    display: flex;
+    gap: 20px;
+}
+
+.skills__tab {
+    $this: &;
+
+    position: relative;
+    display: flex;
+    flex: 1;
+    gap: $base * 3;
+    align-items: center;
+    padding: $base * 6 $base * 8;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: $transition-duration;
+
+    &-label {
+        font-size: rem(16px);
+        font-weight: $font-weight-600;
+        text-transform: uppercase;
+    }
+
+    &-icon {
+        font-size: $font-size-l;
+        transform-origin: center bottom;
+    }
+
+    &_status-active {
+        background: var(--color-bg-level-1);
+        #{$this}-icon { animation: wiggle-animation 1s ease; }
+
+        &::before {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            height: 6px;
+            margin-top: -2px;
+            content: "";
+            background-color: var(--color-bg-level-1);
+        }
+    }
+}
+
+.skills__content {
+    padding: $base * 10;
+    border: 2px solid;
+
+    &-label {
+        display: none;
+        margin-bottom: $base * 4;
+        font-size: $font-size-m;
+        font-weight: $font-weight-600;
+        line-height: $line-height-m;
+    }
+
+    &-image {
+        float: right;
+        margin-bottom: $gap;
+        margin-left: $gap;
+    }
+
+    &-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 21.25%);
+        gap: $base * 10 5%;
+        justify-items: center;
+        margin-top: $gap;
+    }
+
+    &-text {
+        font-size: $font-size-s;
+        line-height: $line-height-s;
+    }
+
+    &-paragraph + &-paragraph {
+        margin-top: $base * 3;
+    }
+}
+
+@each $type, $colors in $types {
+    .skills__tab_status-active.skills__tab_type-#{$type},
+    .skills__content_type-#{$type} {
+        border-color: list.nth($colors, 1);
+    }
+
+    .skills__tab_type-#{$type}:hover,
+    .skills__tab_status-active.skills__tab_type-#{$type} {
+        color: list.nth($colors, 2);
+    }
+}
+
+@keyframes wiggle-animation {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-7deg); }
+    40% { transform: rotate(7deg); }
+    60% { transform: rotate(-3deg); }
+    80% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media (max-width: $screen-md-max) {
+    .skills__tab { justify-content: center; }
+    .skills__tab-label { display: none; }
+    .skills__content-label { display: block; }
+}
+
+@media (max-width: $screen-sm-max) {
+    .skills__content-gallery {
+        grid-template-columns: repeat(3, 33%);
+        gap: $base * 5 0.5%;
+    }
+}
+@media (max-width: $screen-xs-max) {
+    .skills__content-gallery {
+        grid-template-columns: repeat(2, 49%);
+        gap: $base * 5 2%;
+    }
+
+    .skills__content-image {
+        float: none;
+        margin-left: 0;
+        text-align: center;
+
+        img { margin: 0 auto; }
+    }
+
+    .skills__tab {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,63 @@
+@use "sass:list";
+@use "./styles/global" as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-family-base;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-level-0);
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.g-inner {
+    position: relative;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin: 0 auto;
+}
+
+// Определение карты с брейкпоинтами и ширинами
+$breakpoints: (
+    xs: ($screen-xs-min, 100%, 14px), // <576
+    sm: ($screen-sm-min, 540px, 14px), // 576
+    md: ($screen-md-min, 720px, 14px), // 768
+    lg: ($screen-lg-min, 960px, 14px), // 992
+    xl: ($screen-xl-min, 1140px, 15px), // 1200
+    xxl: ($screen-xxl-min, 1320px, 16px) // 1400
+);
+
+// Миксин для генерации медиа-запросов и стилей
+@mixin responsive-widths {
+    @each $breakpoint, $values in $breakpoints {
+        $min-width: list.nth($values, 1);
+        $max-container-width: list.nth($values, 2);
+        $html-font-size: list.nth($values, 3);
+
+        @if not $min-width {
+            // Базовый стиль без медиа-запроса для xs
+            html { font-size: $html-font-size; }
+
+            .g-inner {
+                width: $max-container-width;
+            }
+        } @else {
+            @media (min-width: $min-width) {
+                html { font-size: $html-font-size; }
+
+                .g-inner {
+                    width: $max-container-width;
+                }
+            }
+        }
+    }
+}
+
+@include responsive-widths;

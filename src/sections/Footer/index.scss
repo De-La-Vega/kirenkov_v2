@@ -1,0 +1,29 @@
+@use "../../styles/global" as *;
+
+.section-footer .g-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: $base * 8 5%;
+    padding-top: $base * 10;
+    padding-bottom: $base * 10;
+}
+
+.section-footer__logo svg {
+    display: block;
+    width: auto;
+    height: $base * 10;
+}
+
+@media (max-width: $screen-md-max) {
+    .section-footer .g-inner {
+        grid-template-columns: repeat(1, 100%);
+        justify-content: center;
+        text-align: center;
+
+        .follow-me__list { justify-content: center; }
+    }
+
+    .section-footer__logo svg {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,21 @@
+@use "../../styles/global" as *;
+
+.heading {
+    margin-bottom: $base * 10;
+    font-family: $font-family-heading;
+    text-transform: uppercase;
+
+    h2 {
+        margin: 0 0 $base * 2;
+        font-size: $font-size-s;
+        font-weight: $font-weight-500;
+        color: var(--primary);
+    }
+
+    h3 {
+        margin: 0;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-600;
+        color: var(--color-text-primary);
+    }
+}

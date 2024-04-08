@@ -1,0 +1,32 @@
+@use "sass:math";
+@use "../../../../styles/global" as *;
+
+.range {
+    $size: 2px;
+
+    width: $base * 2;
+    border: $size solid;
+
+    &_position-left {
+        border-right: 0;
+    }
+
+    &_position-right {
+        position: relative;
+        border-left: 0;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            right: calc(math.div(math.hypot($base * 2, $base * 2), 2) * -1);
+            display: block;
+            width: $base * 2;
+            height: $base * 2;
+            content: "";
+            background: var(--color-bg-level-0);
+            border-top: $size solid;
+            border-right: $size solid;
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+}

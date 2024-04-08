@@ -1,0 +1,22 @@
+@use "../../styles/global" as *;
+
+.write-to-me {
+    &__label {
+        margin-bottom: $base * 2;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-600;
+        text-transform: uppercase;
+    }
+
+    &__email {
+        font-size: $font-size-s;
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: $transition-duration;
+
+            @include border-btm(var(--primary), var(--primary));
+        }
+    }
+}

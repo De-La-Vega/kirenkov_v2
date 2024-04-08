@@ -1,0 +1,13 @@
+@use "../../styles/global" as *;
+
+.overlay {
+    // opacity: 1;
+    position: fixed;
+    inset-inline-start: 0;
+    top: 0;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background: url("../../assets/bg-body.png") repeat top left;
+}

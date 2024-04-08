@@ -1,0 +1,56 @@
+@use "../../styles/global" as *;
+
+$border-radius: 100px;
+
+.switcher__label {
+	margin-bottom: $base * 2;
+}
+
+.switcher__buttons {
+    display: inline-flex;
+    gap: $base;
+    padding: $base;
+    border: 1px solid var(--primary);
+    border-radius: $border-radius;
+}
+
+.switcher__button {
+    position: relative;
+	padding: $base * 2 $base * 3;
+	margin: 0;
+    overflow: hidden;
+	font-size: $font-size-xs;
+	color: var(--color-text-primary);
+	cursor: pointer;
+	background: none;
+	border: 0;
+	border-radius: $border-radius;
+    transition: $transition-duration;
+
+	&_status-active {
+		color: var(--color-black-1300);
+		background-color: var(--primary);
+	}
+
+    &::before {
+        position: absolute;
+        inset-inline-end: 0;
+        top: 0;
+        z-index: -1;
+        width: 0;
+        height: 100%;
+        content: "";
+        background: var(--primary);
+        border-radius: $border-radius;
+        transition: $transition-duration;
+    }
+
+    &:hover {
+        color: var(--color-black-1300);
+
+        &::before {
+            inset-inline: 0% auto;
+            width: 100%;
+        }
+    }
+}
