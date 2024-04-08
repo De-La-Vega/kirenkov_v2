@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Typed from 'typed.js';
 import { Helmet } from 'react-helmet';
@@ -17,6 +17,13 @@ import './index.scss';
 export const Hero: React.FC = () => {
     const { t } = useTranslation();
     const elTyped = React.useRef(null);
+    const [isDesktop, setIsDesktop] = useState<boolean>(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(min-width: 62em)');
+        setIsDesktop(mediaQuery.matches);
+    }, []);
+    
 
     useEffect(() => {
         const typed = new Typed(elTyped.current, {
@@ -35,8 +42,7 @@ export const Hero: React.FC = () => {
     return (
         <>
             <Helmet>
-                <link rel="preload" as="image" href={hero_large} />
-                <link rel="preload" as="image" href={hero_small} />
+                <link rel="preload" as="image" href={isDesktop ? hero_large : hero_small} />
             </Helmet>
 
             <section className="g-outer section-hero">
