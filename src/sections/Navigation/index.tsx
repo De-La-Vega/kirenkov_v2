@@ -2,7 +2,8 @@ import React, { useRef, useState, useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClose, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faClose } from '@fortawesome/free-solid-svg-icons/faClose';
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 
 import { getNavigationData } from '../../data/navigation';
 import { ThemeSwitcher } from '../../components/ThemeSwitcher';

@@ -1,6 +1,9 @@
 
 import { TFunction } from 'i18next';
-import { faTasks, faLaptopCode, faFilm, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
+import { faTasks } from '@fortawesome/free-solid-svg-icons/faTasks';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
+import { faFilm } from '@fortawesome/free-solid-svg-icons/faFilm';
+import { faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons/faChalkboardTeacher';
 
 import { TPortfolioItem, TProject } from '../models';
 import { SKILLS_TYPE } from '../enums';

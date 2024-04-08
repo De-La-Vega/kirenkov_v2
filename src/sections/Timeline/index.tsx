@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useCallback, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
-import { throttle } from 'lodash';
+import throttle from 'lodash/throttle';
 
 import { Heading } from '../../components/Heading'
 import { getTimelineData } from '../../data/timeline';

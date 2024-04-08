@@ -1,6 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin, faFacebook, faYoutube, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons/faFacebook';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
+import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons/faInstagramSquare';
+
 import { useTranslation } from 'react-i18next';
 
 import './index.scss';

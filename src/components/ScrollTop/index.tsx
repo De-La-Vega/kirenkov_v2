@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons/faArrowUp';
 
 // import { CircularProgressBar } from '../../components/CircularProgressBar';
 import { scrollTo } from '../../utils';
