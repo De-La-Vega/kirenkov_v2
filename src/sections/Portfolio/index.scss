@@ -87,8 +87,11 @@ $types: (
 }
 
 .portfolio-content {
-    &__paragraph + &__paragraph {
-        margin-top: $base * 3;
+    p {
+        padding: 0;
+        margin: 0;
+
+        & + p { margin-top: $base * 3; }
     }
 
     &__video-gallery {

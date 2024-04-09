@@ -22,7 +22,7 @@ export const PortfolioContent: React.FC<TProps> = ({ item }) => {
 
             {content && (
                 <div className="portfolio-content__text">
-                    {content.map((text, index) => <div className="portfolio-content__paragraph" key={`${type}-text-${index}`}><Trans i18nKey={text} /></div>)}
+                    {content.map((text, index) => <p key={`${type}-text-${index}`}><Trans i18nKey={text} /></p>)}
                 </div>
             )}
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import { Trans } from 'react-i18next';
 
 import { GalleryWrapper } from '../../components/GalleryWrapper';
 import { SKILLS_TYPE } from '../../enums';
@@ -28,11 +29,7 @@ export const SkillsContent: React.FC<TProps> = ({ item }) => {
             {image && <GalleryWrapper data={[image]} itemClassName="skills__content-image" />}
 
             <div className="skills__content-text">
-                {content.map((contentItem, index) => (
-                    <div key={`${type}-text-${index}`} className="skills__content-paragraph">
-                        {contentItem}
-                    </div>
-                ))}
+                {content.map((contentItem, index) => <p key={`${type}-text-${index}`}><Trans i18nKey={contentItem} /></p>)}
             </div>
 
             {imageGallery && imageGallery.length > 0 ? (

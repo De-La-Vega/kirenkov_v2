@@ -214,58 +214,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
                 height: 600,
             },
         },
-    },
-    {
-        id: 'timeline-id-9',
-        informationType: TIMELINE_INFORMATION_TYPE.HOBBY,
-        dateRange: [2021, 2022],
-        content: t('timeline.list.timeline-id-9', { returnObjects: true }),
-        position: TIMELINE_ITEM_POSITION.LEFT,
-        level: 1,
-        image: {
-            small: {
-                srcMain: timeline_id_9_s_200x67_main,
-                srcFallback: timeline_id_9_s_200x67_fallback,
-                width: 200,
-                height: 67
-            },
-            large: {
-                srcMain: timeline_id_9_l_600x200_large,
-                width: 600,
-                height: 200,
-            },
-        },
-    },
-    
-    {
-        id: 'timeline-id-10',
-        informationType: TIMELINE_INFORMATION_TYPE.HOBBY,
-        dateRange: [2022, 2024],
-        content: t('timeline.list.timeline-id-10', { returnObjects: true }),
-        position: TIMELINE_ITEM_POSITION.LEFT,
-        level: 1,
-        image: {
-            small: {
-                srcMain: timeline_id_10_s_200x142_main,
-                srcFallback: timeline_id_10_s_200x142_fallback,
-                width: 200,
-                height: 142
-            },
-            large: {
-                srcMain: timeline_id_10_l_600x425_large,
-                width: 600,
-                height: 425,
-            },
-        },
-    },
-    {
-        id: 'timeline-id-11',
-        informationType: TIMELINE_INFORMATION_TYPE.EDUCATION,
-        dateRange: [2023, 2024],
-        content: t('timeline.list.timeline-id-11', { returnObjects: true }),
-        position: TIMELINE_ITEM_POSITION.LEFT,
-        level: 2,
-    },
+    },    
     {
         id: 'timeline-id-12',
         dateRange: [1988, 1994],
@@ -566,6 +515,56 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         level: 2,
     },
     {
+        id: 'timeline-id-9',
+        informationType: TIMELINE_INFORMATION_TYPE.HOBBY,
+        dateRange: [2021, 2022],
+        content: t('timeline.list.timeline-id-9', { returnObjects: true }),
+        position: TIMELINE_ITEM_POSITION.LEFT,
+        level: 1,
+        image: {
+            small: {
+                srcMain: timeline_id_9_s_200x67_main,
+                srcFallback: timeline_id_9_s_200x67_fallback,
+                width: 200,
+                height: 67
+            },
+            large: {
+                srcMain: timeline_id_9_l_600x200_large,
+                width: 600,
+                height: 200,
+            },
+        },
+    },
+    {
+        id: 'timeline-id-10',
+        informationType: TIMELINE_INFORMATION_TYPE.HOBBY,
+        dateRange: [2022, 2024],
+        content: t('timeline.list.timeline-id-10', { returnObjects: true }),
+        position: TIMELINE_ITEM_POSITION.LEFT,
+        level: 1,
+        image: {
+            small: {
+                srcMain: timeline_id_10_s_200x142_main,
+                srcFallback: timeline_id_10_s_200x142_fallback,
+                width: 200,
+                height: 142
+            },
+            large: {
+                srcMain: timeline_id_10_l_600x425_large,
+                width: 600,
+                height: 425,
+            },
+        },
+    },
+    {
+        id: 'timeline-id-11',
+        informationType: TIMELINE_INFORMATION_TYPE.EDUCATION,
+        dateRange: [2023, 2024],
+        content: t('timeline.list.timeline-id-11', { returnObjects: true }),
+        position: TIMELINE_ITEM_POSITION.LEFT,
+        level: 2,
+    },
+    {
         id: 'timeline-id-36',
         informationType: TIMELINE_INFORMATION_TYPE.HOBBY,
         dateRange: [1998, 2000],
@@ -642,8 +641,8 @@ export const YEAR_OFFSETS: Record<number, number> = {
     2016: 180,
     2017: 180,
     2018: 320,
-    2019: 160,
-    2020: 160,
+    2019: 200,
+    2020: 200,
     2021: 160,
     2022: 160,
     2023: 160,
