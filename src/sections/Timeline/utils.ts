@@ -94,13 +94,20 @@ function getSortedElements(selector: string): TSortedElement[] {
 }
 
 function updateNearestElements(sortedElements: TSortedElement[], centerY: number) {
-    // Изменяем логику поиска ближайшего элемента к центру экрана
     let nearestIndex = -1;
     let smallestDistance = Infinity;
 
     sortedElements.forEach(({ top, element }, index) => {
-        const elementCenter = top + (element as HTMLElement).offsetHeight / 2;
-        const distance = Math.abs(centerY - elementCenter); // Расстояние от центра элемента до центра экрана
+        const elementHeight = (element as HTMLElement).offsetHeight;
+        const elementCenter = top + elementHeight / 2;
+        let referencePoint = elementCenter; // По умолчанию используем центр элемента
+
+        // Если высота элемента больше 50% высоты окна, используем его верхнюю границу в качестве точки отсчета
+        if (elementHeight > window.innerHeight * 0.5) {
+            referencePoint = top;
+        }
+
+        const distance = Math.abs(centerY - referencePoint); // Расстояние от точки отсчета до центра экрана
 
         if (distance < smallestDistance) {
             smallestDistance = distance;
