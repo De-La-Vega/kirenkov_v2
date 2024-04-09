@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { LightboxContainer } from './components/LightboxContainer';
 import { Overlay } from './components/Overlay';
 import { BgLines } from './components/BgLines';
 import { ScrollTop } from './components/ScrollTop';
@@ -30,7 +29,5 @@ export const Main: React.FC = () => (
             <ViewsAndIdeas />
             <Footer />
         </main>
-
-        <LightboxContainer />
     </>
 );

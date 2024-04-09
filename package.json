@@ -20,17 +20,18 @@
     "i18next": "^23.10.1",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
+    "photoswipe": "^5.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^14.1.0",
+    "react-photoswipe-gallery": "^3.0.1",
     "react-scripts": "5.0.1",
     "sass": "^1.72.0",
     "scroll-to-element": "^2.0.3",
     "typed.js": "^2.1.0",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4",
-    "yet-another-react-lightbox": "^3.17.2"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

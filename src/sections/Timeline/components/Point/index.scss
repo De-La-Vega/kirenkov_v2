@@ -1,12 +1,11 @@
-@use "sass:math";
 @use "../../../../styles/global" as *;
 
 .point {
-    $size: $base * 2;
+    // $size: $base * 2;
 
-    position: relative;
-    width: $size;
-    height: $size;
-    border: 2px solid var(--primary);
-    border-radius: $size;
+    // position: relative;
+    // width: $size;
+    // height: $size;
+    // border: 2px solid var(--primary);
+    // border-radius: $size;
 }

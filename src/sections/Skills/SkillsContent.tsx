@@ -1,9 +1,7 @@
-import React, { useCallback, useMemo } from 'react';
+import React from 'react';
 import classNames from 'classnames';
-import { SlideImage } from 'yet-another-react-lightbox';
 
-import { useLightbox } from '../../components/LightboxContainer/LightboxContext';
-import { Image } from '../../components/Image';
+import { GalleryWrapper } from '../../components/GalleryWrapper';
 import { SKILLS_TYPE } from '../../enums';
 import { TSkillsItem } from '../../models';
 
@@ -14,24 +12,7 @@ type TProps = {
 };
 
 export const SkillsContent: React.FC<TProps> = ({ item }) => {
-    const { openLightbox } = useLightbox();
     const { content, image, type, imageGallery } = item;
-
-    const slides = useMemo(() => (
-        imageGallery?.map(imageGalleryItem => ({ src: imageGalleryItem.srcLarge })) ?? []
-    ), [imageGallery]);
-
-    const handleGalleryImageClick = useCallback((event: React.MouseEvent<HTMLDivElement>, index: number) => {
-        event.stopPropagation();
-        openLightbox(slides, index);
-    }, [slides, openLightbox]);
-
-    const handleMainImageClick = useCallback(() => {
-        if (image) {
-            const singleImageSlides: SlideImage[] = [{ src: image.srcLarge }];
-            openLightbox(singleImageSlides, 0);
-        }
-    }, [image, openLightbox]);
 
     return (
         <div
@@ -44,20 +25,11 @@ export const SkillsContent: React.FC<TProps> = ({ item }) => {
         >
             <div className="skills__content-label">{item.label}</div>
 
-            {image && (
-                <Image
-                    imageObj={image}
-                    className="skills__content-image"
-                    onClick={handleMainImageClick}
-                />
-            )}
+            {image && <GalleryWrapper data={[image]} itemClassName="skills__content-image" />}
 
             <div className="skills__content-text">
                 {content.map((contentItem, index) => (
-                    <div
-                        key={`${type}-text-${index}`}
-                        className="skills__content-paragraph"
-                    >
+                    <div key={`${type}-text-${index}`} className="skills__content-paragraph">
                         {contentItem}
                     </div>
                 ))}
@@ -65,13 +37,7 @@ export const SkillsContent: React.FC<TProps> = ({ item }) => {
 
             {imageGallery && imageGallery.length > 0 ? (
                 <div className="skills__content-gallery">
-                    {imageGallery.map((imageGalleryItem, index) => (
-                        <Image
-                            key={`${item.type}-image-${index}`}
-                            imageObj={imageGalleryItem}
-                            onClick={(event) => handleGalleryImageClick(event, index)}
-                        />
-                    ))}
+                    <GalleryWrapper data={imageGallery} />
                 </div>
             ) : null}
         </div>

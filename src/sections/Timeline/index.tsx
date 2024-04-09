@@ -59,7 +59,7 @@ const getSeparatedData = (
 };
 
 export const Timeline: React.FC = () => {
-    const yearHeight = 32;
+    const yearHeight = 52;
     const { t } = useTranslation();
     const itemRefs = useRef<(HTMLElement | null)[]>([]);
     

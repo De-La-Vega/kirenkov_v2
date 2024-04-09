@@ -1,10 +1,8 @@
 import React from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-import { SlideImage } from 'yet-another-react-lightbox';
 
-import { useLightbox } from '../../components/LightboxContainer/LightboxContext';
 import { YouTubeVideo } from '../../components/YouTubeVideo';
-import { Image } from '../../components/Image';
+import { GalleryWrapper } from '../../components/GalleryWrapper';
 import { TPortfolioItem } from '../../models';
 
 import './index.scss';
@@ -15,19 +13,11 @@ type TProps = {
 
 export const PortfolioContent: React.FC<TProps> = ({ item }) => {
     const { t } = useTranslation();
-    const { openLightbox } = useLightbox();
     const { content, image, videoGallery, video, type } = item;
-
-    const handleMainImageClick = () => {
-        if (image) {
-            const singleImageSlides: SlideImage[] = [{ src: image.srcLarge }];
-            openLightbox(singleImageSlides, 0)
-        }
-    }
 
     return (
         <div className="portfolio-content">
-            {image && <Image className="portfolio-content__image" imageObj={image} onClick={handleMainImageClick} />}
+            {image && <GalleryWrapper data={[image]} itemClassName="portfolio-content__image" />}
             {video && <YouTubeVideo video={video} className="portfolio-content__video" />}
 
             {content && (

@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Image from '../../components/Image'
 import { Heading } from '../../components/Heading'
 import { getViewsAndIdeasData } from '../../data/viewsAndIdeas';
 
@@ -20,10 +21,7 @@ export const ViewsAndIdeas: React.FC = () => {
                         <li key={item.id} className="views-and-ideas-list__item">
                             <a className="views-and-ideas-list__link" href={item.link} target="_blank" rel="noreferrer">
                                 <div className="views-and-ideas-list__image">
-                                    <picture>
-                                        <source srcSet={item.image.srcSmallMain} type="image/webp" />
-                                        <img src={item.image.srcSmallFallback} alt={item.label} width={item.image.width} height={item.image.height} />
-                                    </picture>
+                                    <Image imageObj={item.image} />
                                 </div>
                                 <ul className="views-and-ideas-list__badges">
                                     {item.tags.map((tag) => <li key={tag}>{tag}</li>)}

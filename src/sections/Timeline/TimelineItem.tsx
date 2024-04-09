@@ -1,11 +1,9 @@
 import React, { forwardRef } from 'react';
 import classNames from 'classnames';
-import { SlideImage } from 'yet-another-react-lightbox';
 import { Trans } from 'react-i18next';
 
-import { useLightbox } from '../../components/LightboxContainer/LightboxContext';
-import { Image } from '../../components/Image';
-import { YouTubeVideo } from '../../components/YouTubeVideo';
+import { YouTubePreview } from '../../components/YouTubePreview';
+import { GalleryWrapper } from '../../components/GalleryWrapper';
 import { TTimelineItem } from '../../models';
 import { TIMELINE_ITEM_TYPE, TIMELINE_ITEM_POSITION } from '../../enums';
 
@@ -22,46 +20,33 @@ type TProps = {
 };
 
 const TimelineItem = forwardRef<HTMLDivElement, TProps>(({ item, height, offsetTop, type }, ref) => {
-    const { openLightbox } = useLightbox();
-    const { position, content, level, image } = item;
+    const { position, content, level, image, video, icon } = item;
 
-    const handleImageClick = () => {
-        if (image) {
-            const slides: SlideImage[] = [{ src: image.srcLarge }];
-            openLightbox(slides, 0)
-        }
-    }
-  
     return (
         <div
             ref={ref}
             data-id={item.id}
-            className={classNames('timeline__item', {
-                'timeline__item_level-0': position === TIMELINE_ITEM_POSITION.LEFT && level === 0,
-                'timeline__item_level-1': position === TIMELINE_ITEM_POSITION.LEFT && level === 1,
-                'timeline__item_level-2': position === TIMELINE_ITEM_POSITION.LEFT && level === 2,
-                'timeline__item_type-point': type === TIMELINE_ITEM_TYPE.POINT,
-                'timeline__item_type-range': type === TIMELINE_ITEM_TYPE.RANGE,
+            className={classNames('timeline-item', {
+                'timeline-item_level-0': position === TIMELINE_ITEM_POSITION.LEFT && level === 0,
+                'timeline-item_level-1': position === TIMELINE_ITEM_POSITION.LEFT && level === 1,
+                'timeline-item_level-2': position === TIMELINE_ITEM_POSITION.LEFT && level === 2,
+                'timeline-item_type-point': type === TIMELINE_ITEM_TYPE.POINT,
+                'timeline-item_type-range': type === TIMELINE_ITEM_TYPE.RANGE,
             })}
             style={{ height: `${height}px`, top: `${offsetTop}px` }}
         >
-            {type === TIMELINE_ITEM_TYPE.POINT && <Point className="timeline__item-point" />}
-            {type === TIMELINE_ITEM_TYPE.RANGE && <Range className="timeline__item-range" timelineSide={position} />}
+            {type === TIMELINE_ITEM_TYPE.POINT && icon && <Point icon={icon} className="timeline-item__point" />}
+            {type === TIMELINE_ITEM_TYPE.RANGE && <Range className="timeline-item__range" timelineSide={position} />}
 
-            <div className="timeline__item-content">
-                {content.heading && <div className="timeline__item-heading">{content.heading}</div>}
-                {content.subheading && <div className="timeline__item-subheading">{content.subheading}</div>}
-                <div className="timeline__item-description"><Trans i18nKey={content.description} /></div>
+            <div className="timeline-item__content">
+                {content.heading && <div className="timeline-item__heading">{content.heading}</div>}
+                {content.subheading && <div className="timeline-item__subheading">{content.subheading}</div>}
+                <div className="timeline-item__description"><Trans i18nKey={content.description} /></div>
             </div>
 
-            {image && (
-                <Image
-                    imageObj={image}
-                    className="timeline__item-image"
-                    onClick={handleImageClick}
-                />
-            )}
-            {item.video && <YouTubeVideo video={item.video} className="timeline__item-video" />}
+            {image && <GalleryWrapper data={[image]} itemClassName="timeline-item__image" />}
+
+            {video && <YouTubePreview video={video} className="timeline-item__video" />}
         </div>
     );
 });

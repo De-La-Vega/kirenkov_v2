@@ -55,11 +55,17 @@ export const getPortfolioData = (t: TFunction): TPortfolioItem[] => [
         label: t('portfolio.list.consulting.label'),
         content: t('portfolio.list.consulting.content', { returnObjects: true }) as string[],
         image: {
-            srcSmallMain: consulting_main_s_200x200_main,
-            srcSmallFallback: consulting_main_s_200x200_fallback,
-            srcLarge: consulting_main_l_600x600_large,
-            width: 200,
-            height: 200
+            small: {
+                srcMain: consulting_main_s_200x200_main,
+                srcFallback: consulting_main_s_200x200_fallback,
+                width: 200,
+                height: 200
+            },
+            large: {
+                srcMain: consulting_main_l_600x600_large,
+                width: 600,
+                height: 600,
+            },
         },
     },
 ];

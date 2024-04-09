@@ -1,0 +1,37 @@
+@use "../../styles/global" as *;
+
+.youtube-preview {
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__thumbnail {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: $transition-duration ease-out;
+    }
+
+    &::before {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        content: "";
+        background-color: #00000060;
+    }
+
+    &__play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        font-size: 48px;
+        color: #f00;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__thumbnail {
+        transform: scale(1.1);
+    }
+}

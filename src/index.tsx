@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 
 import 'normalize.css';
 import './index.scss';
+import 'photoswipe/dist/photoswipe.css'
 import { Main } from './Main';
 import reportWebVitals from './reportWebVitals';
 import './i18n';
 
 import { ThemeProvider } from './components/ThemeSwitcher/ThemeContext'
-import { LightboxProvider } from './components/LightboxContainer/LightboxContext';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -16,9 +16,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <ThemeProvider>
-            <LightboxProvider>
-                <Main />
-            </LightboxProvider>
+            <Main />
         </ThemeProvider>
     </React.StrictMode>
 );

@@ -10,11 +10,17 @@ export type TVideo = {
 }
 
 export type TImage = {
-    srcSmallMain: string;
-    srcSmallFallback: string;
-    srcLarge: string;
-    width: number;
-    height: number;
+    small: {
+        srcMain: string;
+        srcFallback: string;
+        width: number;
+        height: number;
+    },
+    large: {
+        srcMain: string;
+        width: number;
+        height: number;
+    }
 }
 
 export type TTimelineItem = {
@@ -30,6 +36,7 @@ export type TTimelineItem = {
     image?: TImage;
     video?: TVideo;
     informationType?: TIMELINE_INFORMATION_TYPE;
+    icon?: IconDefinition;
 };
 
 export type TProject = {

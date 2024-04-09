@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 
 import { TImage } from '../../models';
@@ -11,20 +11,25 @@ type TProps = {
     onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
-export const Image: React.FC<TProps> = ({ imageObj, className, onClick }) => {
-    const { srcSmallMain, srcSmallFallback, width, height } = imageObj;
+const Image = forwardRef<HTMLDivElement, TProps>(({ imageObj, className, onClick }, ref) => {
+    const { small } = imageObj;
 
     const handleClick = (event: React.MouseEvent<HTMLDivElement>) => onClick && onClick(event);
 
     return (
         <div
+            ref={ref}
             className={classNames('image', className)}
             onClick={handleClick}
         >
             <picture>
-                <source srcSet={srcSmallMain} type="image/webp" />
-                <img src={srcSmallFallback} alt="" width={width} height={height} />
+                <source srcSet={small.srcMain} type="image/webp" />
+                <img src={small.srcFallback} alt="" width={small.width} height={small.height} />
             </picture>
         </div>
     );
-}
+});
+
+Image.displayName = 'Image';
+
+export default React.memo(Image);

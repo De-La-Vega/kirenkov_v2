@@ -93,53 +93,14 @@ function getSortedElements(selector: string): TSortedElement[] {
     return sortedElements;
 }
 
-// function updateNearestElements(sortedElements: TSortedElement[], centerY: number) {
-//     // Изменяем логику поиска ближайшего элемента к центру экрана
-//     let nearestIndex = -1;
-//     let smallestDistance = Infinity;
-
-//     sortedElements.forEach(({ top, element }, index) => {
-//         const elementCenter = top + (element as HTMLElement).offsetHeight / 2;
-//         const distance = Math.abs(centerY - elementCenter); // Расстояние от центра элемента до центра экрана
-
-//         if (distance < smallestDistance) {
-//             smallestDistance = distance;
-//             nearestIndex = index;
-//         }
-//     });
-
-//     if (nearestIndex !== -1) {
-//         // Сбрасываем классы всех элементов
-//         sortedElements.forEach(({ element }) => {
-//             element.classList.remove('center-level-0', 'center-level-1', 'center-level-2', 'center-level-3');
-//         });
-
-//         // Обновляем классы для ближайших элементов
-//         const levels = [-3, -2, -1, 0, 1, 2, 3];
-//         levels.forEach(level => {
-//             const index = nearestIndex + level;
-//             if (sortedElements[index]) {
-//                 sortedElements[index].element.classList.add(`center-level-${Math.abs(level)}`);
-//             }
-//         });
-//     }
-// }
-
 function updateNearestElements(sortedElements: TSortedElement[], centerY: number) {
+    // Изменяем логику поиска ближайшего элемента к центру экрана
     let nearestIndex = -1;
     let smallestDistance = Infinity;
 
     sortedElements.forEach(({ top, element }, index) => {
-        const elementHeight = (element as HTMLElement).offsetHeight;
-        const elementCenter = top + elementHeight / 2;
-        let referencePoint = elementCenter; // По умолчанию используем центр элемента
-
-        // Если высота элемента больше 50% высоты окна, используем его верхнюю границу в качестве точки отсчета
-        if (elementHeight > window.innerHeight * 0.6) {
-            referencePoint = top;
-        }
-
-        const distance = Math.abs(centerY - referencePoint); // Расстояние от точки отсчета до центра экрана
+        const elementCenter = top + (element as HTMLElement).offsetHeight / 2;
+        const distance = Math.abs(centerY - elementCenter); // Расстояние от центра элемента до центра экрана
 
         if (distance < smallestDistance) {
             smallestDistance = distance;
@@ -166,12 +127,14 @@ function updateNearestElements(sortedElements: TSortedElement[], centerY: number
 
 export function handleScroll() {
     const centerY = window.scrollY + window.innerHeight / 2;
-    const sortedLeft = getSortedElements('.timeline-left .timeline__item');
-    const sortedRightRanges = getSortedElements('.timeline-right .timeline__item_type-range');
-    // const sortedRightPoints = getSortedElements('.timeline-right .timeline__item_type-point');
+    const sortedLeft = getSortedElements('.timeline-left .timeline-item');
+    const sortedRight = getSortedElements('.timeline-right .timeline-item');
+    // const sortedRightRanges = getSortedElements('.timeline-right .timeline-item_type-range');
+    // const sortedRightPoints = getSortedElements('.timeline-right .timeline-item_type-point');
   
     // Функция для обновления классов на основе близости к центру
     updateNearestElements(sortedLeft, centerY);
-    updateNearestElements(sortedRightRanges, centerY);
+    updateNearestElements(sortedRight, centerY);
+    // updateNearestElements(sortedRightRanges, centerY);
     // updateNearestElements(sortedRightPoints, centerY);
 }

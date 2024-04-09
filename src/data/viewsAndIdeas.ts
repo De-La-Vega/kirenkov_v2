@@ -32,11 +32,17 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.publication'),
         ],
         image: {
-            srcSmallMain: views_and_ideas_id_1_s_400x269_main,
-            srcSmallFallback: views_and_ideas_id_1_s_400x269_fallback,
-            srcLarge: views_and_ideas_id_1_l_600x404_large,
-            width: 400,
-            height: 269
+            small: {
+                srcMain: views_and_ideas_id_1_s_400x269_main,
+                srcFallback: views_and_ideas_id_1_s_400x269_fallback,
+                width: 400,
+                height: 269
+            },
+            large: {
+                srcMain: views_and_ideas_id_1_l_600x404_large,
+                width: 600,
+                height: 404,
+            }
         },
     },
     {
@@ -49,11 +55,17 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.publication'),
         ],
         image: {
-            srcSmallMain: views_and_ideas_id_2_s_400x217_main,
-            srcSmallFallback: views_and_ideas_id_2_s_400x217_fallback,
-            srcLarge: views_and_ideas_id_2_l_600x326_large,
-            width: 400,
-            height: 217
+            small: {
+                srcMain: views_and_ideas_id_2_s_400x217_main,
+                srcFallback: views_and_ideas_id_2_s_400x217_fallback,
+                width: 400,
+                height: 217
+            },
+            large: {
+                srcMain: views_and_ideas_id_2_l_600x326_large,
+                width: 600,
+                height: 326,
+            }
         },
     },
     {
@@ -66,11 +78,17 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.article'),
         ],
         image: {
-            srcSmallMain: views_and_ideas_id_3_s_400x233_main,
-            srcSmallFallback: views_and_ideas_id_3_s_400x233_fallback,
-            srcLarge: views_and_ideas_id_3_l_600x350_large,
-            width: 400,
-            height: 233
+            small: {
+                srcMain: views_and_ideas_id_3_s_400x233_main,
+                srcFallback: views_and_ideas_id_3_s_400x233_fallback,
+                width: 400,
+                height: 233
+            },
+            large: {
+                srcMain: views_and_ideas_id_3_l_600x350_large,
+                width: 600,
+                height: 350,
+            }
         },
     },
     {
@@ -83,11 +101,17 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.interview'),
         ],
         image: {
-            srcSmallMain: views_and_ideas_id_4_s_400x225_main,
-            srcSmallFallback: views_and_ideas_id_4_s_400x225_fallback,
-            srcLarge: views_and_ideas_id_4_l_600x337_large,
-            width: 400,
-            height: 225
+            small: {
+                srcMain: views_and_ideas_id_4_s_400x225_main,
+                srcFallback: views_and_ideas_id_4_s_400x225_fallback,
+                width: 400,
+                height: 225
+            },
+            large: {
+                srcMain: views_and_ideas_id_4_l_600x337_large,
+                width: 600,
+                height: 337,
+            }
         },
     },
     {
@@ -100,11 +124,17 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.interview'),
         ],
         image: {
-            srcSmallMain: views_and_ideas_id_5_s_400x225_main,
-            srcSmallFallback: views_and_ideas_id_5_s_400x225_fallback,
-            srcLarge: views_and_ideas_id_5_l_600x337_large,
-            width: 400,
-            height: 225
+            small: {
+                srcMain: views_and_ideas_id_5_s_400x225_main,
+                srcFallback: views_and_ideas_id_5_s_400x225_fallback,
+                width: 400,
+                height: 225
+            },
+            large: {
+                srcMain: views_and_ideas_id_5_l_600x337_large,
+                width: 600,
+                height: 337,
+            }
         },
     },
     {
@@ -117,11 +147,17 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.article'),
         ],
         image: {
-            srcSmallMain: views_and_ideas_id_6_s_400x225_main,
-            srcSmallFallback: views_and_ideas_id_6_s_400x225_fallback,
-            srcLarge: views_and_ideas_id_6_l_600x281_large,
-            width: 400,
-            height: 187
+            small: {
+                srcMain: views_and_ideas_id_6_s_400x225_main,
+                srcFallback: views_and_ideas_id_6_s_400x225_fallback,
+                width: 400,
+                height: 187
+            },
+            large: {
+                srcMain: views_and_ideas_id_6_l_600x281_large,
+                width: 600,
+                height: 281,
+            }
         },
     },
 ];

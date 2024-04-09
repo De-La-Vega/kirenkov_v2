@@ -18,6 +18,7 @@
         font-weight: $font-weight-600;
         color: var(--primary);
         text-transform: uppercase;
+        white-space: nowrap;
     }
 
     &__name {
