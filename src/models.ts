@@ -57,14 +57,19 @@ type TItemCommon = {
     icon: IconDefinition;
 }
 
+export type TContentItem = {
+    label: string;
+    text: string[];
+}
+
 export type TSkillsItem = {
-    content: string[];
+    content: TContentItem[];
     imageGallery?: TImage[];
 } & TItemCommon;
 
 export type TPortfolioItem = {
     projects?: TProject[];
-    content?: string[];
+    content?: TContentItem[];
     videoGallery?: TVideo[];
     video?: TVideo;
 } & TItemCommon;

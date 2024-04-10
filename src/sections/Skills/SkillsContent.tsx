@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import classNames from 'classnames';
 import { Trans } from 'react-i18next';
 
 import { GalleryWrapper } from '../../components/GalleryWrapper';
+import { LinkText } from '../../components/LinkText';
 import { SKILLS_TYPE } from '../../enums';
 import { TSkillsItem } from '../../models';
 
@@ -29,7 +30,21 @@ export const SkillsContent: React.FC<TProps> = ({ item }) => {
             {image && <GalleryWrapper data={[image]} itemClassName="skills__content-image" />}
 
             <div className="skills__content-text">
-                {content.map((contentItem, index) => <p key={`${type}-text-${index}`}><Trans i18nKey={contentItem} /></p>)}
+                {content.map((contentItem, contentItemIndex) => (
+                    <Fragment key={`${type}-container-${contentItemIndex}`}>
+                        <h4 className="text-subheading">{contentItem.label}</h4>
+                        {contentItem.text.map((text, textIndex) => (
+                            <p key={`${type}-text-${textIndex}`}>
+                                <Trans
+                                    i18nKey={text}
+                                    components={{
+                                        youtube: <LinkText href="https://www.youtube.com/@prosto_razrabotka" />
+                                    }}
+                                />
+                            </p>
+                        ))}
+                    </Fragment>
+                ))}
             </div>
 
             {imageGallery && imageGallery.length > 0 ? (

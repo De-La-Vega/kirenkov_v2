@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 
 import { YouTubeVideo } from '../../components/YouTubeVideo';
@@ -22,7 +22,12 @@ export const PortfolioContent: React.FC<TProps> = ({ item }) => {
 
             {content && (
                 <div className="portfolio-content__text">
-                    {content.map((text, index) => <p key={`${type}-text-${index}`}><Trans i18nKey={text} /></p>)}
+                    {content.map((contentItem, contentItemIndex) => (
+                        <Fragment key={`${type}-container-${contentItemIndex}`}>
+                            <h4 className="text-subheading">{contentItem.label}</h4>
+                            {contentItem.text.map((text, textIndex) => <p key={`${type}-text-${textIndex}`}><Trans i18nKey={text} /></p>)}
+                        </Fragment>
+                    ))}
                 </div>
             )}
 

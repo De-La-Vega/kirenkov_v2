@@ -87,12 +87,7 @@ $types: (
 }
 
 .portfolio-content {
-    p {
-        padding: 0;
-        margin: 0;
-
-        & + p { margin-top: $base * 3; }
-    }
+    @include article-typo;
 
     &__video-gallery {
         display: grid;

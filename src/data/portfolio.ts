@@ -5,7 +5,7 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { faFilm } from '@fortawesome/free-solid-svg-icons/faFilm';
 import { faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons/faChalkboardTeacher';
 
-import { TPortfolioItem, TProject } from '../models';
+import { TPortfolioItem, TProject, TContentItem } from '../models';
 import { SKILLS_TYPE } from '../enums';
 
 // Blogging
@@ -40,7 +40,7 @@ export const getPortfolioData = (t: TFunction): TPortfolioItem[] => [
         type: SKILLS_TYPE.BLOGGING,
         icon: faFilm,
         label: t('portfolio.list.blogging.label'),
-        content: t('portfolio.list.blogging.content', { returnObjects: true }) as string[],
+        content: t('portfolio.list.blogging.content', { returnObjects: true }) as TContentItem[],
         video: { id: '2Bo619QsSE4', width: 400, height: 225, thumbnail: yt_thumbnail },
         videoGallery: [
             { id: blogging_1, width: 200, height: 355 },
@@ -53,7 +53,7 @@ export const getPortfolioData = (t: TFunction): TPortfolioItem[] => [
         type: SKILLS_TYPE.CONSULTING,
         icon: faChalkboardTeacher,
         label: t('portfolio.list.consulting.label'),
-        content: t('portfolio.list.consulting.content', { returnObjects: true }) as string[],
+        content: t('portfolio.list.consulting.content', { returnObjects: true }) as TContentItem[],
         image: {
             small: {
                 srcMain: consulting_main_s_200x200_main,

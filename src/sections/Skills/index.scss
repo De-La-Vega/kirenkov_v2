@@ -65,6 +65,8 @@ $types: (
 }
 
 .skills__content {
+    @include article-typo;
+
     padding: $base * 10;
     border: 2px solid;
 
@@ -93,13 +95,6 @@ $types: (
     &-text {
         font-size: $font-size-s;
         line-height: $line-height-s;
-    }
-
-    p {
-        padding: 0;
-        margin: 0;
-
-        & + p { margin-top: $base * 3; }
     }
 }
 
