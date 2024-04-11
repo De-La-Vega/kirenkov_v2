@@ -9,19 +9,19 @@ export type TVideo = {
     height: number;
 }
 
-export type TImage = {
-    small: {
-        srcMain: string;
-        srcFallback: string;
-        width: number;
-        height: number;
-    },
-    large: {
-        srcMain: string;
-        width: number;
-        height: number;
-    }
-}
+// export type TImage = {
+//     small: {
+//         srcMain: string;
+//         srcFallback: string;
+//         width: number;
+//         height: number;
+//     },
+//     large: {
+//         srcMain: string;
+//         width: number;
+//         height: number;
+//     }
+// }
 
 export type TTimelineItem = {
     id: string;
@@ -33,7 +33,7 @@ export type TTimelineItem = {
     };
     position: TIMELINE_ITEM_POSITION;
     level?: 0 | 1 | 2;
-    image?: TImage;
+    image?: TImageModel;
     video?: TVideo;
     informationType?: TIMELINE_INFORMATION_TYPE;
     icon?: IconDefinition;
@@ -47,13 +47,14 @@ export type TProject = {
     completedObjectives: string[];
     technologies: string[];
     tools: string[];
+    imageGalleryKeys?: string[];
 }
 
 type TItemCommon = {
     id: string;
     type: SKILLS_TYPE;
     label: string;
-    image?: TImage;
+    image?: TImageModel;
     icon: IconDefinition;
 }
 
@@ -64,7 +65,7 @@ export type TContentItem = {
 
 export type TSkillsItem = {
     content: TContentItem[];
-    imageGallery?: TImage[];
+    imageGallery?: TImageModel[];
 } & TItemCommon;
 
 export type TPortfolioItem = {
@@ -82,9 +83,32 @@ export type TNavigationItem = {
 export type TViewsAndIdeasItem = {
     id: string;
     link: string;
-    image: TImage;
+    image: TImageModel;
     label: string;
     tags: string[]
 };
 
 
+// New Image
+type TImageSizes = {
+    width: number;
+    height: number;
+}
+
+type TImageSources = {
+    webp: string;
+    jpg: string;
+}
+  
+type ImageVersion = {
+    sources: TImageSources;
+} & TImageSizes
+
+export type TImageModel = {
+    id: string; // Уникальный идентификатор изображения
+    title: string; // Название или описание изображения
+    preview: ImageVersion; // Превью версия для обычных экранов
+    previewRetina: ImageVersion; // Превью версия для Retina экранов
+    original: ImageVersion; // Увеличенная версия для обычных экранов
+    originalRetina: ImageVersion; // Увеличенная версия для Retina экранов
+}

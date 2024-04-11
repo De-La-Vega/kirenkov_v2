@@ -51,6 +51,7 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     
     &__subheading {
+        margin-top: $base;
         font-size: $font-size-s;
         color: var(--color-gray-300);
     }

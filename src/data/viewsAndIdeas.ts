@@ -2,24 +2,7 @@
 import { TFunction } from 'i18next';
 import { TViewsAndIdeasItem } from '../models';
 
-import views_and_ideas_id_1_s_400x269_main from '../assets/viewsAndIdeas/views_and_ideas_id_1_s_400x269.webp';
-import views_and_ideas_id_1_s_400x269_fallback from '../assets/viewsAndIdeas/views_and_ideas_id_1_s_400x269.jpeg';
-import views_and_ideas_id_1_l_600x404_large from '../assets/viewsAndIdeas/views_and_ideas_id_1_l_600x404.jpeg';
-import views_and_ideas_id_2_s_400x217_main from '../assets/viewsAndIdeas/views_and_ideas_id_2_s_400x217.webp';
-import views_and_ideas_id_2_s_400x217_fallback from '../assets/viewsAndIdeas/views_and_ideas_id_2_s_400x217.png';
-import views_and_ideas_id_2_l_600x326_large from '../assets/viewsAndIdeas/views_and_ideas_id_2_l_600x326.png';
-import views_and_ideas_id_3_s_400x233_main from '../assets/viewsAndIdeas/views_and_ideas_id_3_s_400x233.webp';
-import views_and_ideas_id_3_s_400x233_fallback from '../assets/viewsAndIdeas/views_and_ideas_id_3_s_400x233.jpeg';
-import views_and_ideas_id_3_l_600x350_large from '../assets/viewsAndIdeas/views_and_ideas_id_3_l_600x350.jpeg';
-import views_and_ideas_id_4_s_400x225_main from '../assets/viewsAndIdeas/views_and_ideas_id_4_s_400x225.webp';
-import views_and_ideas_id_4_s_400x225_fallback from '../assets/viewsAndIdeas/views_and_ideas_id_4_s_400x225.jpeg';
-import views_and_ideas_id_4_l_600x337_large from '../assets/viewsAndIdeas/views_and_ideas_id_4_l_600x337.jpeg';
-import views_and_ideas_id_5_s_400x225_main from '../assets/viewsAndIdeas/views_and_ideas_id_5_s_400x225.webp';
-import views_and_ideas_id_5_s_400x225_fallback from '../assets/viewsAndIdeas/views_and_ideas_id_5_s_400x225.jpeg';
-import views_and_ideas_id_5_l_600x337_large from '../assets/viewsAndIdeas/views_and_ideas_id_5_l_600x337.jpeg';
-import views_and_ideas_id_6_s_400x225_main from '../assets/viewsAndIdeas/views_and_ideas_id_6_s_400x225.webp';
-import views_and_ideas_id_6_s_400x225_fallback from '../assets/viewsAndIdeas/views_and_ideas_id_6_s_400x225.jpg';
-import views_and_ideas_id_6_l_600x281_large from '../assets/viewsAndIdeas/views_and_ideas_id_6_l_600x281.png';
+import { gallery } from'./viewsAndIdeasGallery';
 
 export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
     {
@@ -31,19 +14,7 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.productivity'),
             t('viewsAndIdeas.tags.publication'),
         ],
-        image: {
-            small: {
-                srcMain: views_and_ideas_id_1_s_400x269_main,
-                srcFallback: views_and_ideas_id_1_s_400x269_fallback,
-                width: 400,
-                height: 269
-            },
-            large: {
-                srcMain: views_and_ideas_id_1_l_600x404_large,
-                width: 600,
-                height: 404,
-            }
-        },
+        image: gallery['views_and_ideas_id_1'],
     },
     {
         id: 'views-and-ideas-id-2',
@@ -54,19 +25,7 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.development'),
             t('viewsAndIdeas.tags.publication'),
         ],
-        image: {
-            small: {
-                srcMain: views_and_ideas_id_2_s_400x217_main,
-                srcFallback: views_and_ideas_id_2_s_400x217_fallback,
-                width: 400,
-                height: 217
-            },
-            large: {
-                srcMain: views_and_ideas_id_2_l_600x326_large,
-                width: 600,
-                height: 326,
-            }
-        },
+        image: gallery['views_and_ideas_id_2'],
     },
     {
         id: 'views-and-ideas-id-3',
@@ -77,19 +36,7 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.ui'),
             t('viewsAndIdeas.tags.article'),
         ],
-        image: {
-            small: {
-                srcMain: views_and_ideas_id_3_s_400x233_main,
-                srcFallback: views_and_ideas_id_3_s_400x233_fallback,
-                width: 400,
-                height: 233
-            },
-            large: {
-                srcMain: views_and_ideas_id_3_l_600x350_large,
-                width: 600,
-                height: 350,
-            }
-        },
+        image: gallery['views_and_ideas_id_3'],
     },
     {
         id: 'views-and-ideas-id-4',
@@ -100,19 +47,7 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.consulting'),
             t('viewsAndIdeas.tags.interview'),
         ],
-        image: {
-            small: {
-                srcMain: views_and_ideas_id_4_s_400x225_main,
-                srcFallback: views_and_ideas_id_4_s_400x225_fallback,
-                width: 400,
-                height: 225
-            },
-            large: {
-                srcMain: views_and_ideas_id_4_l_600x337_large,
-                width: 600,
-                height: 337,
-            }
-        },
+        image: gallery['views_and_ideas_id_4'],
     },
     {
         id: 'views-and-ideas-id-5',
@@ -123,19 +58,7 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.blogging'),
             t('viewsAndIdeas.tags.interview'),
         ],
-        image: {
-            small: {
-                srcMain: views_and_ideas_id_5_s_400x225_main,
-                srcFallback: views_and_ideas_id_5_s_400x225_fallback,
-                width: 400,
-                height: 225
-            },
-            large: {
-                srcMain: views_and_ideas_id_5_l_600x337_large,
-                width: 600,
-                height: 337,
-            }
-        },
+        image: gallery['views_and_ideas_id_5'],
     },
     {
         id: 'views-and-ideas-id-6',
@@ -146,18 +69,6 @@ export const getViewsAndIdeasData = (t: TFunction): TViewsAndIdeasItem[] => [
             t('viewsAndIdeas.tags.consulting'),
             t('viewsAndIdeas.tags.article'),
         ],
-        image: {
-            small: {
-                srcMain: views_and_ideas_id_6_s_400x225_main,
-                srcFallback: views_and_ideas_id_6_s_400x225_fallback,
-                width: 400,
-                height: 187
-            },
-            large: {
-                srcMain: views_and_ideas_id_6_l_600x281_large,
-                width: 600,
-                height: 281,
-            }
-        },
+        image: gallery['views_and_ideas_id_6'],
     },
 ];

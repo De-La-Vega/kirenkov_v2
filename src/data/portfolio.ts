@@ -8,15 +8,12 @@ import { faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons/faChalkbo
 import { TPortfolioItem, TProject, TContentItem } from '../models';
 import { SKILLS_TYPE } from '../enums';
 
+import { gallery } from'./portfolioGallery';
+
 // Blogging
 import blogging_1 from '../assets/portfolio/blogging-1.mp4';
 import blogging_2 from '../assets/portfolio/blogging-2.mp4';
 import blogging_3 from '../assets/portfolio/blogging-3.mp4';
-
-// Consulting
-import consulting_main_s_200x200_main from '../assets/portfolio/consulting_main_s_200x200.webp';
-import consulting_main_s_200x200_fallback from '../assets/portfolio/consulting_main_s_200x200.jpeg';
-import consulting_main_l_600x600_large from '../assets/portfolio/consulting_main_l_600x600.jpeg';
 
 import yt_thumbnail from '../assets/portfolio/thumbnail-portfolio.jpeg';
 
@@ -54,18 +51,6 @@ export const getPortfolioData = (t: TFunction): TPortfolioItem[] => [
         icon: faChalkboardTeacher,
         label: t('portfolio.list.consulting.label'),
         content: t('portfolio.list.consulting.content', { returnObjects: true }) as TContentItem[],
-        image: {
-            small: {
-                srcMain: consulting_main_s_200x200_main,
-                srcFallback: consulting_main_s_200x200_fallback,
-                width: 200,
-                height: 200
-            },
-            large: {
-                srcMain: consulting_main_l_600x600_large,
-                width: 600,
-                height: 600,
-            },
-        },
+        image: gallery['consulting_main'],
     },
 ];

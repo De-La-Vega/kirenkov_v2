@@ -1,18 +1,18 @@
 import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 
-import { TImage } from '../../models';
+import { TImageModel } from '../../models';
 
 import './index.scss';
 
 type TProps = {
     className?: string;
-    imageObj: TImage;
+    imageObj: TImageModel;
     onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 const Image = forwardRef<HTMLDivElement, TProps>(({ imageObj, className, onClick }, ref) => {
-    const { small } = imageObj;
+    const { title, preview, previewRetina } = imageObj;
 
     const handleClick = (event: React.MouseEvent<HTMLDivElement>) => onClick && onClick(event);
 
@@ -23,8 +23,14 @@ const Image = forwardRef<HTMLDivElement, TProps>(({ imageObj, className, onClick
             onClick={handleClick}
         >
             <picture>
-                <source srcSet={small.srcMain} type="image/webp" />
-                <img src={small.srcFallback} alt="" width={small.width} height={small.height} />
+                <source type="image/webp" srcSet={`${previewRetina.sources.webp} 2x, ${preview.sources.webp}`} />
+                <source type="image/jpeg" srcSet={`${previewRetina.sources.jpg} 2x, ${preview.sources.jpg}`} />
+                <img
+                    src={preview.sources.jpg}
+                    alt={title || ''}
+                    width={preview.width}
+                    height={preview.height}
+                />
             </picture>
         </div>
     );

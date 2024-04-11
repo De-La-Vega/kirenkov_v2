@@ -7,71 +7,9 @@ import { faWheelchair } from '@fortawesome/free-solid-svg-icons/faWheelchair';
 import { TTimelineItem } from '../models';
 import { TIMELINE_INFORMATION_TYPE, TIMELINE_ITEM_POSITION } from '../enums';
 
-import timeline_id_7_s_200x150_main from '../assets/timeline-photos/timeline_id_7_s_200x150.webp';
-import timeline_id_7_s_200x150_fallback from '../assets/timeline-photos/timeline_id_7_s_200x150.jpeg';
-import timeline_id_7_l_600x450_large from '../assets/timeline-photos/timeline_id_7_l_600x450.jpeg';
-import timeline_id_6_s_200x150_main from '../assets/timeline-photos/timeline_id_6_s_200x150.webp';
-import timeline_id_6_s_200x150_fallback from '../assets/timeline-photos/timeline_id_6_s_200x150.jpeg';
-import timeline_id_6_l_600x450_large from '../assets/timeline-photos/timeline_id_6_l_600x450.jpeg';
-import timeline_id_22_s_200x200_main from '../assets/timeline-photos/timeline_id_22_s_200x200.webp';
-import timeline_id_22_s_200x200_fallback from '../assets/timeline-photos/timeline_id_22_s_200x200.jpeg';
-import timeline_id_22_l_600x600_large from '../assets/timeline-photos/timeline_id_22_l_600x600.jpeg';
-import timeline_id_26_s_200x133_main from '../assets/timeline-photos/timeline_id_26_s_200x133.webp';
-import timeline_id_26_s_200x133_fallback from '../assets/timeline-photos/timeline_id_26_s_200x133.jpeg';
-import timeline_id_26_l_600x400_large from '../assets/timeline-photos/timeline_id_26_l_600x400.jpeg';
-import timeline_id_2_s_200x266_main from '../assets/timeline-photos/timeline_id_2_s_200x266.webp';
-import timeline_id_2_s_200x266_fallback from '../assets/timeline-photos/timeline_id_2_s_200x266.jpeg';
-import timeline_id_2_l_600x800_large from '../assets/timeline-photos/timeline_id_2_l_600x800.jpeg';
-import timeline_id_3_s_200x150_main from '../assets/timeline-photos/timeline_id_3_s_200x150.webp';
-import timeline_id_3_s_200x150_fallback from '../assets/timeline-photos/timeline_id_3_s_200x150.jpeg';
-import timeline_id_3_l_600x451_large from '../assets/timeline-photos/timeline_id_3_l_600x451.jpeg';
-import timeline_id_1_s_200x300_main from '../assets/timeline-photos/timeline_id_1_s_200x300.webp';
-import timeline_id_1_s_200x300_fallback from '../assets/timeline-photos/timeline_id_1_s_200x300.jpeg';
-import timeline_id_1_l_600x900_large from '../assets/timeline-photos/timeline_id_1_l_600x900.jpeg';
-import timeline_id_18_s_200x300_main from '../assets/timeline-photos/timeline_id_18_s_200x300.webp';
-import timeline_id_18_s_200x300_fallback from '../assets/timeline-photos/timeline_id_18_s_200x300.jpeg';
-import timeline_id_18_l_600x902_large from '../assets/timeline-photos/timeline_id_18_l_600x902.jpeg';
-import timeline_id_30_s_200x266_main from '../assets/timeline-photos/timeline_id_30_s_200x266.webp';
-import timeline_id_30_s_200x266_fallback from '../assets/timeline-photos/timeline_id_30_s_200x266.jpeg';
-import timeline_id_30_l_600x800_large from '../assets/timeline-photos/timeline_id_30_l_600x800.jpeg';
-import timeline_id_24_s_200x200_main from '../assets/timeline-photos/timeline_id_24_s_200x200.webp';
-import timeline_id_24_s_200x200_fallback from '../assets/timeline-photos/timeline_id_24_s_200x200.jpeg';
-import timeline_id_24_l_600x600_large from '../assets/timeline-photos/timeline_id_24_l_600x600.jpeg';
-import timeline_id_15_s_200x150_main from '../assets/timeline-photos/timeline_id_15_s_200x150.webp';
-import timeline_id_15_s_200x150_fallback from '../assets/timeline-photos/timeline_id_15_s_200x150.jpeg';
-import timeline_id_15_l_600x450_large from '../assets/timeline-photos/timeline_id_15_l_600x450.jpeg';
-import timeline_id_14_s_200x160_main from '../assets/timeline-photos/timeline_id_14_s_200x160.webp';
-import timeline_id_14_s_200x160_fallback from '../assets/timeline-photos/timeline_id_14_s_200x160.jpeg';
-import timeline_id_14_l_600x480_large from '../assets/timeline-photos/timeline_id_14_l_600x480.jpeg';
-import timeline_id_28_s_200x227_main from '../assets/timeline-photos/timeline_id_28_s_200x227.webp';
-import timeline_id_28_s_200x227_fallback from '../assets/timeline-photos/timeline_id_28_s_200x227.jpeg';
-import timeline_id_28_l_600x682_large from '../assets/timeline-photos/timeline_id_28_l_600x682.jpeg';
-import timeline_id_13_s_200x266_main from '../assets/timeline-photos/timeline_id_13_s_200x266.webp';
-import timeline_id_13_s_200x266_fallback from '../assets/timeline-photos/timeline_id_13_s_200x266.jpeg';
-import timeline_id_13_l_600x800_large from '../assets/timeline-photos/timeline_id_13_l_600x800.jpeg';
-import timeline_id_12_s_200x300_main from '../assets/timeline-photos/timeline_id_12_s_200x300.webp';
-import timeline_id_12_s_200x300_fallback from '../assets/timeline-photos/timeline_id_12_s_200x300.jpeg';
-import timeline_id_12_l_600x900_large from '../assets/timeline-photos/timeline_id_12_l_600x900.jpeg';
-import timeline_id_8_s_200x200_main from '../assets/timeline-photos/timeline_id_8_s_200x200.webp';
-import timeline_id_8_s_200x200_fallback from '../assets/timeline-photos/timeline_id_8_s_200x200.png';
-import timeline_id_8_l_600x600_large from '../assets/timeline-photos/timeline_id_8_l_600x600.png';
-import timeline_id_10_s_200x142_main from '../assets/timeline-photos/timeline_id_10_s_200x142.webp';
-import timeline_id_10_s_200x142_fallback from '../assets/timeline-photos/timeline_id_10_s_200x142.jpg';
-import timeline_id_10_l_600x425_large from '../assets/timeline-photos/timeline_id_10_l_600x425.jpg';
-
-import timeline_id_9_s_200x67_main from '../assets/timeline-photos/timeline_id_9_s_200x67.webp';
-import timeline_id_9_s_200x67_fallback from '../assets/timeline-photos/timeline_id_9_s_200x67.jpg';
-import timeline_id_9_l_600x200_large from '../assets/timeline-photos/timeline_id_9_l_600x200.jpg';
-
-import timeline_id_36_s_200x257_main from '../assets/timeline-photos/timeline_id_36_s_200x257.webp';
-import timeline_id_36_s_200x257_fallback from '../assets/timeline-photos/timeline_id_36_s_200x257.jpg';
-import timeline_id_36_l_600x770_large from '../assets/timeline-photos/timeline_id_36_l_600x770.jpg';
-
-import timeline_id_37_s_200x141_main from '../assets/timeline-photos/timeline_id_37_s_200x141.webp';
-import timeline_id_37_s_200x141_fallback from '../assets/timeline-photos/timeline_id_37_s_200x141.jpg';
-import timeline_id_37_l_600x424_large from '../assets/timeline-photos/timeline_id_37_l_600x424.jpg';
-
 import yt_thumbnail from '../assets/timeline-photos/thumbnail-defa.jpeg';
+
+import { gallery } from './timelineGallery';
 
 export const getTimelineData = (t: TFunction): TTimelineItem[] => [
     {
@@ -80,19 +18,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-1', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 0,
-        image: {
-            small: {
-                srcMain: timeline_id_1_s_200x300_main,
-                srcFallback: timeline_id_1_s_200x300_fallback,
-                width: 200,
-                height: 300
-            },
-            large: {
-                srcMain: timeline_id_1_l_600x900_large,
-                width: 600,
-                height: 900,
-            },
-        },
+        image: gallery['timeline-id-1'],
     },
     {
         id: 'timeline-id-2',
@@ -101,19 +27,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-2', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 0,
-        image: {
-            small: {
-                srcMain: timeline_id_2_s_200x266_main,
-                srcFallback: timeline_id_2_s_200x266_fallback,
-                width: 200,
-                height: 266
-            },
-            large: {
-                srcMain: timeline_id_2_l_600x800_large,
-                width: 600,
-                height: 800,
-            },
-        },
+        image: gallery['timeline-id-2'],
     },
     {
         id: 'timeline-id-3',
@@ -122,19 +36,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-3', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 0,
-        image: {
-            small: {
-                srcMain: timeline_id_3_s_200x150_main,
-                srcFallback: timeline_id_3_s_200x150_fallback,
-                width: 200,
-                height: 150
-            },
-            large: {
-                srcMain: timeline_id_3_l_600x451_large,
-                width: 600,
-                height: 451,
-            },
-        },
+        image: gallery['timeline-id-3'],
     },
     {
         id: 'timeline-id-4',
@@ -159,19 +61,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-6', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 0,
-        image: {
-            small: {
-                srcMain: timeline_id_6_s_200x150_main,
-                srcFallback: timeline_id_6_s_200x150_fallback,
-                width: 200,
-                height: 150
-            },
-            large: {
-                srcMain: timeline_id_6_l_600x450_large,
-                width: 600,
-                height: 450,
-            },
-        },
+        image: gallery['timeline-id-6'],
     },
     {
         id: 'timeline-id-7',
@@ -180,19 +70,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-7', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 1,
-        image: {
-            small: {
-                srcMain: timeline_id_7_s_200x150_main,
-                srcFallback: timeline_id_7_s_200x150_fallback,
-                width: 200,
-                height: 150
-            },
-            large: {
-                srcMain: timeline_id_7_l_600x450_large,
-                width: 600,
-                height: 450,
-            },
-        },
+        image: gallery['timeline-id-7'],
     },
     {
         id: 'timeline-id-8',
@@ -201,38 +79,14 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-8', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 1,
-        image: {
-            small: {
-                srcMain: timeline_id_8_s_200x200_main,
-                srcFallback: timeline_id_8_s_200x200_fallback,
-                width: 200,
-                height: 200
-            },
-            large: {
-                srcMain: timeline_id_8_l_600x600_large,
-                width: 600,
-                height: 600,
-            },
-        },
+        image: gallery['timeline-id-8'],
     },    
     {
         id: 'timeline-id-12',
         dateRange: [1988, 1994],
         content: t('timeline.list.timeline-id-12', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_12_s_200x300_main,
-                srcFallback: timeline_id_12_s_200x300_fallback,
-                width: 200,
-                height: 300
-            },
-            large: {
-                srcMain: timeline_id_12_l_600x900_large,
-                width: 600,
-                height: 900,
-            },
-        },
+        image: gallery['timeline-id-12'],
     },
     {
         id: 'timeline-id-13',
@@ -240,19 +94,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [1994, 1998],
         content: t('timeline.list.timeline-id-13', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_13_s_200x266_main,
-                srcFallback: timeline_id_13_s_200x266_fallback,
-                width: 200,
-                height: 266
-            },
-            large: {
-                srcMain: timeline_id_13_l_600x800_large,
-                width: 600,
-                height: 800,
-            },
-        },
+        image: gallery['timeline-id-13'],
     },
     {
         id: 'timeline-id-14',
@@ -260,19 +102,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [1998, 2003],
         content: t('timeline.list.timeline-id-14', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_14_s_200x160_main,
-                srcFallback: timeline_id_14_s_200x160_fallback,
-                width: 200,
-                height: 160
-            },
-            large: {
-                srcMain: timeline_id_14_l_600x480_large,
-                width: 600,
-                height: 480,
-            },
-        },
+        image: gallery['timeline-id-14'],
     },
     {
         id: 'timeline-id-15',
@@ -280,19 +110,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [2003, 2005],
         content: t('timeline.list.timeline-id-15', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_15_s_200x150_main,
-                srcFallback: timeline_id_15_s_200x150_fallback,
-                width: 200,
-                height: 150
-            },
-            large: {
-                srcMain: timeline_id_15_l_600x450_large,
-                width: 600,
-                height: 450,
-            },
-        },
+        image: gallery['timeline-id-15'],
     },
     {
         id: 'timeline-id-16',
@@ -313,19 +131,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [2007, 2010],
         content: t('timeline.list.timeline-id-18', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_18_s_200x300_main,
-                srcFallback: timeline_id_18_s_200x300_fallback,
-                width: 200,
-                height: 300
-            },
-            large: {
-                srcMain: timeline_id_18_l_600x902_large,
-                width: 600,
-                height: 902,
-            },
-        },
+        image: gallery['timeline-id-18'],
     },
 
     {
@@ -356,19 +162,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [2014, 2015],
         content: t('timeline.list.timeline-id-22', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_22_s_200x200_main,
-                srcFallback: timeline_id_22_s_200x200_fallback,
-                width: 200,
-                height: 200
-            },
-            large: {
-                srcMain: timeline_id_22_l_600x600_large,
-                width: 600,
-                height: 600,
-            },
-        },
+        image: gallery['timeline-id-22'],
     },
     {
         id: 'timeline-id-23',
@@ -383,19 +177,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [2015, 2018],
         content: t('timeline.list.timeline-id-24', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_24_s_200x200_main,
-                srcFallback: timeline_id_24_s_200x200_fallback,
-                width: 200,
-                height: 200
-            },
-            large: {
-                srcMain: timeline_id_24_l_600x600_large,
-                width: 600,
-                height: 600,
-            },
-        },
+        image: gallery['timeline-id-24'],
     },
     {
         id: 'timeline-id-25',
@@ -410,19 +192,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [2018, 2019],
         content: t('timeline.list.timeline-id-26', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_26_s_200x133_main,
-                srcFallback: timeline_id_26_s_200x133_fallback,
-                width: 200,
-                height: 133
-            },
-            large: {
-                srcMain: timeline_id_26_l_600x400_large,
-                width: 600,
-                height: 400,
-            },
-        },
+        image: gallery['timeline-id-26'],
     },
     {
         id: 'timeline-id-27',
@@ -437,19 +207,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [2019, 2021],
         content: t('timeline.list.timeline-id-28', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_28_s_200x227_main,
-                srcFallback: timeline_id_28_s_200x227_fallback,
-                width: 200,
-                height: 227
-            },
-            large: {
-                srcMain: timeline_id_28_l_600x682_large,
-                width: 600,
-                height: 682,
-            },
-        },
+        image: gallery['timeline-id-28'],
     },
     {
         id: 'timeline-id-29',
@@ -464,19 +222,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         dateRange: [2021, 2024],
         content: t('timeline.list.timeline-id-30', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.RIGHT,
-        image: {
-            small: {
-                srcMain: timeline_id_30_s_200x266_main,
-                srcFallback: timeline_id_30_s_200x266_fallback,
-                width: 200,
-                height: 266
-            },
-            large: {
-                srcMain: timeline_id_30_l_600x800_large,
-                width: 600,
-                height: 800,
-            },
-        },
+        image: gallery['timeline-id-30'],
     },
     {
         id: 'timeline-id-31',
@@ -521,19 +267,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-9', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 1,
-        image: {
-            small: {
-                srcMain: timeline_id_9_s_200x67_main,
-                srcFallback: timeline_id_9_s_200x67_fallback,
-                width: 200,
-                height: 67
-            },
-            large: {
-                srcMain: timeline_id_9_l_600x200_large,
-                width: 600,
-                height: 200,
-            },
-        },
+        image: gallery['timeline-id-9'],
     },
     {
         id: 'timeline-id-10',
@@ -542,19 +276,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-10', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 1,
-        image: {
-            small: {
-                srcMain: timeline_id_10_s_200x142_main,
-                srcFallback: timeline_id_10_s_200x142_fallback,
-                width: 200,
-                height: 142
-            },
-            large: {
-                srcMain: timeline_id_10_l_600x425_large,
-                width: 600,
-                height: 425,
-            },
-        },
+        image: gallery['timeline-id-10'],
     },
     {
         id: 'timeline-id-11',
@@ -571,19 +293,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-36', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 1,
-        image: {
-            small: {
-                srcMain: timeline_id_36_s_200x257_main,
-                srcFallback: timeline_id_36_s_200x257_fallback,
-                width: 200,
-                height: 257
-            },
-            large: {
-                srcMain: timeline_id_36_l_600x770_large,
-                width: 600,
-                height: 770,
-            },
-        },
+        image: gallery['timeline-id-36'],
     },
     {
         id: 'timeline-id-37',
@@ -592,19 +302,7 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         content: t('timeline.list.timeline-id-37', { returnObjects: true }),
         position: TIMELINE_ITEM_POSITION.LEFT,
         level: 1,
-        image: {
-            small: {
-                srcMain: timeline_id_37_s_200x141_main,
-                srcFallback: timeline_id_37_s_200x141_fallback,
-                width: 200,
-                height: 141
-            },
-            large: {
-                srcMain: timeline_id_37_l_600x424_large,
-                width: 600,
-                height: 424,
-            },
-        },
+        image: gallery['timeline-id-37'],
     },
 ];
 

@@ -116,30 +116,13 @@ $types: (
 }
 
 .portfolio-project {
-    &__section:not(:first-child) {
-        margin-top: $base * 4;
-    }
+    @include article-typo;
 
-    &__title {
-        font-weight: $font-weight-600;
-    }
-
-    &__completed-objectives {
-        padding: 0 0 0 $base * 5;
-        margin: 0;
-    }
-
-    &__technologies,
-    &__tools {
-        display: flex;
+    &__gallery {
+        display: grid;
         flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-
-        li:not(:last-child)::after {
-            content: "-";
-        }
+        grid-template-columns: repeat(3, 30%);
+        gap: $base * 10 5%;
     }
 }
 
