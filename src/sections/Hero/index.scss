@@ -116,10 +116,13 @@
             flex: 1;
         }
 
+        &__position { font-size: $font-size-m; }
+        &__name { font-size: rem(60px); }
+
         &__img { max-width: 450px; }
     }
 
     @media (max-width: $screen-xs-max) {
-        &__img { max-width: 300px; }
+        &__img { max-width: 270px; }
     }
 }

@@ -43,7 +43,7 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 
     &__range { color: var(--primary); }
     &__content { flex: 1; }
-    &__image { max-width: 40%; }
+    &__image, &__video { max-width: 40%; }
 
     &__heading {
         font-size: $font-size-m;
@@ -67,6 +67,7 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 
     &.timeline-item_type-point {
         z-index: 5;
+        padding-left: $base * 2;
     }
 
     &_level-1 .range { margin-right: $base * 4;}
@@ -223,15 +224,17 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
         &__item { flex: auto;}
     }
 
-    .timeline-item__image { display: none; }
+    .timeline-item__image,
+    .timeline-item__video { display: none; }
 
     .timeline-years__item {
-        transform: rotate(-90deg);
+        padding-right: $base;
+        padding-left: $base;
     }
 
     .timeline-years {
-        margin-right: $base * 6;
-        margin-left: $base * 6;
+        margin-right: $base * 7;
+        margin-left: $base * 7;
     }
 
     .timeline__item {
@@ -240,8 +243,6 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 @media (max-width: $screen-md-max) {
-    .timeline-item__video { display: none; }
-
     .timeline-item__heading {
         font-size: $font-size-xs;
         line-height: $line-height-xs;
