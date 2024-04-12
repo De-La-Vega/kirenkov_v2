@@ -23,8 +23,8 @@ const Image = forwardRef<HTMLDivElement, TProps>(({ imageObj, className, onClick
             onClick={handleClick}
         >
             <picture>
-                <source type="image/webp" srcSet={`${previewRetina.sources.webp} 2x, ${preview.sources.webp}`} />
-                <source type="image/jpeg" srcSet={`${previewRetina.sources.jpg} 2x, ${preview.sources.jpg}`} />
+                <source type="image/webp" srcSet={`${previewRetina.sources.webp} 2x, ${preview.sources.webp} 1x`} />
+                <source type="image/jpeg" srcSet={`${previewRetina.sources.jpg} 2x, ${preview.sources.jpg} 1x`} />
                 <img
                     src={preview.sources.jpg}
                     alt={title || ''}

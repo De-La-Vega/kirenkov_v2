@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { GalleryWrapper } from '../../components/GalleryWrapper';
 import { TProject } from '../../models';
 
-import { gallery } from './gallery';
+import { gallery } from '../../data/portfolioGallery';
 
 import './index.scss';
 

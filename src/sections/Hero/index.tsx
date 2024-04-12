@@ -1,29 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Typed from 'typed.js';
-import { Helmet } from 'react-helmet';
 
 import { FollowMe } from '../../components/FollowMe';
 import { WriteToMe } from '../../components/WriteToMe';
 
-import hero_small_fallback from '../../assets/hero-400x500.png';
-import hero_small from '../../assets/hero-400x500.webp';
-
-import hero_large_fallback from '../../assets/hero-800x1000.png';
-import hero_large from '../../assets/hero-800x1000.webp';
+import hero_previewRetina_1600x2000_png from '../../assets/hero_previewRetina_1600x2000.png';
+import hero_previewRetina_1600x2000_webp from '../../assets/hero_previewRetina_1600x2000.webp';
+import hero_preview_800x1000_webp from '../../assets/hero_preview_800x1000.webp';
+import hero_preview_800x1000_png from '../../assets/hero_preview_800x1000.png';
+import hero_mobile_preview_400x500_png from '../../assets/hero-mobile_preview_400x500.png';
+import hero_mobile_preview_400x500_webp from '../../assets/hero-mobile_preview_400x500.webp';
 
 import './index.scss';
 
 export const Hero: React.FC = () => {
     const { t } = useTranslation();
-    const elTyped = React.useRef(null);
-    const [isDesktop, setIsDesktop] = useState<boolean>(false);
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia('(min-width: 62em)');
-        setIsDesktop(mediaQuery.matches);
-    }, []);
-    
+    const elTyped = useRef(null);
 
     useEffect(() => {
         const typed = new Typed(elTyped.current, {
@@ -41,10 +34,6 @@ export const Hero: React.FC = () => {
 
     return (
         <>
-            <Helmet>
-                <link rel="preload" as="image" href={isDesktop ? hero_large : hero_small} />
-            </Helmet>
-
             <section className="g-outer section-hero">
                 <div className="g-inner">
                     <div className="section-hero__content-left">
@@ -55,9 +44,20 @@ export const Hero: React.FC = () => {
                     </div>
                     <div className="section-hero__content-right">
                         <picture>
-                            <source srcSet={`${hero_large} 800w, ${hero_small} 300w`} sizes="(min-width: 62em) 800px, (max-width: 47.9375em) 300px" type="image/webp" />
-                            <source srcSet={`${hero_large_fallback} 800w, ${hero_small_fallback} 300w`} sizes="(min-width: 62em) 800px, (max-width: 47.9375em) 300px" type="image/png" />
-                            <img className="section-hero__img" src={hero_large_fallback} alt="Vitaliy Kirenkov" width="800" height="1000" />
+                            {/* Для ретина десктопа */}
+                            <source media="(min-width: 1024px)" srcSet={`${hero_previewRetina_1600x2000_webp} 2x, ${hero_preview_800x1000_webp} 1x`} type="image/webp" />
+                            <source media="(min-width: 1024px)" srcSet={`${hero_previewRetina_1600x2000_png} 2x, ${hero_preview_800x1000_png} 1x`} type="image/png" />
+
+                            {/* Для мобильных устройств с ретина */}
+                            <source media="(max-width: 1023px)" srcSet={`${hero_preview_800x1000_webp} 2x, ${hero_mobile_preview_400x500_webp} 1x`} type="image/webp" />
+                            <source media="(max-width: 1023px)" srcSet={`${hero_preview_800x1000_png} 2x, ${hero_mobile_preview_400x500_png} 1x`} type="image/png" />
+
+                            {/* Для мобильных устройств без ретина */}
+                            <source media="(max-width: 1023px)" srcSet={hero_mobile_preview_400x500_webp} type="image/webp" />
+                            <source media="(max-width: 1023px)" srcSet={hero_mobile_preview_400x500_png} type="image/png" />
+
+                            {/* Изображение по умолчанию */}
+                            <img className="section-hero__img" src={hero_preview_800x1000_png} alt="Vitaliy Kirenkov" width="800" height="1000" />
                         </picture>
 
                         <div className="section-hero__columns">

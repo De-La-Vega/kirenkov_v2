@@ -519,7 +519,7 @@
                         ],
                         "technologies": ["JavaScript", "jQuery", "PHP", "HTML", "CSS", "Bitrix", "NetCat"],
                         "tools": ["Photoshop", "Sublime Text", "Dreamviewer", "Zeplin"],
-                        "imageGalleryKeys": ["studio_sibur", "studio_ecos", "studio_uralkali", "fl_dreamline", "fl_home_sea", "studio_slav_dvor", "fl_brand_art", "fl_lansklad", "studio_tnk"]
+                        "imageGalleryKeys": ["studio_sibur", "fl_brand_art", "studio_slav_dvor", "studio_ecos", "studio_tnk", "fl_dreamline", "fl_home_sea", "fl_lansklad", "studio_uralkali"]
                     }
                 ]
             },
