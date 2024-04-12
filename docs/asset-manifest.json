@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/kirenkov_v2/static/css/main.9f71b85f.css",
-    "main.js": "/kirenkov_v2/static/js/main.deebbd15.js",
+    "main.js": "/kirenkov_v2/static/js/main.d073a1a2.js",
     "static/js/453.9859ad0a.chunk.js": "/kirenkov_v2/static/js/453.9859ad0a.chunk.js",
     "static/media/blogging-3.mp4": "/kirenkov_v2/static/media/blogging-3.65d0f41d1926b723cb03.mp4",
-    "static/media/hero-800x1000.png": "/kirenkov_v2/static/media/hero-800x1000.691fc85cd19775db521e.png",
+    "static/media/hero_previewRetina_1600x2000.png": "/kirenkov_v2/static/media/hero_previewRetina_1600x2000.a74d88521d7f8d9b9e9f.png",
     "static/media/blogging-2.mp4": "/kirenkov_v2/static/media/blogging-2.7c140f548f6586a29618.mp4",
+    "static/media/hero_preview_800x1000.png": "/kirenkov_v2/static/media/hero_preview_800x1000.6c30f5aee3aeb4b8a98e.png",
     "static/media/timeline_id_2_originalRetina_1200x1600.jpg": "/kirenkov_v2/static/media/timeline_id_2_originalRetina_1200x1600.e0f911b3c88c06f59091.jpg",
     "static/media/programming_main_originalRetina_1200x1803.jpg": "/kirenkov_v2/static/media/programming_main_originalRetina_1200x1803.f07b90d3859b846e84ab.jpg",
     "static/media/studio_slav_dvor_originalRetina_1200x1520.jpg": "/kirenkov_v2/static/media/studio_slav_dvor_originalRetina_1200x1520.09fb5369a819f704bc9c.jpg",
@@ -35,8 +36,8 @@
     "static/media/consulting_main_originalRetina_1200x1200.jpg": "/kirenkov_v2/static/media/consulting_main_originalRetina_1200x1200.77010aed09ee87f533bc.jpg",
     "static/media/timeline_id_1_originalRetina_1200x1800.jpg": "/kirenkov_v2/static/media/timeline_id_1_originalRetina_1200x1800.35bad9c3984c58f42412.jpg",
     "static/media/timeline_id_37_originalRetina_1200x848.jpg": "/kirenkov_v2/static/media/timeline_id_37_originalRetina_1200x848.fc23ca25529a81e63a83.jpg",
-    "static/media/hero-400x500.png": "/kirenkov_v2/static/media/hero-400x500.d4e0170f785646f6883f.png",
     "static/media/timeline_id_26_originalRetina_1200x800.jpg": "/kirenkov_v2/static/media/timeline_id_26_originalRetina_1200x800.397d3609841a4867c1da.jpg",
+    "static/media/hero-mobile_preview_400x500.png": "/kirenkov_v2/static/media/hero-mobile_preview_400x500.beb157811e1a12bf0de8.png",
     "static/media/timeline_id_18_originalRetina_1200x1805.jpg": "/kirenkov_v2/static/media/timeline_id_18_originalRetina_1200x1805.b451ead1a5bd52d49b28.jpg",
     "static/media/studio_uralkali_originalRetina_1200x728.webp": "/kirenkov_v2/static/media/studio_uralkali_originalRetina_1200x728.31f58d199b82c8754cf5.webp",
     "static/media/timeline_id_14_originalRetina_1200x960.jpg": "/kirenkov_v2/static/media/timeline_id_14_originalRetina_1200x960.1885b1ec9ba3fc685cfa.jpg",
@@ -77,6 +78,7 @@
     "static/media/timeline_id_18_originalRetina_1200x1805.webp": "/kirenkov_v2/static/media/timeline_id_18_originalRetina_1200x1805.f4b37274e01cc2b03f80.webp",
     "static/media/timeline_id_28_originalRetina_1200x1364.webp": "/kirenkov_v2/static/media/timeline_id_28_originalRetina_1200x1364.1f5595cf8dc1dfc02a1b.webp",
     "static/media/studio_tnk_originalRetina_1200x1172.webp": "/kirenkov_v2/static/media/studio_tnk_originalRetina_1200x1172.8b4dd2f02659b6382976.webp",
+    "static/media/hero_previewRetina_1600x2000.webp": "/kirenkov_v2/static/media/hero_previewRetina_1600x2000.74a2baa6ccdabe009eb5.webp",
     "static/media/studio_slav_dvor_original_600x760.jpg": "/kirenkov_v2/static/media/studio_slav_dvor_original_600x760.ddabc21838d456ee3f78.jpg",
     "static/media/management_4_originalRetina_1200x927.jpg": "/kirenkov_v2/static/media/management_4_originalRetina_1200x927.c8b58154300ac6b1a182.jpg",
     "static/media/views_and_ideas_id_2_originalRetina_1200x653.jpg": "/kirenkov_v2/static/media/views_and_ideas_id_2_originalRetina_1200x653.8a83734687a6b2c26776.jpg",
@@ -166,6 +168,7 @@
     "static/media/timeline_id_28_original_600x682.webp": "/kirenkov_v2/static/media/timeline_id_28_original_600x682.4a3b030b22511a1ca3aa.webp",
     "static/media/timeline_id_18_previewRetina_400x601.jpg": "/kirenkov_v2/static/media/timeline_id_18_previewRetina_400x601.6bf14e30463fa59b4474.jpg",
     "static/media/timeline_id_7_originalRetina_1200x900.webp": "/kirenkov_v2/static/media/timeline_id_7_originalRetina_1200x900.587b5fa8fa9d3cf0356c.webp",
+    "static/media/hero_preview_800x1000.webp": "/kirenkov_v2/static/media/hero_preview_800x1000.b620032b316f7e61a244.webp",
     "static/media/consulting_main_original_600x600.webp": "/kirenkov_v2/static/media/consulting_main_original_600x600.f6ef38c9d0730008da79.webp",
     "static/media/fl_brand_art_original_600x697.webp": "/kirenkov_v2/static/media/fl_brand_art_original_600x697.d980214ee437214894ed.webp",
     "static/media/studio_tnk_original_600x586.webp": "/kirenkov_v2/static/media/studio_tnk_original_600x586.3f582646a3614c8e7fc2.webp",
@@ -182,7 +185,6 @@
     "static/media/fl_lansklad_previewRetina_400x649.jpg": "/kirenkov_v2/static/media/fl_lansklad_previewRetina_400x649.59d9845df249d96b1af7.jpg",
     "static/media/timeline_id_8_originalRetina_1200x1200.webp": "/kirenkov_v2/static/media/timeline_id_8_originalRetina_1200x1200.bc5e9f17767ad26038bc.webp",
     "static/media/timeline_id_15_original_600x450.webp": "/kirenkov_v2/static/media/timeline_id_15_original_600x450.36f7701b260ae9726220.webp",
-    "static/media/hero-800x1000.webp": "/kirenkov_v2/static/media/hero-800x1000.379e416a07cbe0afb3fb.webp",
     "static/media/timeline_id_6_original_600x450.jpg": "/kirenkov_v2/static/media/timeline_id_6_original_600x450.172789855081283ef963.jpg",
     "static/media/fl_dreamline_original_600x572.jpg": "/kirenkov_v2/static/media/fl_dreamline_original_600x572.fa754ae2e208af06a50e.jpg",
     "static/media/studio_slav_dvor_previewRetina_400x506.webp": "/kirenkov_v2/static/media/studio_slav_dvor_previewRetina_400x506.59dee314f2081138c59a.webp",
@@ -269,6 +271,7 @@
     "static/media/programming_main_previewRetina_400x601.webp": "/kirenkov_v2/static/media/programming_main_previewRetina_400x601.b740cd5bb2cb7dde0493.webp",
     "static/media/management_2_previewRetina_400x309.jpg": "/kirenkov_v2/static/media/management_2_previewRetina_400x309.000149fa22b05d00b889.jpg",
     "static/media/fl_brand_art_previewRetina_400x465.webp": "/kirenkov_v2/static/media/fl_brand_art_previewRetina_400x465.f32d80388487f398dbb8.webp",
+    "static/media/hero-mobile_preview_400x500.webp": "/kirenkov_v2/static/media/hero-mobile_preview_400x500.7b5b00eb8cef681cbcd3.webp",
     "static/media/management_1_original_600x463.webp": "/kirenkov_v2/static/media/management_1_original_600x463.a2021fb50ef1cac45c03.webp",
     "static/media/management_2_original_600x463.webp": "/kirenkov_v2/static/media/management_2_original_600x463.80cdc1bf15ea75e22a85.webp",
     "static/media/management_1_previewRetina_400x309.jpg": "/kirenkov_v2/static/media/management_1_previewRetina_400x309.6be28082b12d6fbd5543.jpg",
@@ -285,7 +288,6 @@
     "static/media/blogging_main_original_600x360.webp": "/kirenkov_v2/static/media/blogging_main_original_600x360.5802cef4eb766ed9736b.webp",
     "static/media/management_4_previewRetina_400x309.jpg": "/kirenkov_v2/static/media/management_4_previewRetina_400x309.8189c6cc6355f5be6579.jpg",
     "static/media/management_3_previewRetina_400x309.jpg": "/kirenkov_v2/static/media/management_3_previewRetina_400x309.68635a87b65ed933281d.jpg",
-    "static/media/hero-400x500.webp": "/kirenkov_v2/static/media/hero-400x500.3389487d8bb8b61ff7e1.webp",
     "static/media/blogging_main_previewRetina_400x240.jpg": "/kirenkov_v2/static/media/blogging_main_previewRetina_400x240.662c9781dfb14e86a9ee.jpg",
     "static/media/timeline_id_6_previewRetina_400x300.jpg": "/kirenkov_v2/static/media/timeline_id_6_previewRetina_400x300.c522d1fe505d61e6393e.jpg",
     "static/media/timeline_id_8_original_600x600.webp": "/kirenkov_v2/static/media/timeline_id_8_original_600x600.632d58bb6079a8a13304.webp",
@@ -420,11 +422,11 @@
     "index.html": "/kirenkov_v2/index.html",
     "static/media/views_and_ideas_id_1_preview_200x134.webp": "/kirenkov_v2/static/media/views_and_ideas_id_1_preview_200x134.72143a0846e3c9a59832.webp",
     "main.9f71b85f.css.map": "/kirenkov_v2/static/css/main.9f71b85f.css.map",
-    "main.deebbd15.js.map": "/kirenkov_v2/static/js/main.deebbd15.js.map",
+    "main.d073a1a2.js.map": "/kirenkov_v2/static/js/main.d073a1a2.js.map",
     "453.9859ad0a.chunk.js.map": "/kirenkov_v2/static/js/453.9859ad0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f71b85f.css",
-    "static/js/main.deebbd15.js"
+    "static/js/main.d073a1a2.js"
   ]
 }

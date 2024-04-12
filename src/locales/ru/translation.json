@@ -287,93 +287,85 @@
                 "content": [
                     {
                         "id": "management-project-1",
-                        "label": "The Geologist's Intellectual Assistant and a Unified Database",
-                        "goal": "Develop and implement an advanced tool for calculating probabilities of geological hypotheses using Knowledge Templates and Analogs.",
-                        "team": "Scrum team comprised of a Business Architect, Business Analyst, Frontend and Backend Developers, UI Designer, QA, DevOps Engineer along with other experts specific to geological exploration.",
+                        "label": "Интеллектуальный помощник геолога и единая база данных",
+                        "goal": "Разработать и внедрить передовой инструмент для расчета вероятностей геологических гипотез с использованием шаблонов знаний и аналогов.",
+                        "team": "1 Scrum-команда, включающая 1 архитектора бизнеса, 1 бизнес-аналитика, 1 фронтенд-разработчика, 1 бэкенд-разработчика, 1 дизайнера интерфейса, 1 инженера по качеству, 1 инженера DevOps, а также других экспертов, специализирующихся на геологической разведке.",
                         "completedObjectives": [
-                            "Developed an advanced tool capable of calculating the probabilities of geological hypotheses based on approved Knowledge Templates.",
-                            "Implemented a unified Database of Geological Analogs ensuring real-time data access and accurate analog-based calculations.",
-                            "Integrated a system for calculating weights of alternative geological scenarios, enhancing prediction accuracy.",
-                            "Established a recommendation system that guides further studies, minimizing risks associated with low-level object exploration.",
-                            "Ensured continuous integration with other geological systems, allowing for seamless data transfer and collaboration.",
-                            "Met the required quality standards and passed rigorous testing protocols, confirming the tool's reliability and effectiveness.",
-                            "Achieved a positive feedback loop from initial user groups, validating the tool's user-friendliness and efficiency."
+                            "Разработан передовой инструмент, способный рассчитывать вероятности геологических гипотез на основе утвержденных шаблонов знаний.",
+                            "Реализована единая база данных геологических аналогов, обеспечивающая доступ к данным в режиме реального времени и точные расчеты на основе аналогов.",
+                            "Интегрирована система для расчета веса альтернативных геологических сценариев, повышающая точность прогнозов.",
+                            "Установлена рекомендательная система, направляющая дальнейшие исследования и минимизирующая риски, связанные с исследованием объектов низкой значимости.",
+                            "Обеспечена непрерывная интеграция с другими геологическими системами, позволяющая бесперебойную передачу данных и сотрудничество.",
+                            "Соответствие установленным стандартам качества и успешное прохождение строгих тестировочных протоколов, подтверждающих надежность и эффективность инструмента.",
+                            "Получена положительная обратная связь от первых групп пользователей, подтверждающая удобство использования и эффективность инструмента."
                         ],
                         "technologies": ["JavaScript", "TypeScript", "Node.js", "Python", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"]
                     },
-
                     {
                         "id": "management-project-2",
-                        "label": "The Expert System Selects Technical Solutions for Oil Reservoir Development & Study",
-                        "goal": "Develop and implement an advanced AI and ML-powered tool to optimize the planning and management of geological projects, providing project managers with strategic insights for project success and integrating the tool with current software and systems for seamless project management.",
-                        "team": "Scrum team, which included a Business Architect, Business Analyst, Frontend and Backend Developers, UI Designer, and DevOps Engineer, QA complemented by domain-specific experts in geological exploration.",
+                        "label": "Экспертная система для выбора технических решений разработки и исследования нефтяных месторождений",
+                        "goal": "Разработать и внедрить передовой инструмент на основе ИИ и машинного обучения для оптимизации планирования и управления геологическими проектами, предоставляющий руководителям проектов стратегические данные для успеха проекта и интеграцию инструмента с текущими программными средствами и системами для бесшовного управления проектами.",
+                        "team": "1 Scrum-команда, включая 1 архитектора бизнеса, 1 бизнес-аналитика, 1 фронтенд-разработчика, 1 бэкенд-разработчика, 1 дизайнера интерфейса, 1 инженера DevOps, 1 инженера по качеству, дополненная доменными экспертами в области геологической разведки.",
                         "completedObjectives": [
-                            "Developed an AI and ML algorithm capable of analyzing intricate geological data.",
-                            "Integrated the advanced tool with existing software and systems for seamless user experience.",
-                            "Conducted multiple quality assurance tests to ensure tool's reliability and accuracy in data processing.",
-                            "Created comprehensive user manuals and training materials to aid in the client's adoption of the tool.",
-                            "Successfully generated insights into effective strategies for geological project success using the developed tool.",
-                            "Streamlined the workflow for planning and managing geological projects, ensuring project managers can easily adopt and utilize the tool.",
-                            "Enhanced the client's ability to optimize resources, improve project timelines, and reduce the risk of project failures using the new tool."
+                            "Разработан алгоритм ИИ и машинного обучения, способный анализировать сложные геологические данные.",
+                            "Интегрирован передовой инструмент с существующими программными средствами и системами для обеспечения бесперебойного пользовательского опыта.",
+                            "Проведено множество тестов качества для обеспечения надежности инструмента и точности обработки данных.",
+                            "Созданы подробные руководства пользователя и учебные материалы для облегчения внедрения инструмента клиентами.",
+                            "Успешно сгенерированы стратегические данные для успеха геологических проектов с использованием разработанного инструмента.",
+                            "Оптимизированы процессы планирования и управления геологическими проектами, что позволяет руководителям проектов легко адаптироваться и использовать инструмент.",
+                            "Улучшена способность клиента оптимизировать ресурсы, сократить временные рамки проектов и уменьшить риски неудач проектов с использованием нового инструмента."
                         ],
                         "technologies": ["AI (Artificial Intelligence)", "ML (Machine Learning)", "JavaScript", "TypeScript", "Node.js", "Python", "React", "MobX"],
                         "tools": ["Jira", "Confluence", "Git"]
                     },
-
                     {
                         "id": "management-project-3",
-                        "label": "Tool for Effective Exploration Project Planning & Management",
-                        "goal": "Develop a comprehensive tool that enhances and streamlines the planning and management processes within geological exploration, integrating multiple facets like geological knowledge, project administration, scenario modeling, risk analysis, Gantt charting, cost engineering, and others.",
-                        "team": "Scrum team, which included a Business Architect, Business Analyst, Frontend and Backend Developers, UI Designer, and DevOps Engineer. This team was complemented by domain-specific experts in geological exploration.",
+                        "label": "Инструмент для эффективного планирования и управления проектами разведки",
+                        "goal": "Разработать комплексный инструмент, который улучшит и оптимизирует процессы планирования и управления в области геологической разведки, интегрируя множество аспектов, таких как знания в области геологии, управление проектами, моделирование сценариев, анализ рисков, планирование по диаграмме Ганта, инжиниринг затрат и другие.",
+                        "team": "1 Scrum-команда, включая 1 архитектора бизнеса, 1 бизнес-аналитика, 1 фронтенд-разработчика, 1 бэкенд-разработчика, 1 дизайнера интерфейса, 1 инженера DevOps, дополненная доменными экспертами в области геологической разведки.",
                         "completedObjectives": [
-                            "Created a unified platform merging geological data, project administration tools, scenario modeling functions, and more.",
-                            "Integrated an intuitive Gantt chart detailing mechanism, optimizing the visualization of project timelines.",
-                            "Implemented a robust risk and event planning module, ensuring contingencies are effectively addressed.",
-                            "Incorporated a cost engineering function, allowing precise financial planning and forecasting.",
-                            "Designed an interface and backend that prioritized user-friendliness and operational efficiency.",
-                            "Successfully conducted rigorous testing and fine-tuning phases, ensuring the tool's reliability and efficacy in real-world scenarios.",
-                            "Launched the tool with adherence to industry's best practices, receiving positive feedback for its transformative impact on geological exploration planning and management."
+                            "Создана единая платформа, объединяющая геологические данные, инструменты управления проектами, функции моделирования сценариев и другое.",
+                            "Интегрирована интуитивно понятная система детализации по диаграмме Ганта, оптимизирующая визуализацию временных рамок проектов.",
+                            "Реализована надежная модуль планирования рисков и событий, обеспечивающая эффективное управление непредвиденными обстоятельствами.",
+                            "Внедрена функция инжиниринга затрат, позволяющая точно планировать и прогнозировать финансовые показатели.",
+                            "Разработан интерфейс и бэкенд, приоритет которых - удобство пользователя и операционная эффективность.",
+                            "Успешно проведены строгие тесты и фазы доводки, обеспечивающие надежность и эффективность инструмента в реальных условиях.",
+                            "Запущен инструмент с соблюдением лучших практик отрасли, получив положительные отзывы за его трансформационное влияние на планирование и управление геологической разведкой."
                         ],
                         "technologies": ["JavaScript", "TypeScript", "Node.js", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"]
                     },
-
                     {
                         "id": "management-project-4",
-                        "label": "Web application for Real Estate Investment Evaluation",
-                        "goal": "Create a geoinformation software system to manage a database of existing construction projects and provide automated spatial analysis of land parcels' investment attractiveness for constructing multi-apartment residential complexes in the customer's regions of presence.",
-                        "team": "1 Scrum team comprised of a Project Manager, Business Analyst, Data Engineer, Frontend and Backend developers, DevOps Engineer, UX/UI Designers and a Business Architect.",
+                        "label": "Веб-приложение для оценки инвестиций в недвижимость",
+                        "goal": "Создать геоинформационную систему для управления базой данных существующих строительных проектов и предоставления автоматизированного пространственного анализа привлекательности земельных участков для строительства многоквартирных жилых комплексов в регионах присутствия заказчика.",
+                        "team": "1 Scrum-команда, состоящая из 1 руководителя проекта, 1 бизнес-аналитика, 1 инженера данных, 1 фронтенд-разработчика, 1 бэкенд-разработчика, 1 инженера DevOps, 1 дизайнера интерфейсов/пользовательского опыта, 1 бизнес-архитектора",
                         "completedObjectives": [
-                            "Enabled the display of construction projects on a map and maintained updated databases of the customer's and competitors' construction projects across multiple cities.",
-                            "Facilitated automated spatial analysis of land parcels integrating data from various sources including internal and external datasets, attribute information, and both public and commercial map services.",
-                            "Provided automated analysis of efficient land use based on urban planning, location assessment, competitive analysis, sales forecasting, and financial modeling.",
-                            "Developed a user-friendly web application for real-time visualization and analysis of land parcels for investment.",
-                            "Enabled users to assess the attractiveness of potential construction projects, decide on development types, and explore sales strategies."
+                            "Обеспечено отображение строительных проектов на карте и поддержание актуальных баз данных строительных проектов заказчика и его конкурентов в разных городах.",
+                            "Осуществлен автоматизированный пространственный анализ земельных участков, интегрируя данные из различных источников, включая внутренние и внешние наборы данных, информацию об атрибутах, а также общедоступные и коммерческие картографические сервисы.",
+                            "Предоставлен автоматизированный анализ эффективного использования земли на основе градостроительного планирования, оценки местоположения, анализа конкуренции, прогнозирования продаж и финансового моделирования.",
+                            "Разработано удобное в использовании веб-приложение для реального времени визуализации и анализа земельных участков для инвестиций.",
+                            "Пользователям предоставлена возможность оценить привлекательность потенциальных строительных проектов, выбрать типы разработки и изучить стратегии продаж."
                         ],
                         "technologies": ["Python", ".NET", "JavaScript"],
                         "tools": ["Jira", "Confluence", "Git", "Microsoft Teams"]
                     },
-
                     {
                         "id": "management-project-5",
-                        "label": "IT Strategy for the Fashion House",
-                        "goal": "Optimize the company's IT infrastructure, systems, and processes in alignment with the Fashion House's business goals.",
-                        "team": "Scrum team comprised of a Solution Architect, Information Security Expert, Business Analyst, Data Engineers, and a Business Architect.",
+                        "label": "ИТ-стратегия для модного дома",
+                        "goal": "Оптимизация систем и процессов ИТ-инфраструктуры компании в соответствии с бизнес-целями модного дома.",
+                        "team": "1 Scrum-команда, включающая 1 руководителя проекта, 1 архитектора решений, 1 эксперта по информационной безопасности, 1 бизнес-аналитика, несколько инженеров данных, 1 бизнес-архитектора",
                         "completedObjectives": [
-                            "Developed a high-level map of business processes, identified areas for improvement, and analyzed the client's digital maturity against international best practices.",
-                            "Conducted a comprehensive evaluation of the current IT landscape, provided quick-win recommendations, and defined a target IT architecture following IBM standards.",
-                            "Assessed the maturity of critical processes and recommended an optimal target operational model for the IT department.",
-                            "Delivered an infrastructure assessment report and suggested improvements aligned with business goals.",
-                            "Evaluated the current data management model and developed an advancement plan for data management practices.",
-                            "Offered a brief description of the current and target states of information security using the 10 EP reference model and provided strategic-level recommendations.",
-                            "Concluded on IT processes' alignment with IT department goals, evaluated IT processes, identified improvement areas, and developed a roadmap for implementation."
+                            "Разработана высокоуровневая карта бизнес-процессов, определены области для улучшения и проанализирована цифровая зрелость клиента по сравнению с международными лучшими практиками.",
+                            "Проведена всесторонняя оценка текущего ИТ-ландшафта, предложены рекомендации по быстрым победам и определена целевая ИТ-архитектура в соответствии со стандартами IBM.",
+                            "Оценена зрелость критически важных процессов и рекомендована оптимальная целевая операционная модель для ИТ-отдела.",
+                            "Подготовлен отчет об оценке инфраструктуры и предложены улучшения, соответствующие бизнес-целям.",
+                            "Оценена текущая модель управления данными и разработан план развития практик управления данными.",
+                            "Представлено краткое описание текущего и целевого состояния информационной безопасности с использованием 10 EP reference model и предоставлены стратегические рекомендации.",
+                            "Сделан вывод о соответствии ИТ-процессов целям ИТ-отдела, оценены ИТ-процессы, выявлены области для улучшения и разработана дорожная карта для реализации."
                         ],
-                        "technologies": [
-                            "IBM standard IT architecture",
-                            "Data management systems",
-                            "10 EP reference model for information security"
-                        ],
+                        "technologies": ["IBM standard IT architecture", "Data management systems", "10 EP reference model for information security"],
                         "tools": ["Jira", "Confluence"]
                     }
                 ]
@@ -383,14 +375,14 @@
                 "content": [
                     {
                         "id": "programming-project-1",
-                        "label": "Cognitive Cost Metrics Optimization System",
-                        "goal": "Enhancing the efficiency of managing capital projects by deploying automated optimization tools and cost analysis of construction objects.",
-                        "team": "1 scrum team (12 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI and UX Designers, QA Engineer, DevOps Engineers, Solution Architect)",
+                        "label": "Система оптимизации метрик когнитивных затрат",
+                        "goal": "Повышение эффективности управления капитальными проектами за счет использования автоматизированных инструментов оптимизации и анализа стоимости строительных объектов.",
+                        "team": "1 Scrum-команда (12 сотрудников: 1 руководитель проекта, 2 бизнес-аналитика, 2 фронтенд-разработчика, 2 бэкенд-разработчика, 1 дизайнер UI, 1 дизайнер UX, 1 инженер по качеству, 1 инженер DevOps, 1 архитектор решений)",
                         "completedObjectives": [
-                            "Automated generation of multiple cost-reduction variants for the project and construction objects, considering priority changes in parameters.",
-                            "Manual and automated searching for optimal values of construction object parameters.",
-                            "Automated dependency analysis of the cost of construction objects based on various parameters.",
-                            "Comparison of construction object cost calculations with templates in the Information System."
+                            "Автоматизированная генерация множества вариантов снижения затрат для проекта и строительных объектов с учетом приоритетных изменений параметров.",
+                            "Ручной и автоматизированный поиск оптимальных значений параметров строительных объектов.",
+                            "Автоматизированный анализ зависимости стоимости строительных объектов от различных параметров.",
+                            "Сравнение расчетов стоимости строительных объектов с шаблонами в информационной системе."
                         ],
                         "technologies": ["TypeScript", "React", "Node.js", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"]
@@ -398,16 +390,14 @@
 
                     {
                         "id": "programming-project-2",
-                        "label": "Cognitive Planning and Control System",
-                        "goal": "Enhance the efficiency of project execution by leveraging historical project information and cognitive functions.",
-                        "team": "1 scrum team (13 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI and UX Designers, QA Engineers, DevOps Engineers, Business Architect)",
+                        "label": "Система когнитивного планирования и контроля",
+                        "goal": "Повышение эффективности исполнения проектов за счет использования исторической информации о проектах и когнитивных функций.",
+                        "team": "1 Scrum-команда (13 сотрудников: 1 руководитель проекта, 2 бизнес-аналитика, 2 фронтенд-разработчика, 2 бэкенд-разработчика, 1 дизайнер UI, 1 дизайнер UX, 2 инженера по качеству, 1 инженер DevOps, 1 бизнес-архитектор)",
                         "completedObjectives": [
-                            "Processed and systematized historical data from completed projects.",
-                            "Enabled swift recalculations of alternative project trajectories based on historical insights.",
-                            "Introduced a \"hints\" feature to assist during project implementation, backed by ontology.",
-                            "Addressed challenges like overcoming fragmented data repositories, integrating cognitive functionalities into software, and incorporating \"what-if\" analysis.",
-                            "Contributed towards challenges by enriching data, developing a product for fragmented data analysis, and creating optimal project implementation algorithms.",
-                            "Set KPIs including streamlined project implementation timelines and reduced time spent on project data processing/analysis, even as data volume increases."
+                            "Обработка и систематизация исторических данных из завершенных проектов.",
+                            "Обеспечение быстрой перерасчета альтернативных траекторий проектов на основе исторических данных.",
+                            "Введение функции \"подсказок\", поддерживаемой онтологией, для помощи в реализации проекта.",
+                            "Решение проблем, связанных с преодолением фрагментации репозиториев данных, интеграцией когнитивных функций в программное обеспечение и внедрением анализа \"что-если\"."
                         ],
                         "technologies": ["TypeScript", "React", "Node.js", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"]
@@ -415,13 +405,13 @@
 
                     {
                         "id": "programming-project-3",
-                        "label": "Workplace For a Bank Employee",
-                        "goal": "Streamline the loan application process by automating decision-making based on clients' data, facilitating swift and efficient loan approvals.",
-                        "team": "2 scrum team (20 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI and UX Designers, QA Engineers, DevOps Engineers, Business and Solution Architects)",
+                        "label": "Рабочее место сотрудника банка",
+                        "goal": "Оптимизация процесса подачи заявлений на кредиты за счет автоматизации принятия решений на основе данных клиентов, обеспечивая быстрые и эффективные одобрения кредитов.",
+                        "team": "2 Scrum-команды (20 сотрудников: 1 руководитель проекта, 2 бизнес-аналитика, 4 фронтенд-разработчика, 4 бэкенд-разработчика, 1 дизайнер UI, 1 дизайнер UX, 2 инженера по качеству, 2 инженера DevOps, 2 бизнес- и решений-архитектора)",
                         "completedObjectives": [
-                            "Transformed the loan application process to require only an identity card from clients.",
-                            "Automated evaluation of critical client data, including salary and credit history, to derive loan conditions.",
-                            "Drastically reduced the loan issuance time, with approvals now taking just 10-15 minutes."
+                            "Трансформация процесса подачи заявлений на кредиты, требующая только удостоверения личности клиентов.",
+                            "Автоматизация оценки ключевых данных клиентов, включая зарплату и кредитную историю, для определения условий кредита.",
+                            "Значительное сокращение времени выдачи кредитов, с одобрениями, теперь занимающими всего 10-15 минут."
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "BitBucket", "Webpack"]
@@ -429,16 +419,16 @@
 
                     {
                         "id": "programming-project-4",
-                        "label": "Digital Laboratory and IT-Architecture Development",
-                        "goal": "Develop a comprehensive three-year business, digital, and IT transformation strategy to transform the client's bank into a leading digital player in the financial industry, enabling it to double its loan portfolio, tap into the SME market, and transition the majority of its customers' operations to digital channels.",
-                        "team": "In-house Digital Lab with 4 Scrum teams (40 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI and UX Designers, QA Engineers, DevOps Engineers, Business and Solution Architects).",
+                        "label": "Разработка цифровой лаборатории и ИТ-архитектуры",
+                        "goal": "Разработать комплексную трехлетнюю стратегию цифровой и ИТ-трансформации бизнеса для трансформации банка клиента в ведущего цифрового игрока в финансовой индустрии, что позволит удвоить его кредитный портфель, выйти на рынок МСБ и перевести большинство операций его клиентов в цифровые каналы.",
+                        "team": "Внутренняя цифровая лаборатория с 4 Scrum-командами (40 сотрудников: 1 руководитель проекта, 4 бизнес-аналитика, 8 фронтенд-разработчиков, 8 бэкенд-разработчиков, 2 дизайнера UI, 2 дизайнера UX, 4 инженера по качеству, 4 инженера DevOps, 4 архитектора бизнеса и решений)",
                         "completedObjectives": [
-                            "Successfully established an in-house Digital Lab, fostering innovation using Design Thinking, Agile, and DevOps methodologies.",
-                            "Launched several MVPs for the bank's newest digital products.",
-                            "Achieved a 400% faster time-to-market.",
-                            "Saw a 16% increase in active digital customers.",
-                            "Managed an 18% reduction in operations costs.",
-                            "Positioned the client's bank as a leader in digital innovation within the financial industry."
+                            "Успешно создана внутренняя Цифровая лаборатория, стимулирующая инновации с использованием методологий Design Thinking, Agile и DevOps.",
+                            "Запущено несколько MVP для новейших цифровых продуктов банка.",
+                            "Достижение ускорения вывода на рынок в 4 раза.",
+                            "Увеличение числа активных цифровых клиентов на 16%.",
+                            "Управление снижением операционных затрат на 18%.",
+                            "Позиционирование банка клиента как лидера цифровой инновации в финансовой индустрии."
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "Git", "Slack"]
@@ -446,17 +436,17 @@
 
                     {
                         "id": "programming-project-5",
-                        "label": "MVP Development of Digital and IT-architecture",
-                        "goal": "To pave the way for the bank's digital transformation by developing and piloting a MVP (Minimum Viable Product) of the digital and IT-architecture.",
-                        "team": "1 scrum team (10 employees: Project Manager, Business Analyst, Frontend and Backend developers, UI Designer, QA, DevOps Engineer)",
+                        "label": "Разработка MVP цифровой и ИТ-архитектуры",
+                        "goal": "Проложить путь для цифровой трансформации банка, разработав и запустив MVP (минимально жизнеспособный продукт) цифровой и ИТ-архитектуры.",
+                        "team": "1 Scrum-команда (10 сотрудников: 1 руководитель проекта, 1 бизнес-аналитик, 2 фронтенд-разработчика, 2 бэкенд-разработчика, 1 дизайнер UI, 1 инженер по качеству, 1 инженер DevOps)",
                         "completedObjectives": [
-                            "Designed and developed a clickable prototype simulating the bank's future digital platform.",
-                            "Successfully launched an MVP of the digital and IT-architecture, meeting the initial requirements and objectives set by stakeholders.",
-                            "Facilitated seamless integration with existing bank systems, ensuring data integrity and security.",
-                            "Conducted user testing sessions, gathering feedback to refine and optimize the digital platform for better user experience.",
-                            "Established a continuous integration/continuous deployment (CI/CD) pipeline for efficient development and deployment cycles.",
-                            "Addressed critical bugs and challenges post-launch, ensuring platform stability and user satisfaction.",
-                            "Delivered comprehensive documentation and user manuals for bank staff, ensuring smooth onboarding and adoption of the platform."
+                            "Спроектирован и разработан кликабельный прототип, имитирующий будущую цифровую платформу банка.",
+                            "Успешно запущен MVP цифровой и ИТ-архитектуры, отвечающий первоначальным требованиям и целям заинтересованных сторон.",
+                            "Обеспечена бесперебойная интеграция с существующими системами банка, гарантирующая целостность данных и безопасность.",
+                            "Проведены сессии пользовательского тестирования, сбор обратной связи для уточнения и оптимизации цифровой платформы для лучшего пользовательского опыта.",
+                            "Установлена непрерывная интеграция и непрерывная доставка (CI/CD) для эффективных циклов разработки и развертывания.",
+                            "Решены критические ошибки и проблемы после запуска, обеспечивая стабильность платформы и удовлетворенность пользователей.",
+                            "Предоставлена полная документация и руководства пользователя для сотрудников банка, обеспечивая плавное внедрение и адаптацию платформы."
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"]
@@ -464,14 +454,14 @@
 
                     {
                         "id": "programming-project-6",
-                        "label": "Component Library for Customer",
-                        "goal": "To create a robust UI library that streamlines development, ensures consistency across applications, and maintains compatibility with legacy systems.",
-                        "team": "In-house developers experienced with frontend technologies, actively collaborating with application developers for feedback and improvement.",
+                        "label": "Библиотека компонентов для клиента",
+                        "goal": "Создать надежную библиотеку пользовательского интерфейса, которая упрощает разработку, обеспечивает единообразие между приложениями и поддерживает совместимость с устаревшими системами.",
+                        "team": "Внутренние разработчики с опытом работы с технологиями фронтенда, активно сотрудничающие с разработчиками приложений для получения обратной связи и улучшения",
                         "completedObjectives": [
-                            "Established browser support for IE8 and newer versions.",
-                            "Transitioned majority of components to be \"stateless\" for performance improvements.",
-                            "Facilitated smooth integration for application developers using TypeScript.",
-                            "Broke down large applications into modular units for on-demand loading."
+                            "Установлена поддержка браузеров начиная с IE8 и новее.",
+                            "Перевод большинства компонентов в 'stateless' для улучшения производительности.",
+                            "Облегчена интеграция для разработчиков приложений с использованием TypeScript.",
+                            "Разбиение крупных приложений на модульные единицы для загрузки по требованию."
                         ],
                         "technologies": ["TypeScript", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "BitBucket"]
@@ -479,13 +469,13 @@
 
                     {
                         "id": "programming-project-7",
-                        "label": "Internal Components Library",
-                        "goal": "To create a robust and scalable components library that aligns with the business architecture, streamlining the process of product prototyping and development.",
-                        "team": "1 scrum team (8 employees: Project Manager, Business Analysts, Frontend and Backend developers, UI Designer, QA, DevOps Engineer)",
+                        "label": "Внутренняя библиотека компонентов",
+                        "goal": "Создать надежную и масштабируемую библиотеку компонентов, соответствующую бизнес-архитектуре и упрощающую процесс прототипирования и разработки продуктов.",
+                        "team": "1 Scrum-команда (8 сотрудников: 1 руководитель проекта, 2 бизнес-аналитика, 1 фронтенд-разработчик, 1 бэкенд-разработчик, 1 дизайнер UI, 1 инженер по качеству, 1 инженер DevOps)",
                         "completedObjectives": [
-                            "Development and documentation of a component architecture that corresponds to the business architecture.",
-                            "Effective decomposition, allocation, and prioritization of tasks to ensure timely completion and optimal resource utilization.",
-                            "Creation of a comprehensive framework that aids in prototyping new products, ensuring consistency and reducing the time-to-market."
+                            "Разработка и документация архитектуры компонентов, соответствующей бизнес-архитектуре.",
+                            "Эффективное разделение, распределение и приоритизация задач для обеспечения своевременного выполнения и оптимального использования ресурсов.",
+                            "Создание комплексной системы, помогающей в прототипировании новых продуктов, обеспечивающей единообразие и сокращающей время вывода на рынок."
                         ],
                         "technologies": ["TypeScript", "React"],
                         "tools": ["Jira", "Storybook", "GitHub"]
@@ -493,16 +483,16 @@
 
                     {
                         "id": "programming-project-8",
-                        "label": "Banking Business Online",
-                        "goal": "Transformation and development of a new-generation online bank for corporate clients, catering specifically to small and medium-sized businesses, by Sberbank in collaboration with IBM's Interactive Experience (iX) subdivision.",
-                        "team": "Joint effort between Sberbank and IBM's iX team, including Frontend and Backend developers, QA, Business Analysts, and UX and UI Designers, DevOps Engineers.",
+                        "label": "Онлайн-банкинг для бизнеса",
+                        "goal": "Трансформация и разработка нового поколения онлайн-банка для корпоративных клиентов, ориентированного на малый и средний бизнес, в сотрудничестве с подразделением IBM Interactive Experience (iX).",
+                        "team": "Совместная работа между командой Сбербанка и командой IBM iX, включая 1 руководителя проекта, нескольких фронтенд и бэкенд разработчиков, инженеров QA, бизнес-аналитиков, дизайнеров UI и UX, инженеров DevOps",
                         "completedObjectives": [
-                            "Prototyping products and altering their parameters according to business needs.",
-                            "Developing the architecture for components and services.",
-                            "Decomposing, allocating, and prioritizing tasks.",
-                            "Maintaining the work schedule and ensuring timely completion.",
-                            "Collaborative development of the UX concept, offering a simplified interaction method for users with key banking products and services.",
-                            "Creation of a new-generation online bank alongside a store of both banking and non-banking services within the system."
+                            "Прототипирование продуктов и изменение их параметров в соответствии с бизнес-потребностями.",
+                            "Разработка архитектуры компонентов и услуг.",
+                            "Декомпозиция, распределение и приоритизация задач.",
+                            "Поддержание рабочего графика и обеспечение своевременного завершения.",
+                            "Совместная разработка концепции UX, предлагающей упрощенный метод взаимодействия пользователей с ключевыми банковскими продуктами и услугами.",
+                            "Создание нового поколения онлайн-банка вместе с магазином банковских и небанковских услуг в системе."
                         ],
                         "technologies": ["TypeScript", "React", "Java"],
                         "tools": ["Jira", "Confluence", "GitHub", "Slack", "Figma", "Jenkins"]
@@ -512,7 +502,7 @@
                         "id": "programming-project-9",
                         "label": "Проекты Дизайн-студий и Фриланс",
                         "goal": "Выполнение проектных задач в студиях и реализация заказов на фрилансе с основной целью предоставления качественных веб-решений, соответствующих уникальным потребностям каждого клиента. Проекты охватывали широкий диапазон задач, от дизайна до разработки и поддержки, с акцентом на адаптивность, пользовательское удобство и современные веб-стандарты.",
-                        "team": "Самостоятельная работа как независимый фронтенд разработчик/верстальщик, а также взаимодействие с дизайнерами и бэкенд-разработчиками в рамках проектов студий.",
+                        "team": "Independent work as a frontend developer/designer, collaborating with designers and backend developers within studio projects",
                         "completedObjectives": [
                             "Разработка и запуск более 200 сайтов различной направленности в период с 2007 по 2015 год, включая производственные сайты, интернет-магазины, сайты-визитки и корпоративные сайты. Опыт охватывает работу в различных отраслях и демонстрирует способность успешно управлять и реализовывать многообразные веб-проекты.",
                             "Все эти проекты были выполнены более десяти лет назад, подчёркивая моё долгосрочное присутствие и опыт в веб-разработке. За это время многие сайты были обновлены или перестали существовать, что делает сохранение полного списка работ бессмысленным. Отражены лишь скриншоты нескольких проектов."
