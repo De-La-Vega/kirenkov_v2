@@ -53,7 +53,7 @@
             },
             "timeline-id-7": {
                 "heading": "RANEPA",
-                "description": "My first steps towards project management began here. I enrolled at RANEPA in the program 'IT Manager: Project Manager Business Analyst.'"
+                "description": "My first steps towards project management began here. I enrolled at RANEPA in the program \"IT Manager: Project Manager, Business Analyst.\""
             },
             "timeline-id-8": {
                 "heading": "YouTube",
@@ -128,12 +128,12 @@
                 "description": "After two months of rest, I returned to work in Moscow with renewed energy. The interview at IBM was an unexpected turn. Receiving the offer, I could not hide my excitement. The position of a mid-level developer was just right, and working with React provided the opportunity to grow quickly. Within a year, I felt at the level of a senior developer, successfully managing tasks for the banking sector."
             },
             "timeline-id-25": {
-                "description": "A short-term 'relocation' to Baku on a project brought new challenges and experiences."
+                "description": "A short-term relocation to Baku on a project brought new challenges and experiences."
             },
             "timeline-id-26": {
                 "heading": "IBM Caspian",
                 "subheading": "Technical Leader",
-                "description": "Being promoted to technical leader was unexpected but thrilling. This period was pivotal for my transition to a managerial role. I became involved in all processes, from project management to team management and negotiations, working on a project for one of the largest banks in Azerbaijan."
+                "description": "Being promoted to Technical leader was unexpected but thrilling. This period was pivotal for my transition to a managerial role. I became involved in all processes, from project management to team management and negotiations, working on a project for one of the largest banks in Azerbaijan."
             },
             "timeline-id-27": {
                 "description": "I returned to Moscow after the project in Baku, ready for new projects."
@@ -188,7 +188,7 @@
                 "content": [
                     {
                         "label": "Education and First Steps",
-                        "text": ["My journey into <strong>project management</strong> began with a course at <strong>RANEPA \"IT Manager: Project Manager Business Analyst\"</strong> in 2017, which laid the foundation for my managerial skills. This experience was further solidified while working as a <strong>technical leader</strong> on a significant project in Baku for one of Azerbaijan's largest banks in 2018, where managing multiple teams involved in critical banking operations allowed me to deepen my management and communication skills."]
+                        "text": ["My journey into <strong>project management</strong> began with a course at <strong>RANEPA \"IT Manager: Project Manager, Business Analyst\"</strong> in 2017, which laid the foundation for my managerial skills. This experience was further solidified while working as a <strong>Technical leader</strong> on a significant project in Baku for one of Azerbaijan's largest banks in 2018, where managing multiple teams involved in critical banking operations allowed me to deepen my management and communication skills."]
                     },
                     {
                         "label": "Expanding Managerial Boundaries",
@@ -212,20 +212,20 @@
                         "label": "Journey in IT and Web Development",
                         "text": [
                             "My passion for <strong>IT</strong> started with my first <strong>Pentium 100</strong>, opening the exciting world of technology to me. Early steps in web development, learning <strong>HTML and CSS</strong> from *.chm files, laid the foundation for my future career.",
-                            "After completing a web development course, supported by my mother, I began working at <strong>DreamArt</strong> as a <strong>content manager</strong> and <strong>web designer</strong>, marking the start of my deep dive into development that opened the path to more complex projects."
+                            "After completing a web development course, supported by my mother, I began working at <strong>DreamArt</strong> as a <strong>Content manager</strong> and <strong>Web Designer</strong>, marking the start of my deep dive into development that opened the path to more complex projects."
                         ]
                     },
                     {
                         "label": "Development and Professional Growth",
                         "text": [
-                            "Working in various web studios and product companies helped me evolve into an experienced <strong>frontend developer</strong>. Freelancing provided a unique opportunity to apply and develop my skills on real projects, keeping up with current technologies and trends.",
+                            "Working in various web studios and product companies helped me evolve into an experienced <strong>Frontend developer</strong>. Freelancing provided a unique opportunity to apply and develop my skills on real projects, keeping up with current technologies and trends.",
                             "My interest expanded beyond <strong>jQuery</strong>, embracing modern frameworks and libraries including <strong>Angular</strong>, <strong>Vue</strong>, and <strong>React</strong>. My role at <strong>IBM Russia</strong>, where React became the foundation for many projects, confirmed the right direction of my career and greatly enhanced my skills in <strong>Redux</strong>, <strong>TypeScript</strong>, as well as in using build and versioning tools such as <strong>Webpack</strong> and <strong>GIT</strong>."
                         ]
                     },
                     {
                         "label": "Leadership and Technical Expertise",
                         "text": [
-                            "Achieving the position of <strong>technical leader</strong> at <strong>IBM Caspian</strong> was a significant milestone in my career, affirming my abilities to solve technically complex tasks and effectively manage a team of developers.",
+                            "Achieving the position of <strong>Technical leader</strong> at <strong>IBM Caspian</strong> was a significant milestone in my career, affirming my abilities to solve technically complex tasks and effectively manage a team of developers.",
                             "This transition emphasized my capacity not only for technical development but also for project management, demonstrating my confidence in my leadership qualities and technical expertise."
                         ]
                     }
@@ -588,6 +588,10 @@
             "views-and-ideas-id-6": {
                 "label": "HTML and CSS in Modern Web Development: Necessity or Choice?"
             }
+        },
+        "semanticDescriptions": {
+            "link": "read more about this topic",
+            "tags": "Tags related to the content"
         }
     },
 

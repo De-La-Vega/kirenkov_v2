@@ -24,31 +24,31 @@ export const PortfolioProject: React.FC<TProps> = ({ project }) => {
     }, [imageGalleryKeys, gallery]);
 
     return (
-        <div className="portfolio-project">
-            <h4 className="text-subheading">{t('portfolio.project.goal')}</h4>
+        <div className="portfolio-project" role="tabpanel">
+            <div className="text-subheading">{t('portfolio.project.goal')}</div>
             <p>{goal}</p>
 
-            <h4 className="text-subheading">{t('portfolio.project.team')}</h4>
+            <div className="text-subheading">{t('portfolio.project.team')}</div>
             <p>{team}</p>
 
-            <h4 className="text-subheading">{t('portfolio.project.completed-objectives')}</h4>
+            <div className="text-subheading">{t('portfolio.project.completed-objectives')}</div>
             <ol className="portfolio-project__completed-objectives">
                 {completedObjectives.map((completedObjective, index) => <li key={index}>{completedObjective}</li>)}
             </ol>
 
-            <h4 className="text-subheading">{t('portfolio.project.technologies')}</h4>
+            <div className="text-subheading">{t('portfolio.project.technologies')}</div>
             <ul className="portfolio-project__technologies">
                 {technologies.map((technology, index) => <li key={index}>{technology}</li>)}
             </ul>
 
-            <h4 className="text-subheading">{t('portfolio.project.tools')}</h4>
+            <div className="text-subheading">{t('portfolio.project.tools')}</div>
             <ul className="portfolio-project__tools">
                 {tools.map((tool, index) => <li key={index}>{tool}</li>)}
             </ul>
 
             {imageGallery && imageGallery.length > 0 && (
                 <>
-                    <h4 className="text-subheading">{t('portfolio.project.gallery')}</h4>
+                    <div className="text-subheading">{t('portfolio.project.gallery')}</div>
                     <div className="portfolio-project__gallery">
                         <GalleryWrapper data={imageGallery} />
                     </div>

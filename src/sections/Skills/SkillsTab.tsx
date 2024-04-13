@@ -14,7 +14,9 @@ type TProps = {
 };
 
 export const SkillsTab: React.FC<TProps> = ({ item, activeItemType, onClick }) => (
-    <div
+    <button
+        role="tab"
+        aria-selected={item.type === activeItemType}
         onClick={() => onClick(item.type)}
         className={classNames('skills__tab', {
             'skills__tab_type-management': item.type === SKILLS_TYPE.MANAGEMENT,
@@ -24,11 +26,11 @@ export const SkillsTab: React.FC<TProps> = ({ item, activeItemType, onClick }) =
             'skills__tab_status-active': item.type === activeItemType,
         })}
     >
-        <div className="skills__tab-icon">
+        <span className="skills__tab-icon">
             <FontAwesomeIcon icon={item.icon} />
-        </div>
-        <div className="skills__tab-label">
+        </span>
+        <span className="skills__tab-label">
             {item.label}
-        </div>
-    </div>
+        </span>
+    </button>
 );

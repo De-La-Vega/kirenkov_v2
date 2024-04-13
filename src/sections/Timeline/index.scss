@@ -53,10 +53,13 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     &__subheading {
         margin-top: $base;
         font-size: $font-size-s;
+        font-weight: $font-weight-400;
         color: var(--color-gray-300);
     }
     
     &__description {
+        padding: 0;
+        margin: 0;
         font-size: $font-size-s;
         line-height: $line-height-s;
         

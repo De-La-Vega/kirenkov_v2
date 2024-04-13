@@ -16,7 +16,7 @@ export const PortfolioContent: React.FC<TProps> = ({ item }) => {
     const { content, image, videoGallery, video, type } = item;
 
     return (
-        <div className="portfolio-content">
+        <div className="portfolio-content" role="tabpanel">
             {image && <GalleryWrapper data={[image]} itemClassName="portfolio-content__image" />}
             {video && <YouTubeVideo video={video} className="portfolio-content__video" />}
 
@@ -24,7 +24,8 @@ export const PortfolioContent: React.FC<TProps> = ({ item }) => {
                 <div className="portfolio-content__text">
                     {content.map((contentItem, contentItemIndex) => (
                         <Fragment key={`${type}-container-${contentItemIndex}`}>
-                            <h4 className="text-subheading">{contentItem.label}</h4>
+                            <div className="text-subheading">{contentItem.label}</div>
+
                             {contentItem.text.map((text, textIndex) => <p key={`${type}-text-${textIndex}`}><Trans i18nKey={text} /></p>)}
                         </Fragment>
                     ))}
@@ -36,7 +37,7 @@ export const PortfolioContent: React.FC<TProps> = ({ item }) => {
                     {videoGallery.map((video, index) => (
                         <div key={`${type}-video-${index}`} className="portfolio-content__video-item">
                             <video width={video.width} height={video.height} controls>
-                                <source src={video.id} type="video/mp4" />
+                                <source src={`${video.id}#t=0.001`} type="video/mp4" />
                                 {t('systemInformation.videoSupport')}
                             </video>
                         </div>

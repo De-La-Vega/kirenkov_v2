@@ -12,23 +12,6 @@ type TProps = {
 export const GalleryWrapper: React.FC<TProps> = ({ data, itemClassName }) => (
     <Gallery>
         {data.map((image) => (
-            // <Item
-            //     key={index}
-            //     original={item.large.srcMain}
-            //     thumbnail={item.small.srcFallback}
-            //     width={item.large.width}
-            //     height={item.large.height}
-            // >
-            //     {({ ref, open }) => (
-            //         <Image
-            //             className={itemClassName}
-            //             ref={ref}
-            //             imageObj={item}
-            //             onClick={open}
-            //         />
-            //     )}
-            // </Item>
-
             <Item
                 key={image.id}
                 original={image.original.sources.webp}

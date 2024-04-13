@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
 
-import { LOCAL_STORAGE_KEY, SKILLS_TYPE } from '../../enums';
+import { LOCAL_STORAGE_KEY, SKILLS_TYPE, ID } from '../../enums';
 import { Heading } from '../../components/Heading';
 import { getPortfolioData } from '../../data/portfolio';
 import useLocalStorage from '../../useLocalStorage';
@@ -48,9 +48,9 @@ export const Portfolio: React.FC = () => {
     }, [setSelectedProjectID]);
 
     return (
-        <section className="g-outer section-portfolio">
+        <section className="g-outer section-portfolio" aria-labelledby={ID.PORTFOLIO}>
             <div className="g-inner">
-                <Heading primaryText={t('navigation.portfolio')} />
+                <Heading primaryText={t('navigation.portfolio')} id={ID.PORTFOLIO} />
 
                 <div
                     className={classNames('portfolio', {
@@ -60,7 +60,7 @@ export const Portfolio: React.FC = () => {
                         'portfolio_consulting': portfolioType === SKILLS_TYPE.CONSULTING,
                     })}
                 >
-                    <ul className="portfolio-skills-list">
+                    <div className="portfolio-skills-list" role="tablist">
                         {portfolioData.map((portfolioMainTab) => (
                             <PortfolioTabMemo
                                 key={portfolioMainTab.type}
@@ -71,10 +71,10 @@ export const Portfolio: React.FC = () => {
                                 icon={portfolioMainTab.icon}
                             />
                         ))}
-                    </ul>
+                    </div>
 
                     {projects && (
-                        <ul className="portfolio-projects-list">
+                        <div className="portfolio-projects-list" role="tablist">
                             {projects.map((project) => (
                                 <PortfolioTabMemo
                                     key={project.id}
@@ -84,7 +84,7 @@ export const Portfolio: React.FC = () => {
                                     label={project.label}
                                 />
                             ))}
-                        </ul>
+                        </div>
                     )}
 
                     {selectedProject && <PortfolioProjectMemo project={selectedProject} />}

@@ -21,9 +21,6 @@ $types: (
 .portfolio-projects-list {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
 .portfolio-skills-list,
@@ -51,10 +48,13 @@ $types: (
     font-size: $font-size-s;
     font-weight: $font-weight-500;
     line-height: $line-height-s;
+    text-align: left;
     cursor: pointer;
+    background: transparent;
     border-top: 2px solid var(--primary);
     border-right: 2px solid transparent;
     border-bottom: 2px solid var(--primary);
+    border-left: none;
     transition: background-color $transition-duration;
 
     &:not(&_status-active):hover {

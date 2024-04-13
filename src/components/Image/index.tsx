@@ -30,6 +30,7 @@ const Image = forwardRef<HTMLDivElement, TProps>(({ imageObj, className, onClick
                     alt={title || ''}
                     width={preview.width}
                     height={preview.height}
+                    loading="lazy"
                 />
             </picture>
         </div>

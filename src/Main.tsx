@@ -18,9 +18,9 @@ export const Main: React.FC = () => (
         <Overlay />
         <BgLines />
         <ScrollTop />
+        <Navigation />
 
         <main>
-            <Navigation />
             <Hero />
             <YearsOfExperience />
             <Timeline />

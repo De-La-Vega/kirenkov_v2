@@ -34,11 +34,11 @@ export const Hero: React.FC = () => {
 
     return (
         <>
-            <section className="g-outer section-hero">
+            <header className="g-outer section-hero">
                 <div className="g-inner">
                     <div className="section-hero__content-left">
                         <div className="section-hero__position"><span ref={elTyped} /></div>
-                        <div className="section-hero__name">{t('hero.name')}</div>
+                        <h1 className="section-hero__name">{t('hero.name')}</h1>
                         <div className="section-hero__follow-me"><FollowMe /></div>
                         <div className="section-hero__write-to-me"><WriteToMe /></div>
                     </div>
@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </header>
         </>
     )
 };

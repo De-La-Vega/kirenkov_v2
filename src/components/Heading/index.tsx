@@ -3,13 +3,14 @@ import React from 'react';
 import './index.scss';
 
 type TProps = {
+    id?: string;
     primaryText: string;
     secondaryText?: string;
 }
 
-export const Heading: React.FC<TProps> = ({ primaryText, secondaryText }) => (
+export const Heading: React.FC<TProps> = ({ primaryText, secondaryText, id }) => (
     <div className="heading">
-        <h2>{secondaryText || primaryText}</h2>
-        <h3>{primaryText}</h3>
+        <p className="subheading">{secondaryText || primaryText}</p>
+        <h1 id={id}>{primaryText}</h1>
     </div>
 );

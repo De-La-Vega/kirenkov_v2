@@ -38,3 +38,10 @@ export enum LANGUAGE {
     EN = 'en',
     RU = 'ru',
 }
+
+export enum ID {
+    TIMELINE = "TIMELINE",
+    SKILLS = "SKILLS",
+    PORTFOLIO = "PORTFOLIO",
+    VIEWS_AND_IDEAS = "VIEWS_AND_IDEAS"
+}

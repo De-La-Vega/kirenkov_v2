@@ -24,6 +24,11 @@ body {
     margin: 0 auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
 // Определение карты с брейкпоинтами и ширинами
 $breakpoints: (
     xs: ($screen-xs-min, 100%, 14px), // <576

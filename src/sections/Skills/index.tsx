@@ -6,7 +6,7 @@ import './index.scss';
 import useLocalStorage from '../../useLocalStorage';
 import { Heading } from '../../components/Heading'
 import { getSkillsData } from '../../data/skills';
-import { SKILLS_TYPE, LOCAL_STORAGE_KEY } from '../../enums';
+import { SKILLS_TYPE, LOCAL_STORAGE_KEY, ID } from '../../enums';
 
 import { SkillsContent } from './SkillsContent';
 import { SkillsTab } from './SkillsTab';
@@ -28,12 +28,12 @@ export const Skills: React.FC = () => {
     const activeItem = skillsData.find((item) => item.type === activeItemType);
 
     return (
-        <section className="g-outer section-skills">
+        <section className="g-outer section-skills" aria-labelledby={ID.SKILLS} >
             <div className="g-inner">
-                <Heading primaryText={t('navigation.skills')}/>
+                <Heading primaryText={t('navigation.skills')} id={ID.SKILLS} />
 
                 <div className="skills">
-                    <div className="skills__tabs">
+                    <div className="skills__tabs" role="tablist">
                         {skillsData.map((item) => (
                             <SkillsTabMemo
                                 key={item.id}

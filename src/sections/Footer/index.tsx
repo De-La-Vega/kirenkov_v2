@@ -8,12 +8,12 @@ import './index.scss';
 
 export const Footer: React.FC = () => {
     return (
-        <section className="g-outer section-footer">
+        <footer className="g-outer section-footer">
             <div className="g-inner">
                 <div className="section-footer__logo"><Logo /></div>
                 <WriteToMe />
                 <FollowMe />
             </div>
-        </section>
+        </footer>
     )
 };

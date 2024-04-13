@@ -39,9 +39,9 @@ const TimelineItem = forwardRef<HTMLDivElement, TProps>(({ item, height, offsetT
             {type === TIMELINE_ITEM_TYPE.RANGE && <Range className="timeline-item__range" timelineSide={position} />}
 
             <div className="timeline-item__content">
-                {content.heading && <div className="timeline-item__heading">{content.heading}</div>}
-                {content.subheading && <div className="timeline-item__subheading">{content.subheading}</div>}
-                <div className="timeline-item__description"><Trans i18nKey={content.description} /></div>
+                {content.heading && <h2 className="timeline-item__heading">{content.heading}</h2>}
+                {content.subheading && <h3 className="timeline-item__subheading">{content.subheading}</h3>}
+                <p className="timeline-item__description"><Trans i18nKey={content.description} /></p>
             </div>
 
             {image && <GalleryWrapper data={[image]} itemClassName="timeline-item__image" />}

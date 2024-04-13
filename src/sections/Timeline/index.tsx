@@ -5,7 +5,7 @@ import throttle from 'lodash/throttle';
 
 import { Heading } from '../../components/Heading'
 import { getTimelineData } from '../../data/timeline';
-import { TIMELINE_ITEM_POSITION, TIMELINE_INFORMATION_TYPE, TIMELINE_ITEM_TYPE } from '../../enums';
+import { TIMELINE_ITEM_POSITION, TIMELINE_INFORMATION_TYPE, TIMELINE_ITEM_TYPE, ID } from '../../enums';
 import { TTimelineItem } from '../../models';
 
 import TimelineItem from './TimelineItem';
@@ -103,9 +103,9 @@ export const Timeline: React.FC = () => {
     }, [memoizedData, activeFilter]);
 
     return (
-        <section className="g-outer section-timeline">
+        <section className="g-outer section-timeline" aria-labelledby={ID.TIMELINE}>
             <div className="g-inner">
-                <Heading primaryText={t('navigation.timeline')}/>
+                <Heading primaryText={t('navigation.timeline')} id={ID.TIMELINE} />
 
                 <ul className="timeline-filters">
                     {tabsConfig.map(tab => (

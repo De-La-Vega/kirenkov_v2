@@ -29,7 +29,9 @@ $types: (
     align-items: center;
     padding: $base * 6 $base * 8;
     color: var(--color-text-secondary);
+    text-align: left;
     cursor: pointer;
+    background: transparent;
     border: 2px solid transparent;
     border-bottom: 0;
     border-top-left-radius: 10px;

@@ -18,6 +18,7 @@ export const SkillsContent: React.FC<TProps> = ({ item }) => {
 
     return (
         <div
+            role="tabpanel"
             className={classNames('skills__content', {
                 'skills__content_type-management': type === SKILLS_TYPE.MANAGEMENT,
                 'skills__content_type-programming': type === SKILLS_TYPE.PROGRAMMING,
@@ -32,7 +33,8 @@ export const SkillsContent: React.FC<TProps> = ({ item }) => {
             <div className="skills__content-text">
                 {content.map((contentItem, contentItemIndex) => (
                     <Fragment key={`${type}-container-${contentItemIndex}`}>
-                        <h4 className="text-subheading">{contentItem.label}</h4>
+                        <div className="text-subheading">{contentItem.label}</div>
+
                         {contentItem.text.map((text, textIndex) => (
                             <p key={`${type}-text-${textIndex}`}>
                                 <Trans
