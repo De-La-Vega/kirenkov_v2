@@ -1,22 +1,58 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Typed from 'typed.js';
+import { Helmet } from 'react-helmet';
 
 import { FollowMe } from '../../components/FollowMe';
 import { WriteToMe } from '../../components/WriteToMe';
 
-import hero_previewRetina_1600x2000_png from '../../assets/hero_previewRetina_1600x2000.png';
-import hero_previewRetina_1600x2000_webp from '../../assets/hero_previewRetina_1600x2000.webp';
-import hero_preview_800x1000_webp from '../../assets/hero_preview_800x1000.webp';
-import hero_preview_800x1000_png from '../../assets/hero_preview_800x1000.png';
-import hero_mobile_preview_400x500_png from '../../assets/hero-mobile_preview_400x500.png';
-import hero_mobile_preview_400x500_webp from '../../assets/hero-mobile_preview_400x500.webp';
+import hero_previewRetina_1600x2000_png     from '../../assets/hero_previewRetina_1600x2000.png';
+import hero_previewRetina_1600x2000_webp    from '../../assets/hero_previewRetina_1600x2000.webp';
+import hero_preview_800x1000_webp           from '../../assets/hero_preview_800x1000.webp';
+import hero_preview_800x1000_png            from '../../assets/hero_preview_800x1000.png';
+import hero_mobile_preview_400x500_png      from '../../assets/hero-mobile_preview_400x500.png';
+import hero_mobile_preview_400x500_webp     from '../../assets/hero-mobile_preview_400x500.webp';
 
 import './index.scss';
 
+// function support_format_webp() {
+//     const elem = document.createElement('canvas');
+
+//     if (elem.getContext && elem.getContext('2d')) {
+//         return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+//     } else {
+//         return false;
+//     }
+// }
+
 export const Hero: React.FC = () => {
+    const [isMobile, setIsMobile] = useState<boolean>(false);
+    const [supportsWebP, setSupportsWebP] = useState<boolean>(false);
     const { t } = useTranslation();
     const elTyped = useRef(null);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1024);
+        };
+
+        const support_format_webp = (): boolean => {
+            const elem = document.createElement('canvas');
+
+            if (elem.getContext && elem.getContext('2d')) {
+                return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+            } else {
+                return false;
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        setSupportsWebP(support_format_webp());
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     useEffect(() => {
         const typed = new Typed(elTyped.current, {
@@ -34,6 +70,22 @@ export const Hero: React.FC = () => {
 
     return (
         <>
+            <Helmet>
+                {!isMobile && [
+                    <link key="desktop-2x" rel="preload" as="image" href={supportsWebP ? hero_previewRetina_1600x2000_webp : hero_previewRetina_1600x2000_png} media="(min-width: 1024px) and (resolution: 2dppx)" />,
+                    <link key="desktop-1x" rel="preload" as="image" href={supportsWebP ? hero_preview_800x1000_webp : hero_preview_800x1000_png} media="(min-width: 1024px) and (resolution: 1dppx)" />
+                ]}
+                {isMobile && [
+                    <link key="mobile-2x" rel="preload" as="image" href={supportsWebP ? hero_preview_800x1000_webp : hero_preview_800x1000_png} media="(max-width: 1023px) and (resolution: 2dppx)" />,
+                    <link key="mobile-1x" rel="preload" as="image" href={supportsWebP ? hero_mobile_preview_400x500_webp : hero_mobile_preview_400x500_png} media="(max-width: 1023px) and (resolution: 1dppx)" />
+                ]}
+            </Helmet>
+
+            <div style={{ position: 'fixed', bottom: 0, left: 0, backgroundColor: '#000', color: '#fff', padding: "20px", zIndex: 20 }}>
+                isMobile: {isMobile.toString()}<br />
+                supportsWebP: {supportsWebP.toString()}
+            </div>
+
             <header className="g-outer section-hero">
                 <div className="g-inner">
                     <div className="section-hero__content-left">
