@@ -3,69 +3,35 @@
     --blue: #52526c;
 
     /* White */
-    --color-white-1900: #C1C1C1;
-    --color-white-1800: #C7C7D7;
-    --color-white-1700: #C9C6DE;
-    --color-white-1600: #CDCDCD;
-    --color-white-1500: #DDD2CC;
-    --color-white-1400: #F0ECE9;
-    --color-white-1300: #F0EDEB;
-    --color-white-1200: #EFEFEF;
-    --color-white-1100: #F2F0E5;
-    --color-white-1000: #F3F0E4;
-    --color-white-900: #F6EEEA;
-    --color-white-800: #F4F0ED;
-    --color-white-700: #F3F3F3;
-    --color-white-600: #F6F3F0;
+    --color-white-800: #F0ECE9;
+    --color-white-700: #EFEFEF;
+    --color-white-600: #F3F3F3;
     --color-white-500: #F5F5F5;
-    --color-white-400: #0d0d6f;
-    --color-white-300: #F9F9F9;
-    --color-white-200: #FBFAF7;
-    --color-white-100: #fff;
+    --color-white-400: #F9F9F9;
+    --color-white-300: #FBFAF7;
+    --color-white-200: #fff;
 
     /* Black */
-    --color-black-1600: #000;
-    --color-black-1500: #141415;
-    --color-black-1400: #1D1917;
-    --color-black-1300: #1C1D20;
-    --color-black-1200: #212125;
-    --color-black-1100: #222227;
-    --color-black-1000: #272422;
-    --color-black-900: #262629;
-    --color-black-800: #27272B;
-    --color-black-700: #27292D;
-    --color-black-600: #202C58;
-    --color-black-500: #343231;
+    --color-black-800: #1C1D20;
+    --color-black-700: #212125;
+    --color-black-600: #262629;
+    --color-black-500: #27272B;
     --color-black-400: #333337;
     --color-black-300: #3C3636;
-    --color-black-200: #39393D;
-    --color-black-100: #999;
 
     /* Gray */
-    --color-gray-1400: #232327;
-    --color-gray-1300: #3F3A36;
-    --color-gray-1200: #3B3B3F;
-    --color-gray-1100: #3F4044;
-    --color-gray-1000: #44454A;
-    --color-gray-900: #555;
-    --color-gray-800: #636376;
-    --color-gray-700: #63637B;
     --color-gray-600: #666;
-    --color-gray-500: #756F68;
-    --color-gray-400: #89827A;
-    --color-gray-300: #999;
-    --color-gray-200: #D9D9D9;
-    --color-gray-100: #E9E9E9;
+    --color-gray-500: #999;
 }
 
 [data-theme='light'] {
-    --color-logo: var(--color-black-1300);
-    --color-bg-level-0: var(--color-white-300);
+    --color-logo: var(--color-black-800);
+    --color-bg-level-0: var(--color-white-400);
     --color-bg-level-1: var(--color-white-500);
-    --color-bg-level-2: var(--color-white-200);
-    --color-text-primary: var(--color-black-1300);
+    --color-bg-level-2: var(--color-white-300);
+    --color-text-primary: var(--color-black-800);
     --color-text-secondary: var(--color-gray-600);
-    --color-bg-underlines: var(--color-white-1200);
+    --color-bg-underlines: var(--color-white-700);
 
     // Skills
     --color-border-management: #2B4570;
@@ -78,28 +44,28 @@
     --color-text-consulting: #9F87AF;
 
     // Badge
-    --color-bg-badge: var(--color-white-1400);
+    --color-bg-badge: var(--color-white-800);
     --color-text-badge: var(--color-gray-600);
 
     // Tabs
-    --color-bg-tabs: var(--color-white-700);
+    --color-bg-tabs: var(--color-white-600);
 
     // Aside buttons
     --color-bg-aside-btn: var(--color-black-400);
     --color-border-aside-btn: var(--color-gray-600);
     --color-border-active-aside-btn: var(--primary);
-    --color-text-aside-btn: var(--color-white-100);
+    --color-text-aside-btn: var(--color-white-200);
     --color-text-hover-aside-btn: var(--primary);
 }
 
 [data-theme='dark'] {
-    --color-logo: var(--color-white-100);
-    --color-bg-level-0: var(--color-black-1300);
-    --color-bg-level-1: var(--color-black-1200);
-    --color-bg-level-2: var(--color-black-900);
-    --color-text-primary: var(--color-white-100);
-    --color-text-secondary: var(--color-gray-300);
-    --color-bg-underlines: var(--color-black-800);
+    --color-logo: var(--color-white-200);
+    --color-bg-level-0: var(--color-black-800);
+    --color-bg-level-1: var(--color-black-700);
+    --color-bg-level-2: var(--color-black-600);
+    --color-text-primary: var(--color-white-200);
+    --color-text-secondary: var(--color-gray-500);
+    --color-bg-underlines: var(--color-black-500);
 
     // Skills
     --color-border-management: #ACFCD9;
@@ -113,15 +79,15 @@
 
     // Badge
     --color-bg-badge: var(--color-black-300);
-    --color-text-badge: var(--color-black-100);
+    --color-text-badge: var(--color-gray-500);
 
     // Tabs
-    --color-bg-tabs: var(--color-black-900);
+    --color-bg-tabs: var(--color-black-600);
 
     // Aside buttons
     --color-bg-aside-btn: var(--color-black-400);
     --color-border-aside-btn: var(--color-gray-600);
     --color-border-active-aside-btn: var(--primary);
-    --color-text-aside-btn: var(--color-white-100);
+    --color-text-aside-btn: var(--color-white-200);
     --color-text-hover-aside-btn: var(--primary);
 }

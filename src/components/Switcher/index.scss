@@ -28,7 +28,7 @@ $border-radius: 100px;
     transition: $transition-duration;
 
 	&_status-active {
-		color: var(--color-black-1300);
+		color: var(--color-black-800);
 		background-color: var(--primary);
 	}
 
@@ -46,7 +46,7 @@ $border-radius: 100px;
     }
 
     &:hover {
-        color: var(--color-black-1300);
+        color: var(--color-black-800);
 
         &::before {
             inset-inline: 0% auto;

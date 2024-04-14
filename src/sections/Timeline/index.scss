@@ -14,7 +14,7 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     align-items: center;
     max-width: 1px;
     margin: 0 $base * 10;
-    border-left: 1px dashed var(--color-gray-300);
+    border-left: 1px dashed var(--color-gray-500);
 
     &__item {
         padding-right: $base * 2;
@@ -54,7 +54,7 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
         margin-top: $base;
         font-size: $font-size-s;
         font-weight: $font-weight-400;
-        color: var(--color-gray-300);
+        color: var(--color-gray-500);
     }
     
     &__description {
@@ -192,7 +192,7 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
         border-radius: $border-radius;
     
         &_status-active {
-            color: var(--color-black-1300);
+            color: var(--color-black-800);
             background-color: var(--primary);
         }
     
@@ -210,7 +210,7 @@ $local-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
         }
     
         &:hover {
-            color: var(--color-black-1300);
+            color: var(--color-black-800);
     
             &::before {
                 inset-inline: 0% auto;

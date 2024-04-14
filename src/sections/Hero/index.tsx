@@ -110,7 +110,7 @@ export const Hero: React.FC = () => {
                             <source media="(max-width: 1023px)" srcSet={hero_mobile_preview_400x500_png} type="image/png" />
 
                             {/* Изображение по умолчанию */}
-                            <img className="section-hero__img" src={hero_preview_800x1000_png} alt="Vitaliy Kirenkov" width="800" height="1000" />
+                            <img className="section-hero__img" src={hero_preview_800x1000_png} alt={t('hero.alt')} width="800" height="1000" />
                         </picture>
 
                         <div className="section-hero__columns">
