@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Typed from 'typed.js';
 import { Helmet } from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudArrowDown } from '@fortawesome/free-solid-svg-icons/faCloudArrowDown';
 
 import { FollowMe } from '../../components/FollowMe';
 import { WriteToMe } from '../../components/WriteToMe';
@@ -78,6 +80,20 @@ export const Hero: React.FC = () => {
                         <h1 className="section-hero__name">{t('hero.name')}</h1>
                         <div className="section-hero__follow-me"><FollowMe /></div>
                         <div className="section-hero__write-to-me"><WriteToMe /></div>
+                        <div className="section-hero__download-cv">
+                            <a
+                                href="https://drive.google.com/file/d/1Hs8aqvJhKKS01shC096X5taJnPogEwei/view?usp=sharing"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="btn-download-cv"
+                                aria-label="Скачать CV"
+                            >
+                                <span className="btn-download-cv__icon">
+                                    <FontAwesomeIcon icon={faCloudArrowDown} />
+                                </span>
+                                <span className="btn-download-cv__text">{t('hero.download-cv')}</span>
+                            </a>
+                        </div>
                     </div>
                     <div className="section-hero__content-right">
                         <picture>

@@ -7,7 +7,7 @@ import bgBodyPng from '../../assets/bg-body.png';
 import './index.scss';
 
 export const Overlay: React.FC = () => {
-    const [backgroundImage, setBackgroundImage] = useState('');
+    const [backgroundImage, setBackgroundImage] = useState<string>('');
 
     useEffect(() => {
         // Функция для проверки поддержки WebP

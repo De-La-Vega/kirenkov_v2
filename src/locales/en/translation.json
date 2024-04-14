@@ -8,7 +8,8 @@
 
     "hero": {
         "name": "Vitaliy \nKirenkov",
-        "position": ["Project Manager", "Technical Leader", "Youtuber", "Consultant"]
+        "position": ["Project Manager", "Technical Leader", "Youtuber", "Consultant"],
+        "download-cv": "Download CV"
     },
 
     "yearsOfExperience": {

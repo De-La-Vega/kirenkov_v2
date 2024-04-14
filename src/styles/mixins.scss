@@ -2,6 +2,7 @@
 
 @mixin border-btm($color, $hcolor) {
     position: relative;
+    padding-bottom: 2px;
 
     &::after {
         position: absolute;
