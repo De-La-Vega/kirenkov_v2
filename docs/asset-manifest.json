@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/kirenkov_v2/static/css/main.5cd04531.css",
-    "main.js": "/kirenkov_v2/static/js/main.557526c5.js",
+    "main.js": "/kirenkov_v2/static/js/main.1249fc55.js",
     "static/js/453.9859ad0a.chunk.js": "/kirenkov_v2/static/js/453.9859ad0a.chunk.js",
     "static/media/blogging-3.mp4": "/kirenkov_v2/static/media/blogging-3.65d0f41d1926b723cb03.mp4",
-    "static/media/hero_previewRetina_1600x2000.png": "/kirenkov_v2/static/media/hero_previewRetina_1600x2000.a74d88521d7f8d9b9e9f.png",
+    "static/media/hero_previewRetina_1600x2000.png": "/kirenkov_v2/static/media/hero_previewRetina_1600x2000.5b5f6eb3acf72d2117f3.png",
     "static/media/blogging-2.mp4": "/kirenkov_v2/static/media/blogging-2.7c140f548f6586a29618.mp4",
-    "static/media/hero_preview_800x1000.png": "/kirenkov_v2/static/media/hero_preview_800x1000.6c30f5aee3aeb4b8a98e.png",
     "static/media/timeline_id_2_originalRetina_1200x1600.jpg": "/kirenkov_v2/static/media/timeline_id_2_originalRetina_1200x1600.e0f911b3c88c06f59091.jpg",
     "static/media/programming_main_originalRetina_1200x1803.jpg": "/kirenkov_v2/static/media/programming_main_originalRetina_1200x1803.f07b90d3859b846e84ab.jpg",
     "static/media/studio_slav_dvor_originalRetina_1200x1520.jpg": "/kirenkov_v2/static/media/studio_slav_dvor_originalRetina_1200x1520.09fb5369a819f704bc9c.jpg",
@@ -22,6 +21,7 @@
     "static/media/fl_brand_art_originalRetina_1200x1395.jpg": "/kirenkov_v2/static/media/fl_brand_art_originalRetina_1200x1395.d900f8fb842f867876f8.jpg",
     "static/media/studio_uralkali_originalRetina_1200x728.jpg": "/kirenkov_v2/static/media/studio_uralkali_originalRetina_1200x728.dc16ec0688a8a8cbe624.jpg",
     "static/media/bg-body.png": "/kirenkov_v2/static/media/bg-body.b03055c73a8d3d508b5d.png",
+    "static/media/hero_preview_800x1000.png": "/kirenkov_v2/static/media/hero_preview_800x1000.cd2edb243c157f92a38d.png",
     "static/media/blogging_6_originalRetina_1200x895.jpg": "/kirenkov_v2/static/media/blogging_6_originalRetina_1200x895.89afd8c1f174e2223a31.jpg",
     "static/media/blogging_2_originalRetina_1200x895.jpg": "/kirenkov_v2/static/media/blogging_2_originalRetina_1200x895.78ed995f08e4cd74f14c.jpg",
     "static/media/blogging_1_originalRetina_1200x895.jpg": "/kirenkov_v2/static/media/blogging_1_originalRetina_1200x895.e7f25ccf4c1213dcd521.jpg",
@@ -37,7 +37,6 @@
     "static/media/timeline_id_1_originalRetina_1200x1800.jpg": "/kirenkov_v2/static/media/timeline_id_1_originalRetina_1200x1800.35bad9c3984c58f42412.jpg",
     "static/media/timeline_id_37_originalRetina_1200x848.jpg": "/kirenkov_v2/static/media/timeline_id_37_originalRetina_1200x848.fc23ca25529a81e63a83.jpg",
     "static/media/timeline_id_26_originalRetina_1200x800.jpg": "/kirenkov_v2/static/media/timeline_id_26_originalRetina_1200x800.397d3609841a4867c1da.jpg",
-    "static/media/hero-mobile_preview_400x500.png": "/kirenkov_v2/static/media/hero-mobile_preview_400x500.beb157811e1a12bf0de8.png",
     "static/media/timeline_id_18_originalRetina_1200x1805.jpg": "/kirenkov_v2/static/media/timeline_id_18_originalRetina_1200x1805.b451ead1a5bd52d49b28.jpg",
     "static/media/studio_uralkali_originalRetina_1200x728.webp": "/kirenkov_v2/static/media/studio_uralkali_originalRetina_1200x728.31f58d199b82c8754cf5.webp",
     "static/media/timeline_id_14_originalRetina_1200x960.jpg": "/kirenkov_v2/static/media/timeline_id_14_originalRetina_1200x960.1885b1ec9ba3fc685cfa.jpg",
@@ -104,6 +103,7 @@
     "static/media/management_6_originalRetina_1200x892.jpg": "/kirenkov_v2/static/media/management_6_originalRetina_1200x892.b8d0bc94021e7c5c66b1.jpg",
     "static/media/management_7_originalRetina_1200x892.jpg": "/kirenkov_v2/static/media/management_7_originalRetina_1200x892.19b4e8ed1f29051e4af0.jpg",
     "static/media/timeline_id_6_originalRetina_1200x900.webp": "/kirenkov_v2/static/media/timeline_id_6_originalRetina_1200x900.d7c4a79a448eca0c690e.webp",
+    "static/media/hero-mobile_preview_400x500.png": "/kirenkov_v2/static/media/hero-mobile_preview_400x500.9bda1dbeedd0eaac76a5.png",
     "static/media/consulting_main_originalRetina_1200x900.jpg": "/kirenkov_v2/static/media/consulting_main_originalRetina_1200x900.81a908a2ae68900cd11d.jpg",
     "static/media/timeline_id_1_original_600x900.jpg": "/kirenkov_v2/static/media/timeline_id_1_original_600x900.edfe136ed2f7809da4ad.jpg",
     "static/media/fl_home_sea_original_600x573.jpg": "/kirenkov_v2/static/media/fl_home_sea_original_600x573.bc66fbea826a953016e6.jpg",
@@ -422,11 +422,11 @@
     "index.html": "/kirenkov_v2/index.html",
     "static/media/views_and_ideas_id_1_preview_200x134.webp": "/kirenkov_v2/static/media/views_and_ideas_id_1_preview_200x134.72143a0846e3c9a59832.webp",
     "main.5cd04531.css.map": "/kirenkov_v2/static/css/main.5cd04531.css.map",
-    "main.557526c5.js.map": "/kirenkov_v2/static/js/main.557526c5.js.map",
+    "main.1249fc55.js.map": "/kirenkov_v2/static/js/main.1249fc55.js.map",
     "453.9859ad0a.chunk.js.map": "/kirenkov_v2/static/js/453.9859ad0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5cd04531.css",
-    "static/js/main.557526c5.js"
+    "static/js/main.1249fc55.js"
   ]
 }

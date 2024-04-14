@@ -23,10 +23,10 @@ export enum TIMELINE_INFORMATION_TYPE {
 }
 
 export enum SKILLS_TYPE {
-    MANAGEMENT = 'MANAGEMENT',
-    PROGRAMMING = 'PROGRAMMING',
-    BLOGGING = 'BLOGGING',
-    CONSULTING = 'CONSULTING',
+    MANAGEMENT = 'management',
+    PROGRAMMING = 'programming',
+    BLOGGING = 'blogging',
+    CONSULTING = 'consulting',
 }
 
 export enum COLOR_THEME {

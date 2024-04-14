@@ -15,16 +15,6 @@ import hero_mobile_preview_400x500_webp     from '../../assets/hero-mobile_previ
 
 import './index.scss';
 
-// function support_format_webp() {
-//     const elem = document.createElement('canvas');
-
-//     if (elem.getContext && elem.getContext('2d')) {
-//         return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
-//     } else {
-//         return false;
-//     }
-// }
-
 export const Hero: React.FC = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
     const [supportsWebP, setSupportsWebP] = useState<boolean>(false);
@@ -80,11 +70,6 @@ export const Hero: React.FC = () => {
                     <link key="mobile-1x" rel="preload" as="image" href={supportsWebP ? hero_mobile_preview_400x500_webp : hero_mobile_preview_400x500_png} media="(max-width: 1023px) and (resolution: 1dppx)" />
                 ]}
             </Helmet>
-
-            <div style={{ position: 'fixed', bottom: 0, left: 0, backgroundColor: '#000', color: '#fff', padding: "20px", zIndex: 20 }}>
-                isMobile: {isMobile.toString()}<br />
-                supportsWebP: {supportsWebP.toString()}
-            </div>
 
             <header className="g-outer section-hero">
                 <div className="g-inner">

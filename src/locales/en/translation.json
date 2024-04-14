@@ -280,7 +280,8 @@
             "team": "Team",
             "completed-objectives": "Completed objectives",
             "technologies": "Technologies",
-            "tools": "Tools"
+            "tools": "Tools",
+            "gallery": "Gallery"
         },
         "list": {
             "management": {

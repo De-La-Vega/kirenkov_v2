@@ -1,4 +1,7 @@
+import { TFunction } from 'i18next';
+
 import { TImageModel } from '../models';
+import { VIEWS_AND_IDEAS } from './ids';
 
 import views_and_ideas_id_1_preview_webp from '../assets/views-and-ideas/views_and_ideas_id_1_preview_200x134.webp';
 import views_and_ideas_id_1_preview_jpg from '../assets/views-and-ideas/views_and_ideas_id_1_preview_200x134.jpg';
@@ -54,10 +57,10 @@ import views_and_ideas_id_6_original_jpg from '../assets/views-and-ideas/views_a
 import views_and_ideas_id_6_originalRetina_webp from '../assets/views-and-ideas/views_and_ideas_id_6_originalRetina_1200x563.webp';
 import views_and_ideas_id_6_originalRetina_jpg from '../assets/views-and-ideas/views_and_ideas_id_6_originalRetina_1200x563.jpg';
 
-export const gallery: Record<string, TImageModel> = {
-    'views_and_ideas_id_1': {
-        id: 'views_and_ideas_id_1',
-        title: 'Views and ideas id 1',
+export const getGallery = (t: TFunction): Record<string, TImageModel> => ({
+    [VIEWS_AND_IDEAS.Id1]: {
+        id: VIEWS_AND_IDEAS.Id1,
+        alt: t(`viewsAndIdeas.list.${VIEWS_AND_IDEAS.Id1}.label`),
         preview: {
             width: 200,
             height: 134,
@@ -91,9 +94,9 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-    'views_and_ideas_id_2': {
-        id: 'views_and_ideas_id_2',
-        title: 'Views and ideas id 2',
+    [VIEWS_AND_IDEAS.Id2]: {
+        id: VIEWS_AND_IDEAS.Id2,
+        alt: t(`viewsAndIdeas.list.${VIEWS_AND_IDEAS.Id2}.label`),
         preview: {
             width: 200,
             height: 108,
@@ -127,9 +130,9 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-    'views_and_ideas_id_3': {
-        id: 'views_and_ideas_id_3',
-        title: 'Views and ideas id 3',
+    [VIEWS_AND_IDEAS.Id3]: {
+        id: VIEWS_AND_IDEAS.Id3,
+        alt: t(`viewsAndIdeas.list.${VIEWS_AND_IDEAS.Id3}.label`),
         preview: {
             width: 200,
             height: 116,
@@ -163,45 +166,9 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-    'views_and_ideas_id_6': {
-        id: 'views_and_ideas_id_6',
-        title: 'Views and ideas id 6',
-        preview: {
-            width: 200,
-            height: 93,
-            sources: {
-                webp: views_and_ideas_id_6_preview_webp,
-                jpg: views_and_ideas_id_6_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 187,
-            sources: {
-                webp: views_and_ideas_id_6_previewRetina_webp,
-                jpg: views_and_ideas_id_6_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 281,
-            sources: {
-                webp: views_and_ideas_id_6_original_webp,
-                jpg: views_and_ideas_id_6_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 563,
-            sources: {
-                webp: views_and_ideas_id_6_originalRetina_webp,
-                jpg: views_and_ideas_id_6_originalRetina_jpg,
-            },
-        },
-    },
-    'views_and_ideas_id_4': {
-        id: 'views_and_ideas_id_4',
-        title: 'Views and ideas id 4',
+    [VIEWS_AND_IDEAS.Id4]: {
+        id: VIEWS_AND_IDEAS.Id4,
+        alt: t(`viewsAndIdeas.list.${VIEWS_AND_IDEAS.Id4}.label`),
         preview: {
             width: 200,
             height: 112,
@@ -235,9 +202,9 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-    'views_and_ideas_id_5': {
-        id: 'views_and_ideas_id_5',
-        title: 'Views and ideas id 5',
+    [VIEWS_AND_IDEAS.Id5]: {
+        id: VIEWS_AND_IDEAS.Id5,
+        alt: t(`viewsAndIdeas.list.${VIEWS_AND_IDEAS.Id5}.label`),
         preview: {
             width: 200,
             height: 112,
@@ -271,4 +238,40 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-}
+    [VIEWS_AND_IDEAS.Id6]: {
+        id: VIEWS_AND_IDEAS.Id6,
+        alt: t(`viewsAndIdeas.list.${VIEWS_AND_IDEAS.Id6}.label`),
+        preview: {
+            width: 200,
+            height: 93,
+            sources: {
+                webp: views_and_ideas_id_6_preview_webp,
+                jpg: views_and_ideas_id_6_preview_jpg,
+            },
+        },
+        previewRetina: {
+            width: 400,
+            height: 187,
+            sources: {
+                webp: views_and_ideas_id_6_previewRetina_webp,
+                jpg: views_and_ideas_id_6_previewRetina_jpg,
+            },
+        },
+        original: {
+            width: 600,
+            height: 281,
+            sources: {
+                webp: views_and_ideas_id_6_original_webp,
+                jpg: views_and_ideas_id_6_original_jpg,
+            },
+        },
+        originalRetina: {
+            width: 1200,
+            height: 563,
+            sources: {
+                webp: views_and_ideas_id_6_originalRetina_webp,
+                jpg: views_and_ideas_id_6_originalRetina_jpg,
+            },
+        },
+    },
+})

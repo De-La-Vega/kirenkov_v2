@@ -1,4 +1,7 @@
+import { TFunction } from 'i18next';
+
 import { TImageModel } from '../models';
+import { SKILLS_TYPE } from '../enums';
 
 // Management
 import management_main_preview_webp from '../assets/skills/management_main_preview_200x300.webp';
@@ -157,633 +160,638 @@ import consulting_main_original_jpg from '../assets/skills/consulting_main_origi
 import consulting_main_originalRetina_webp from '../assets/skills/consulting_main_originalRetina_1200x900.webp';
 import consulting_main_originalRetina_jpg from '../assets/skills/consulting_main_originalRetina_1200x900.jpg';
 
-export const gallery: Record<string, TImageModel> = {
-    'management_main': {
-        id: 'management_main',
-        title: 'Management main',
-        preview: {
-            width: 200,
-            height: 300,
-            sources: {
-                webp: management_main_preview_webp,
-                jpg: management_main_preview_jpg,
+type TData = Record<SKILLS_TYPE, {
+    image: TImageModel,
+    imageGallery?: TImageModel[],
+}>;
+
+export const getGallery = (t: TFunction): TData => ({
+    [SKILLS_TYPE.MANAGEMENT]: {
+        image: {
+            id: SKILLS_TYPE.MANAGEMENT,
+            alt: t(`skills.list.${SKILLS_TYPE.MANAGEMENT}.label`),
+            preview: {
+                width: 200,
+                height: 300,
+                sources: {
+                    webp: management_main_preview_webp,
+                    jpg: management_main_preview_jpg,
+                },
+            },
+            previewRetina: {
+                width: 400,
+                height: 600,
+                sources: {
+                    webp: management_main_previewRetina_webp,
+                    jpg: management_main_previewRetina_jpg,
+                },
+            },
+            original: {
+                width: 600,
+                height: 900,
+                sources: {
+                    webp: management_main_original_webp,
+                    jpg: management_main_original_jpg,
+                },
+            },
+            originalRetina: {
+                width: 1200,
+                height: 1800,
+                sources: {
+                    webp: management_main_originalRetina_webp,
+                    jpg: management_main_originalRetina_jpg,
+                },
             },
         },
-        previewRetina: {
-            width: 400,
-            height: 600,
-            sources: {
-                webp: management_main_previewRetina_webp,
-                jpg: management_main_previewRetina_jpg,
+
+        imageGallery: [
+            {
+                id: 'management_1',
+                alt: 'Project Management Professional (PMP)®',
+                preview: {
+                    width: 200,
+                    height: 154,
+                    sources: {
+                        webp: management_1_preview_webp,
+                        jpg: management_1_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 309,
+                    sources: {
+                        webp: management_1_previewRetina_webp,
+                        jpg: management_1_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 463,
+                    sources: {
+                        webp: management_1_original_webp,
+                        jpg: management_1_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 927,
+                    sources: {
+                        webp: management_1_originalRetina_webp,
+                        jpg: management_1_originalRetina_jpg,
+                    },
+                },
             },
-        },
-        original: {
-            width: 600,
-            height: 900,
-            sources: {
-                webp: management_main_original_webp,
-                jpg: management_main_original_jpg,
+            {
+                id: 'management_2',
+                alt: 'PMI Agile Certified Practitioner (PMI-ACP)®',
+                preview: {
+                    width: 200,
+                    height: 154,
+                    sources: {
+                        webp: management_2_preview_webp,
+                        jpg: management_2_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 309,
+                    sources: {
+                        webp: management_2_previewRetina_webp,
+                        jpg: management_2_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 463,
+                    sources: {
+                        webp: management_2_original_webp,
+                        jpg: management_2_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 927,
+                    sources: {
+                        webp: management_2_originalRetina_webp,
+                        jpg: management_2_originalRetina_jpg,
+                    },
+                },
             },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 1800,
-            sources: {
-                webp: management_main_originalRetina_webp,
-                jpg: management_main_originalRetina_jpg,
+            {
+                id: 'management_3',
+                alt: 'Advanced Certified ScrumMaster (A-CSM℠)',
+                preview: {
+                    width: 200,
+                    height: 154,
+                    sources: {
+                        webp: management_3_preview_webp,
+                        jpg: management_3_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 309,
+                    sources: {
+                        webp: management_3_previewRetina_webp,
+                        jpg: management_3_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 463,
+                    sources: {
+                        webp: management_3_original_webp,
+                        jpg: management_3_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 927,
+                    sources: {
+                        webp: management_3_originalRetina_webp,
+                        jpg: management_3_originalRetina_jpg,
+                    },
+                },
             },
-        },
+            {
+                id: 'management_4',
+                alt: 'Inspirational Leadership Skills: Practical Motivational Leadership',
+                preview: {
+                    width: 200,
+                    height: 154,
+                    sources: {
+                        webp: management_4_preview_webp,
+                        jpg: management_4_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 309,
+                    sources: {
+                        webp: management_4_previewRetina_webp,
+                        jpg: management_4_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 463,
+                    sources: {
+                        webp: management_4_original_webp,
+                        jpg: management_4_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 927,
+                    sources: {
+                        webp: management_4_originalRetina_webp,
+                        jpg: management_4_originalRetina_jpg,
+                    },
+                },
+            },
+            {
+                id: 'management_5',
+                alt: 'Certified Lean Six Sigma White / Lean Six Sigma Yellow Belt',
+                preview: {
+                    width: 200,
+                    height: 148,
+                    sources: {
+                        webp: management_5_preview_webp,
+                        jpg: management_5_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 297,
+                    sources: {
+                        webp: management_5_previewRetina_webp,
+                        jpg: management_5_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 446,
+                    sources: {
+                        webp: management_5_original_webp,
+                        jpg: management_5_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 892,
+                    sources: {
+                        webp: management_5_originalRetina_webp,
+                        jpg: management_5_originalRetina_jpg,
+                    },
+                },
+            },
+            {
+                id: 'management_6',
+                alt: 'Six Sigma: Certified Lean Six Sigma Green Belt | Accredited',
+                preview: {
+                    width: 200,
+                    height: 148,
+                    sources: {
+                        webp: management_6_preview_webp,
+                        jpg: management_6_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 297,
+                    sources: {
+                        webp: management_6_previewRetina_webp,
+                        jpg: management_6_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 446,
+                    sources: {
+                        webp: management_6_original_webp,
+                        jpg: management_6_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 892,
+                    sources: {
+                        webp: management_6_originalRetina_webp,
+                        jpg: management_6_originalRetina_jpg,
+                    },
+                },
+            },
+            {
+                id: 'management_7',
+                alt: 'Six Sigma: Certified Lean Six Sigma Black Belt | Accredited',
+                preview: {
+                    width: 200,
+                    height: 148,
+                    sources: {
+                        webp: management_7_preview_webp,
+                        jpg: management_7_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 297,
+                    sources: {
+                        webp: management_7_previewRetina_webp,
+                        jpg: management_7_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 446,
+                    sources: {
+                        webp: management_7_original_webp,
+                        jpg: management_7_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 892,
+                    sources: {
+                        webp: management_7_originalRetina_webp,
+                        jpg: management_7_originalRetina_jpg,
+                    },
+                },
+            },
+        ]
     },
 
-    'management_1': {
-        id: 'management_1',
-        title: 'Management 1',
-        preview: {
-            width: 200,
-            height: 154,
-            sources: {
-                webp: management_1_preview_webp,
-                jpg: management_1_preview_jpg,
+    [SKILLS_TYPE.PROGRAMMING]: {
+        image: {
+            id: SKILLS_TYPE.PROGRAMMING,
+            alt: t(`skills.list.${SKILLS_TYPE.PROGRAMMING}.label`),
+            preview: {
+                width: 200,
+                height: 300,
+                sources: {
+                    webp: programming_main_preview_webp,
+                    jpg: programming_main_preview_jpg,
+                },
             },
-        },
-        previewRetina: {
-            width: 400,
-            height: 309,
-            sources: {
-                webp: management_1_previewRetina_webp,
-                jpg: management_1_previewRetina_jpg,
+            previewRetina: {
+                width: 400,
+                height: 601,
+                sources: {
+                    webp: programming_main_previewRetina_webp,
+                    jpg: programming_main_previewRetina_jpg,
+                },
             },
-        },
-        original: {
-            width: 600,
-            height: 463,
-            sources: {
-                webp: management_1_original_webp,
-                jpg: management_1_original_jpg,
+            original: {
+                width: 600,
+                height: 901,
+                sources: {
+                    webp: programming_main_original_webp,
+                    jpg: programming_main_original_jpg,
+                },
             },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 927,
-            sources: {
-                webp: management_1_originalRetina_webp,
-                jpg: management_1_originalRetina_jpg,
+            originalRetina: {
+                width: 1200,
+                height: 1803,
+                sources: {
+                    webp: programming_main_originalRetina_webp,
+                    jpg: programming_main_originalRetina_jpg,
+                },
             },
-        },
+        }
     },
 
-    'management_2': {
-        id: 'management_2',
-        title: 'Management 2',
-        preview: {
-            width: 200,
-            height: 154,
-            sources: {
-                webp: management_2_preview_webp,
-                jpg: management_2_preview_jpg,
+    [SKILLS_TYPE.BLOGGING]: {
+        image: {
+            id: SKILLS_TYPE.BLOGGING,
+            alt: t(`skills.list.${SKILLS_TYPE.BLOGGING}.label`),
+            preview: {
+                width: 200,
+                height: 120,
+                sources: {
+                    webp: blogging_main_preview_webp,
+                    jpg: blogging_main_preview_jpg,
+                },
+            },
+            previewRetina: {
+                width: 400,
+                height: 240,
+                sources: {
+                    webp: blogging_main_previewRetina_webp,
+                    jpg: blogging_main_previewRetina_jpg,
+                },
+            },
+            original: {
+                width: 600,
+                height: 360,
+                sources: {
+                    webp: blogging_main_original_webp,
+                    jpg: blogging_main_original_jpg,
+                },
+            },
+            originalRetina: {
+                width: 1200,
+                height: 720,
+                sources: {
+                    webp: blogging_main_originalRetina_webp,
+                    jpg: blogging_main_originalRetina_jpg,
+                },
             },
         },
-        previewRetina: {
-            width: 400,
-            height: 309,
-            sources: {
-                webp: management_2_previewRetina_webp,
-                jpg: management_2_previewRetina_jpg,
+        imageGallery: [
+            {
+                id: 'blogging_1',
+                alt: 'Premiere Pro CC for Beginners: Video Editing in Premiere',
+                preview: {
+                    width: 200,
+                    height: 149,
+                    sources: {
+                        webp: blogging_1_preview_webp,
+                        jpg: blogging_1_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 298,
+                    sources: {
+                        webp: blogging_1_previewRetina_webp,
+                        jpg: blogging_1_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 447,
+                    sources: {
+                        webp: blogging_1_original_webp,
+                        jpg: blogging_1_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 895,
+                    sources: {
+                        webp: blogging_1_originalRetina_webp,
+                        jpg: blogging_1_originalRetina_jpg,
+                    },
+                },
             },
-        },
-        original: {
-            width: 600,
-            height: 463,
-            sources: {
-                webp: management_2_original_webp,
-                jpg: management_2_original_jpg,
+            {
+                id: 'blogging_2',
+                alt: 'Adobe Audition CC: The Beginner\'s Guide to Adobe Audition',
+                preview: {
+                    width: 200,
+                    height: 149,
+                    sources: {
+                        webp: blogging_2_preview_webp,
+                        jpg: blogging_2_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 298,
+                    sources: {
+                        webp: blogging_2_previewRetina_webp,
+                        jpg: blogging_2_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 447,
+                    sources: {
+                        webp: blogging_2_original_webp,
+                        jpg: blogging_2_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 895,
+                    sources: {
+                        webp: blogging_2_originalRetina_webp,
+                        jpg: blogging_2_originalRetina_jpg,
+                    },
+                },
             },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 927,
-            sources: {
-                webp: management_2_originalRetina_webp,
-                jpg: management_2_originalRetina_jpg,
+            {
+                id: 'blogging_3',
+                alt: 'YouTube Marketing: Grow Your Business with YouTube',
+                preview: {
+                    width: 200,
+                    height: 149,
+                    sources: {
+                        webp: blogging_3_preview_webp,
+                        jpg: blogging_3_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 298,
+                    sources: {
+                        webp: blogging_3_previewRetina_webp,
+                        jpg: blogging_3_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 447,
+                    sources: {
+                        webp: blogging_3_original_webp,
+                        jpg: blogging_3_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 895,
+                    sources: {
+                        webp: blogging_3_originalRetina_webp,
+                        jpg: blogging_3_originalRetina_jpg,
+                    },
+                },
             },
-        },
+            {
+                id: 'blogging_4',
+                alt: 'Be A Video Production & Video Marketing Master!',
+                preview: {
+                    width: 200,
+                    height: 149,
+                    sources: {
+                        webp: blogging_4_preview_webp,
+                        jpg: blogging_4_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 298,
+                    sources: {
+                        webp: blogging_4_previewRetina_webp,
+                        jpg: blogging_4_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 447,
+                    sources: {
+                        webp: blogging_4_original_webp,
+                        jpg: blogging_4_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 895,
+                    sources: {
+                        webp: blogging_4_originalRetina_webp,
+                        jpg: blogging_4_originalRetina_jpg,
+                    },
+                },
+            },
+            {
+                id: 'blogging_5',
+                alt: 'Complete Filmmaker Guide: Become an Incredible Video Creator',
+                preview: {
+                    width: 200,
+                    height: 149,
+                    sources: {
+                        webp: blogging_5_preview_webp,
+                        jpg: blogging_5_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 298,
+                    sources: {
+                        webp: blogging_5_previewRetina_webp,
+                        jpg: blogging_5_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 447,
+                    sources: {
+                        webp: blogging_5_original_webp,
+                        jpg: blogging_5_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 895,
+                    sources: {
+                        webp: blogging_5_originalRetina_webp,
+                        jpg: blogging_5_originalRetina_jpg,
+                    },
+                },
+            },
+            {
+                id: 'blogging_6',
+                alt: 'The Complete Video Production Bootcamp',
+                preview: {
+                    width: 200,
+                    height: 149,
+                    sources: {
+                        webp: blogging_6_preview_webp,
+                        jpg: blogging_6_preview_jpg,
+                    },
+                },
+                previewRetina: {
+                    width: 400,
+                    height: 298,
+                    sources: {
+                        webp: blogging_6_previewRetina_webp,
+                        jpg: blogging_6_previewRetina_jpg,
+                    },
+                },
+                original: {
+                    width: 600,
+                    height: 447,
+                    sources: {
+                        webp: blogging_6_original_webp,
+                        jpg: blogging_6_original_jpg,
+                    },
+                },
+                originalRetina: {
+                    width: 1200,
+                    height: 895,
+                    sources: {
+                        webp: blogging_6_originalRetina_webp,
+                        jpg: blogging_6_originalRetina_jpg,
+                    },
+                },
+            },
+        ]
     },
 
-    'management_3': {
-        id: 'management_3',
-        title: 'Management 3',
-        preview: {
-            width: 200,
-            height: 154,
-            sources: {
-                webp: management_3_preview_webp,
-                jpg: management_3_preview_jpg,
+    [SKILLS_TYPE.CONSULTING]: {
+        image: {
+            id: SKILLS_TYPE.CONSULTING,
+            alt: t(`skills.list.${SKILLS_TYPE.CONSULTING}.label`),
+            preview: {
+                width: 200,
+                height: 150,
+                sources: {
+                    webp: consulting_main_preview_webp,
+                    jpg: consulting_main_preview_jpg,
+                },
+            },
+            previewRetina: {
+                width: 400,
+                height: 300,
+                sources: {
+                    webp: consulting_main_previewRetina_webp,
+                    jpg: consulting_main_previewRetina_jpg,
+                },
+            },
+            original: {
+                width: 600,
+                height: 450,
+                sources: {
+                    webp: consulting_main_original_webp,
+                    jpg: consulting_main_original_jpg,
+                },
+            },
+            originalRetina: {
+                width: 1200,
+                height: 900,
+                sources: {
+                    webp: consulting_main_originalRetina_webp,
+                    jpg: consulting_main_originalRetina_jpg,
+                },
             },
         },
-        previewRetina: {
-            width: 400,
-            height: 309,
-            sources: {
-                webp: management_3_previewRetina_webp,
-                jpg: management_3_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 463,
-            sources: {
-                webp: management_3_original_webp,
-                jpg: management_3_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 927,
-            sources: {
-                webp: management_3_originalRetina_webp,
-                jpg: management_3_originalRetina_jpg,
-            },
-        },
-    },
-
-    'management_4': {
-        id: 'management_4',
-        title: 'Management 4',
-        preview: {
-            width: 200,
-            height: 154,
-            sources: {
-                webp: management_4_preview_webp,
-                jpg: management_4_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 309,
-            sources: {
-                webp: management_4_previewRetina_webp,
-                jpg: management_4_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 463,
-            sources: {
-                webp: management_4_original_webp,
-                jpg: management_4_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 927,
-            sources: {
-                webp: management_4_originalRetina_webp,
-                jpg: management_4_originalRetina_jpg,
-            },
-        },
-    },
-
-    'management_5': {
-        id: 'management_5',
-        title: 'Management 5',
-        preview: {
-            width: 200,
-            height: 148,
-            sources: {
-                webp: management_5_preview_webp,
-                jpg: management_5_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 297,
-            sources: {
-                webp: management_5_previewRetina_webp,
-                jpg: management_5_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 446,
-            sources: {
-                webp: management_5_original_webp,
-                jpg: management_5_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 892,
-            sources: {
-                webp: management_5_originalRetina_webp,
-                jpg: management_5_originalRetina_jpg,
-            },
-        },
-    },
-
-    'management_6': {
-        id: 'management_6',
-        title: 'Management 6',
-        preview: {
-            width: 200,
-            height: 148,
-            sources: {
-                webp: management_6_preview_webp,
-                jpg: management_6_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 297,
-            sources: {
-                webp: management_6_previewRetina_webp,
-                jpg: management_6_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 446,
-            sources: {
-                webp: management_6_original_webp,
-                jpg: management_6_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 892,
-            sources: {
-                webp: management_6_originalRetina_webp,
-                jpg: management_6_originalRetina_jpg,
-            },
-        },
-    },
-
-    'management_7': {
-        id: 'management_7',
-        title: 'Management 7',
-        preview: {
-            width: 200,
-            height: 148,
-            sources: {
-                webp: management_7_preview_webp,
-                jpg: management_7_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 297,
-            sources: {
-                webp: management_7_previewRetina_webp,
-                jpg: management_7_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 446,
-            sources: {
-                webp: management_7_original_webp,
-                jpg: management_7_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 892,
-            sources: {
-                webp: management_7_originalRetina_webp,
-                jpg: management_7_originalRetina_jpg,
-            },
-        },
-    },
-
-    'programming_main': {
-        id: 'programming_main',
-        title: 'Programming main',
-        preview: {
-            width: 200,
-            height: 300,
-            sources: {
-                webp: programming_main_preview_webp,
-                jpg: programming_main_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 601,
-            sources: {
-                webp: programming_main_previewRetina_webp,
-                jpg: programming_main_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 901,
-            sources: {
-                webp: programming_main_original_webp,
-                jpg: programming_main_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 1803,
-            sources: {
-                webp: programming_main_originalRetina_webp,
-                jpg: programming_main_originalRetina_jpg,
-            },
-        },
-    },
-
-    'blogging_main': {
-        id: 'blogging_main',
-        title: 'Blogging main',
-        preview: {
-            width: 200,
-            height: 120,
-            sources: {
-                webp: blogging_main_preview_webp,
-                jpg: blogging_main_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 240,
-            sources: {
-                webp: blogging_main_previewRetina_webp,
-                jpg: blogging_main_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 360,
-            sources: {
-                webp: blogging_main_original_webp,
-                jpg: blogging_main_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 720,
-            sources: {
-                webp: blogging_main_originalRetina_webp,
-                jpg: blogging_main_originalRetina_jpg,
-            },
-        },
-    },
-
-    'blogging_1': {
-        id: 'blogging_1',
-        title: 'Blogging 1',
-        preview: {
-            width: 200,
-            height: 149,
-            sources: {
-                webp: blogging_1_preview_webp,
-                jpg: blogging_1_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 298,
-            sources: {
-                webp: blogging_1_previewRetina_webp,
-                jpg: blogging_1_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 447,
-            sources: {
-                webp: blogging_1_original_webp,
-                jpg: blogging_1_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 895,
-            sources: {
-                webp: blogging_1_originalRetina_webp,
-                jpg: blogging_1_originalRetina_jpg,
-            },
-        },
-    },
-
-    'blogging_2': {
-        id: 'blogging_2',
-        title: 'Blogging 2',
-        preview: {
-            width: 200,
-            height: 149,
-            sources: {
-                webp: blogging_2_preview_webp,
-                jpg: blogging_2_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 298,
-            sources: {
-                webp: blogging_2_previewRetina_webp,
-                jpg: blogging_2_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 447,
-            sources: {
-                webp: blogging_2_original_webp,
-                jpg: blogging_2_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 895,
-            sources: {
-                webp: blogging_2_originalRetina_webp,
-                jpg: blogging_2_originalRetina_jpg,
-            },
-        },
-    },
-
-    'blogging_3': {
-        id: 'blogging_3',
-        title: 'Blogging 3',
-        preview: {
-            width: 200,
-            height: 149,
-            sources: {
-                webp: blogging_3_preview_webp,
-                jpg: blogging_3_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 298,
-            sources: {
-                webp: blogging_3_previewRetina_webp,
-                jpg: blogging_3_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 447,
-            sources: {
-                webp: blogging_3_original_webp,
-                jpg: blogging_3_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 895,
-            sources: {
-                webp: blogging_3_originalRetina_webp,
-                jpg: blogging_3_originalRetina_jpg,
-            },
-        },
-    },
-
-    'blogging_4': {
-        id: 'blogging_4',
-        title: 'Blogging 4',
-        preview: {
-            width: 200,
-            height: 149,
-            sources: {
-                webp: blogging_4_preview_webp,
-                jpg: blogging_4_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 298,
-            sources: {
-                webp: blogging_4_previewRetina_webp,
-                jpg: blogging_4_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 447,
-            sources: {
-                webp: blogging_4_original_webp,
-                jpg: blogging_4_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 895,
-            sources: {
-                webp: blogging_4_originalRetina_webp,
-                jpg: blogging_4_originalRetina_jpg,
-            },
-        },
-    },
-
-    'blogging_5': {
-        id: 'blogging_5',
-        title: 'Blogging 5',
-        preview: {
-            width: 200,
-            height: 149,
-            sources: {
-                webp: blogging_5_preview_webp,
-                jpg: blogging_5_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 298,
-            sources: {
-                webp: blogging_5_previewRetina_webp,
-                jpg: blogging_5_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 447,
-            sources: {
-                webp: blogging_5_original_webp,
-                jpg: blogging_5_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 895,
-            sources: {
-                webp: blogging_5_originalRetina_webp,
-                jpg: blogging_5_originalRetina_jpg,
-            },
-        },
-    },
-
-    'blogging_6': {
-        id: 'blogging_6',
-        title: 'Blogging 6',
-        preview: {
-            width: 200,
-            height: 149,
-            sources: {
-                webp: blogging_6_preview_webp,
-                jpg: blogging_6_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 298,
-            sources: {
-                webp: blogging_6_previewRetina_webp,
-                jpg: blogging_6_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 447,
-            sources: {
-                webp: blogging_6_original_webp,
-                jpg: blogging_6_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 895,
-            sources: {
-                webp: blogging_6_originalRetina_webp,
-                jpg: blogging_6_originalRetina_jpg,
-            },
-        },
-    },
-
-    'consulting_main': {
-        id: 'consulting_main',
-        title: 'Consulting main',
-        preview: {
-            width: 200,
-            height: 150,
-            sources: {
-                webp: consulting_main_preview_webp,
-                jpg: consulting_main_preview_jpg,
-            },
-        },
-        previewRetina: {
-            width: 400,
-            height: 300,
-            sources: {
-                webp: consulting_main_previewRetina_webp,
-                jpg: consulting_main_previewRetina_jpg,
-            },
-        },
-        original: {
-            width: 600,
-            height: 450,
-            sources: {
-                webp: consulting_main_original_webp,
-                jpg: consulting_main_original_jpg,
-            },
-        },
-        originalRetina: {
-            width: 1200,
-            height: 900,
-            sources: {
-                webp: consulting_main_originalRetina_webp,
-                jpg: consulting_main_originalRetina_jpg,
-            },
-        },
-    },
-};
+    }
+});

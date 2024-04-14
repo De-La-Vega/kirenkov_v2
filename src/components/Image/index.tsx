@@ -12,7 +12,7 @@ type TProps = {
 }
 
 const Image = forwardRef<HTMLDivElement, TProps>(({ imageObj, className, onClick }, ref) => {
-    const { title, preview, previewRetina } = imageObj;
+    const { alt, preview, previewRetina } = imageObj;
 
     const handleClick = (event: React.MouseEvent<HTMLDivElement>) => onClick && onClick(event);
 
@@ -27,7 +27,7 @@ const Image = forwardRef<HTMLDivElement, TProps>(({ imageObj, className, onClick
                 <source type="image/jpeg" srcSet={`${previewRetina.sources.jpg} 2x, ${preview.sources.jpg} 1x`} />
                 <img
                     src={preview.sources.jpg}
-                    alt={title || ''}
+                    alt={alt || ''}
                     width={preview.width}
                     height={preview.height}
                     loading="lazy"

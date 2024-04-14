@@ -9,20 +9,6 @@ export type TVideo = {
     height: number;
 }
 
-// export type TImage = {
-//     small: {
-//         srcMain: string;
-//         srcFallback: string;
-//         width: number;
-//         height: number;
-//     },
-//     large: {
-//         srcMain: string;
-//         width: number;
-//         height: number;
-//     }
-// }
-
 export type TTimelineItem = {
     id: string;
     dateRange: [number, number];
@@ -88,8 +74,6 @@ export type TViewsAndIdeasItem = {
     tags: string[]
 };
 
-
-// New Image
 type TImageSizes = {
     width: number;
     height: number;
@@ -106,7 +90,7 @@ type ImageVersion = {
 
 export type TImageModel = {
     id: string; // Уникальный идентификатор изображения
-    title: string; // Название или описание изображения
+    alt: string; // Название или описание изображения
     preview: ImageVersion; // Превью версия для обычных экранов
     previewRetina: ImageVersion; // Превью версия для Retina экранов
     original: ImageVersion; // Увеличенная версия для обычных экранов

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { GalleryWrapper } from '../../components/GalleryWrapper';
 import { TProject } from '../../models';
 
-import { gallery } from '../../data/portfolioGallery';
+import { getGallery } from '../../data/portfolioGallery';
 
 import './index.scss';
 
@@ -18,10 +18,10 @@ export const PortfolioProject: React.FC<TProps> = ({ project }) => {
 
     const imageGallery = useMemo(() => {
         if (imageGalleryKeys && imageGalleryKeys.length > 0) {
-            return imageGalleryKeys.map((key) => gallery[key]).filter((obj) => obj !== undefined);
+            return imageGalleryKeys.map((key) => getGallery(t)[key]).filter((obj) => obj !== undefined);
         }
         return [];
-    }, [imageGalleryKeys, gallery]);
+    }, [imageGalleryKeys, getGallery]);
 
     return (
         <div className="portfolio-project" role="tabpanel">

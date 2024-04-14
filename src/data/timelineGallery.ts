@@ -1,4 +1,8 @@
+import { TFunction } from 'i18next';
+
 import { TImageModel } from '../models';
+
+import { TIMELINE } from './ids';
 
 import timeline_id_1_preview_webp from '../assets/timeline-photos/timeline_id_1_preview_200x300.webp';
 import timeline_id_1_preview_jpg from '../assets/timeline-photos/timeline_id_1_preview_200x300.jpg';
@@ -189,10 +193,10 @@ import timeline_id_37_original_jpg from '../assets/timeline-photos/timeline_id_3
 import timeline_id_37_originalRetina_webp from '../assets/timeline-photos/timeline_id_37_originalRetina_1200x848.webp';
 import timeline_id_37_originalRetina_jpg from '../assets/timeline-photos/timeline_id_37_originalRetina_1200x848.jpg';
 
-export const gallery: Record<string, TImageModel> = {
-    'timeline-id-1': {
-        id: 'timeline-id-1',
-        title: 'Timeline id 1',
+export const getGallery = (t: TFunction): Record<string, TImageModel> => ({
+    [TIMELINE.Id1]: {
+        id: TIMELINE.Id1,
+        alt: t(`timeline.list.${TIMELINE.Id1}.heading`),
         preview: {
             width: 200,
             height: 300,
@@ -227,9 +231,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-2': {
-        id: 'timeline-id-2',
-        title: 'Timeline id 2',
+    [TIMELINE.Id2]: {
+        id: TIMELINE.Id2,
+        alt: t(`timeline.list.${TIMELINE.Id2}.heading`),
         preview: {
             width: 200,
             height: 266,
@@ -264,9 +268,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-3': {
-        id: 'timeline-id-3',
-        title: 'Timeline id 3',
+    [TIMELINE.Id3]: {
+        id: TIMELINE.Id3,
+        alt: t(`timeline.list.${TIMELINE.Id3}.heading`),
         preview: {
             width: 200,
             height: 150,
@@ -301,9 +305,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-6': {
-        id: 'timeline-id-6',
-        title: 'Timeline id 6',
+    [TIMELINE.Id6]: {
+        id: TIMELINE.Id6,
+        alt: t(`timeline.list.${TIMELINE.Id6}.heading`),
         preview: {
             width: 200,
             height: 150,
@@ -338,9 +342,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-7': {
-        id: 'timeline-id-7',
-        title: 'Timeline id 7',
+    [TIMELINE.Id7]: {
+        id: TIMELINE.Id7,
+        alt: t(`timeline.list.${TIMELINE.Id7}.heading`),
         preview: {
             width: 200,
             height: 150,
@@ -374,11 +378,10 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-
     
-    'timeline-id-8': {
-        id: 'timeline_id_8',
-        title: 'Timeline id 8',
+    [TIMELINE.Id8]: {
+        id: TIMELINE.Id8,
+        alt: t(`timeline.list.${TIMELINE.Id8}.heading`),
         preview: {
             width: 200,
             height: 200,
@@ -413,9 +416,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-9': {
-        id: 'timeline_id_9',
-        title: 'Timeline id 9',
+    [TIMELINE.Id9]: {
+        id: TIMELINE.Id9,
+        alt: t(`timeline.list.${TIMELINE.Id9}.heading`),
         preview: {
             width: 200,
             height: 66,
@@ -450,9 +453,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-10': {
-        id: 'timeline_id_10',
-        title: 'Timeline id 10',
+    [TIMELINE.Id10]: {
+        id: TIMELINE.Id10,
+        alt: t(`timeline.list.${TIMELINE.Id10}.heading`),
         preview: {
             width: 200,
             height: 150,
@@ -487,9 +490,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-12': {
-        id: 'timeline-id-12',
-        title: 'Timeline id 12',
+    [TIMELINE.Id12]: {
+        id: TIMELINE.Id12,
+        alt: t(`timeline.list.${TIMELINE.Id12}.heading`),
         preview: {
             width: 200,
             height: 300,
@@ -524,9 +527,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-13': {
-        id: 'timeline-id-13',
-        title: 'Timeline id 13',
+    [TIMELINE.Id13]: {
+        id: TIMELINE.Id13,
+        alt: t(`timeline.list.${TIMELINE.Id13}.heading`),
         preview: {
             width: 200,
             height: 266,
@@ -561,9 +564,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-14': {
-        id: 'timeline-id-14',
-        title: 'Timeline id 14',
+    [TIMELINE.Id14]: {
+        id: TIMELINE.Id14,
+        alt: t(`timeline.list.${TIMELINE.Id14}.heading`),
         preview: {
             width: 200,
             height: 160,
@@ -598,9 +601,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-15': {
-        id: 'timeline-id-15',
-        title: 'Timeline id 15',
+    [TIMELINE.Id15]: {
+        id: TIMELINE.Id15,
+        alt: t(`timeline.list.${TIMELINE.Id15}.heading`),
         preview: {
             width: 200,
             height: 150,
@@ -635,9 +638,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-18': {
-        id: 'timeline-id-18',
-        title: 'Timeline id 18',
+    [TIMELINE.Id18]: {
+        id: TIMELINE.Id18,
+        alt: t(`timeline.list.${TIMELINE.Id18}.heading`),
         preview: {
             width: 200,
             height: 300,
@@ -672,9 +675,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-21': {
-        id: 'timeline-id-21',
-        title: 'Timeline id 21',
+    [TIMELINE.Id21]: {
+        id: TIMELINE.Id21,
+        alt: t(`timeline.list.${TIMELINE.Id21}.heading`),
         preview: {
             width: 200,
             height: 200,
@@ -709,9 +712,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-22': {
-        id: 'timeline-id-22',
-        title: 'Timeline id 22',
+    [TIMELINE.Id22]: {
+        id: TIMELINE.Id22,
+        alt: t(`timeline.list.${TIMELINE.Id22}.heading`),
         preview: {
             width: 200,
             height: 200,
@@ -746,9 +749,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-24': {
-        id: 'timeline-id-24',
-        title: 'Timeline id 24',
+    [TIMELINE.Id24]: {
+        id: TIMELINE.Id24,
+        alt: t(`timeline.list.${TIMELINE.Id24}.heading`),
         preview: {
             width: 200,
             height: 200,
@@ -783,9 +786,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-26': {
-        id: 'timeline-id-26',
-        title: 'Timeline id 26',
+    [TIMELINE.Id26]: {
+        id: TIMELINE.Id26,
+        alt: t(`timeline.list.${TIMELINE.Id26}.heading`),
         preview: {
             width: 200,
             height: 133,
@@ -820,9 +823,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-28': {
-        id: 'timeline-id-28',
-        title: 'Timeline id 28',
+    [TIMELINE.Id28]: {
+        id: TIMELINE.Id28,
+        alt: t(`timeline.list.${TIMELINE.Id28}.heading`),
         preview: {
             width: 200,
             height: 227,
@@ -857,9 +860,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-30': {
-        id: 'timeline-id-30',
-        title: 'Timeline id 30',
+    [TIMELINE.Id30]: {
+        id: TIMELINE.Id30,
+        alt: t(`timeline.list.${TIMELINE.Id30}.heading`),
         preview: {
             width: 200,
             height: 266,
@@ -894,9 +897,9 @@ export const gallery: Record<string, TImageModel> = {
         },
     },
 
-    'timeline-id-36': {
-        id: 'timeline_id_36',
-        title: 'Timeline id 36',
+    [TIMELINE.Id36]: {
+        id: TIMELINE.Id36,
+        alt: t(`timeline.list.${TIMELINE.Id36}.heading`),
         preview: {
             width: 200,
             height: 250,
@@ -930,9 +933,9 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-    'timeline-id-37': {
-        id: 'timeline_id_37',
-        title: 'Timeline id 37',
+    [TIMELINE.Id37]: {
+        id: TIMELINE.Id37,
+        alt: t(`timeline.list.${TIMELINE.Id37}.heading`),
         preview: {
             width: 200,
             height: 141,
@@ -966,4 +969,4 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-};
+});

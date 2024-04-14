@@ -1,7 +1,9 @@
+import { TFunction } from 'i18next';
+
 import { TImageModel } from '../models';
+import { SKILLS_TYPE } from '../enums';
 
 // Programming
-
 import studio_sibur_preview_webp from '../assets/portfolio/freelanceAndStudios/studio_sibur_preview_200x230.webp';
 import studio_sibur_preview_jpg from '../assets/portfolio/freelanceAndStudios/studio_sibur_preview_200x230.jpg';
 import studio_sibur_previewRetina_webp from '../assets/portfolio/freelanceAndStudios/studio_sibur_previewRetina_400x461.webp';
@@ -85,10 +87,10 @@ import consulting_main_original_jpg from '../assets/portfolio/consulting_main_or
 import consulting_main_originalRetina_webp from '../assets/portfolio/consulting_main_originalRetina_1200x1200.webp';
 import consulting_main_originalRetina_jpg from '../assets/portfolio/consulting_main_originalRetina_1200x1200.jpg';
 
-export const gallery: Record<string, TImageModel> = {
+export const getGallery = (t: TFunction): Record<string, TImageModel> => ({
     'studio_sibur': {
         id: 'studio_sibur',
-        title: 'Studio sibur',
+        alt: 'Sibur',
         preview: {
             width: 200,
             height: 230,
@@ -124,7 +126,7 @@ export const gallery: Record<string, TImageModel> = {
     },
     'studio_ecos': {
         id: 'studio_ecos',
-        title: 'Studio ecos',
+        alt: 'Ecos',
         preview: {
             width: 200,
             height: 161,
@@ -160,7 +162,7 @@ export const gallery: Record<string, TImageModel> = {
     },
     'studio_uralkali': {
         id: 'studio_uralkali',
-        title: 'Studio uralkali',
+        alt: 'Uralkali',
         preview: {
             width: 200,
             height: 121,
@@ -196,7 +198,7 @@ export const gallery: Record<string, TImageModel> = {
     },
     'fl_dreamline': {
         id: 'fl_dreamline',
-        title: 'Fl dreamline',
+        alt: 'Dreamline',
         preview: {
             width: 200,
             height: 190,
@@ -232,7 +234,7 @@ export const gallery: Record<string, TImageModel> = {
     },
     'fl_home_sea': {
         id: 'fl_home_sea',
-        title: 'Fl home sea',
+        alt: 'Home sea',
         preview: {
             width: 200,
             height: 191,
@@ -268,7 +270,7 @@ export const gallery: Record<string, TImageModel> = {
     },
     'studio_slav_dvor': {
         id: 'studio_slav_dvor',
-        title: 'Studio slav dvor',
+        alt: 'Slavyanskiy dvor',
         preview: {
             width: 200,
             height: 253,
@@ -304,7 +306,7 @@ export const gallery: Record<string, TImageModel> = {
     },
     'fl_brand_art': {
         id: 'fl_brand_art',
-        title: 'Fl brand art',
+        alt: 'Brand Art',
         preview: {
             width: 200,
             height: 232,
@@ -340,7 +342,7 @@ export const gallery: Record<string, TImageModel> = {
     },
     'fl_lansklad': {
         id: 'fl_lansklad',
-        title: 'Fl lansklad',
+        alt: 'Lansklad',
         preview: {
             width: 200,
             height: 324,
@@ -376,7 +378,7 @@ export const gallery: Record<string, TImageModel> = {
     },
     'studio_tnk': {
         id: 'studio_tnk',
-        title: 'Studio tnk',
+        alt: 'TNK',
         preview: {
             width: 200,
             height: 195,
@@ -413,7 +415,7 @@ export const gallery: Record<string, TImageModel> = {
 
     'consulting_main': {
         id: 'consulting_main',
-        title: 'Consulting main',
+        alt: t(`portfolio.list.${SKILLS_TYPE.CONSULTING}.label`),
         preview: {
             width: 200,
             height: 200,
@@ -447,4 +449,4 @@ export const gallery: Record<string, TImageModel> = {
             },
         },
     },
-};
+});

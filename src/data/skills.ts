@@ -7,56 +7,39 @@ import { faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons/faChalkbo
 import { TSkillsItem } from '../models';
 import { SKILLS_TYPE } from '../enums';
 
-import { gallery } from'./skillsGallery';
+import { getGallery } from'./skillsGallery';
 
 export const getSkillsData = (t: TFunction): TSkillsItem[] => [
     {
-        id: 'skills-id-1',
+        id: SKILLS_TYPE.MANAGEMENT,
         type: SKILLS_TYPE.MANAGEMENT,
         icon: faTasks,
-        label: t('skills.list.management.label'),
-        content: t('skills.list.management.content', { returnObjects: true }),
-        image: gallery['management_main'],
-        imageGallery: [
-            gallery['management_1'],
-            gallery['management_2'],
-            gallery['management_3'],
-            gallery['management_4'],
-            gallery['management_5'],
-            gallery['management_6'],
-            gallery['management_7'],
-        ]
+        label: t(`skills.list.${SKILLS_TYPE.MANAGEMENT}.label`),
+        content: t(`skills.list.${SKILLS_TYPE.MANAGEMENT}.content`, { returnObjects: true }),
+        ...getGallery(t)[SKILLS_TYPE.MANAGEMENT],
     },
     {
-        id: 'skills-id-2',
+        id: SKILLS_TYPE.PROGRAMMING,
         type: SKILLS_TYPE.PROGRAMMING,
         icon: faLaptopCode,
-        label: t('skills.list.programming.label'),
-        content: t('skills.list.programming.content', { returnObjects: true }),
-        image: gallery['programming_main'],
+        label: t(`skills.list.${SKILLS_TYPE.PROGRAMMING}.label`),
+        content: t(`skills.list.${SKILLS_TYPE.PROGRAMMING}.content`, { returnObjects: true }),
+        ...getGallery(t)[SKILLS_TYPE.PROGRAMMING],
     },
     {
-        id: 'skills-id-3',
+        id: SKILLS_TYPE.BLOGGING,
         type: SKILLS_TYPE.BLOGGING,
         icon: faFilm,
-        label: t('skills.list.blogging.label'),
-        content: t('skills.list.blogging.content', { returnObjects: true }),
-        image: gallery['blogging_main'],
-        imageGallery: [
-            gallery['blogging_1'],
-            gallery['blogging_2'],
-            gallery['blogging_3'],
-            gallery['blogging_4'],
-            gallery['blogging_5'],
-            gallery['blogging_6'],
-        ]
+        label: t(`skills.list.${SKILLS_TYPE.BLOGGING}.label`),
+        content: t(`skills.list.${SKILLS_TYPE.BLOGGING}.content`, { returnObjects: true }),
+        ...getGallery(t)[SKILLS_TYPE.BLOGGING],
     },
     {
-        id: 'skills-id-4',
+        id: SKILLS_TYPE.CONSULTING,
         type: SKILLS_TYPE.CONSULTING,
         icon: faChalkboardTeacher,
-        label: t('skills.list.consulting.label'),
-        content: t('skills.list.consulting.content', { returnObjects: true }),
-        image: gallery['consulting_main'],
+        label: t(`skills.list.${SKILLS_TYPE.CONSULTING}.label`),
+        content: t(`skills.list.${SKILLS_TYPE.CONSULTING}.content`, { returnObjects: true }),
+        ...getGallery(t)[SKILLS_TYPE.CONSULTING],
     },
 ];
