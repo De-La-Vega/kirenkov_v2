@@ -60,35 +60,48 @@ export const Portfolio: React.FC = () => {
                         'portfolio_consulting': portfolioType === SKILLS_TYPE.CONSULTING,
                     })}
                 >
-                    <div className="portfolio-skills-list" role="tablist">
-                        {portfolioData.map((portfolioMainTab) => (
-                            <PortfolioTabMemo
-                                key={portfolioMainTab.type}
-                                itemType={portfolioMainTab.type}
-                                isActive={portfolioType === portfolioMainTab.type}
-                                onClick={() => handlePortfolioTypeClick(portfolioMainTab.type)}
-                                label={portfolioMainTab.label}
-                                icon={portfolioMainTab.icon}
-                            />
-                        ))}
-                    </div>
+                    <div className="portfolio__column portfolio__column_order-1">
+                        <div className="portfolio__column-heading">{t('portfolio.subheading.fieldOfActivity')}</div>
 
-                    {projects && (
-                        <div className="portfolio-projects-list" role="tablist">
-                            {projects.map((project) => (
+                        <div className="portfolio-skills-list" role="tablist">
+                            {portfolioData.map((portfolioMainTab) => (
                                 <PortfolioTabMemo
-                                    key={project.id}
-                                    itemType={portfolioType}
-                                    isActive={selectedProjectID === project.id}
-                                    onClick={() => handlePortfolioProjectClick(project.id)}
-                                    label={project.label}
+                                    key={portfolioMainTab.type}
+                                    itemType={portfolioMainTab.type}
+                                    isActive={portfolioType === portfolioMainTab.type}
+                                    onClick={() => handlePortfolioTypeClick(portfolioMainTab.type)}
+                                    label={portfolioMainTab.label}
+                                    icon={portfolioMainTab.icon}
                                 />
                             ))}
                         </div>
+                    </div>
+
+                    {projects && (
+                        <div className="portfolio__column portfolio__column_order-2">
+                            <div className="portfolio__column-heading">{t('portfolio.subheading.projects')}</div>
+
+                            <div className="portfolio-projects-list" role="tablist">
+                                {projects.map((project) => (
+                                    <PortfolioTabMemo
+                                        key={project.id}
+                                        itemType={portfolioType}
+                                        isActive={selectedProjectID === project.id}
+                                        onClick={() => handlePortfolioProjectClick(project.id)}
+                                        label={project.label}
+                                        classification={project.classification}
+                                    />
+                                ))}
+                            </div>
+                        </div>
                     )}
 
-                    {selectedProject && <PortfolioProjectMemo project={selectedProject} />}
-                    {activeItem?.content && <PortfolioContentMemo item={activeItem} />}
+                    <div className="portfolio__column portfolio__column_order-3">
+                        <div className="portfolio__column-heading">{t('portfolio.subheading.details')}</div>
+
+                        {selectedProject && <PortfolioProjectMemo project={selectedProject} />}
+                        {activeItem?.content && <PortfolioContentMemo item={activeItem} />}
+                    </div>
                 </div>
             </div>
         </section>

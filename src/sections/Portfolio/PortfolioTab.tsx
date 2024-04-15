@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
+import { Badges } from '../../components/Badges';
 import { SKILLS_TYPE } from '../../enums';
 
 import './index.scss';
@@ -13,9 +14,10 @@ type TProps = {
     icon?: IconDefinition;
     itemType: SKILLS_TYPE;
     onClick: () => void;
+    classification?: string[];
 };
 
-const PortfolioTab: React.FC<TProps> = memo(({ label, onClick, isActive, icon, itemType }) => (
+const PortfolioTab: React.FC<TProps> = memo(({ label, onClick, isActive, icon, itemType, classification }) => (
     <button
         role="tab"
         aria-selected={isActive}
@@ -33,8 +35,14 @@ const PortfolioTab: React.FC<TProps> = memo(({ label, onClick, isActive, icon, i
                 <FontAwesomeIcon icon={icon} />
             </span>
         )}
-        <span className="portfolio-tab__label">
-            {label}
+        <span className="portfolio-tab__label-and-badge">
+            <span className="portfolio-tab__label">
+                {label}
+            </span>
+
+            {classification && (
+                <Badges list={classification} />
+            )}
         </span>
     </button>
 ));

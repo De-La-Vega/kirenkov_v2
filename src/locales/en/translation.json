@@ -277,10 +277,17 @@
     },
 
     "portfolio": {
+        "subheading": {
+            "fieldOfActivity": "Field of Activity",
+            "projects": "Projects",
+            "details": "Details"
+        },
         "project": {
-            "goal": "Goal",
+            "goal": "Project Goal",
+            "role": "My Role",
             "team": "Team",
             "completed-objectives": "Completed objectives",
+            "technologiesAndTools": "Technologies and Tools",
             "technologies": "Technologies",
             "tools": "Tools",
             "gallery": "Gallery"
@@ -291,9 +298,10 @@
                 "content": [
                     {
                         "id": "management-project-1",
-                        "label": "The Geologist's Intellectual Assistant and a Unified Database",
+                        "role": "Project Manager",
+                        "label": "Innovative Geologist's Assistant and Unified Database",
                         "goal": "Develop and implement an advanced tool for calculating probabilities of geological hypotheses using Knowledge Templates and Analogs.",
-                        "team": "1 scrum team comprised of 1 Business Architect, 1 Business Analyst, 1 Frontend Developer, 1 Backend Developer, 1 UI Designer, 1 QA, 1 DevOps Engineer, along with other experts specific to geological exploration",
+                        "team": "Scrum team comprised of Business Architect, Business Analyst, Frontend Developer, Backend Developer, UI Designer, QA, DevOps Engineer, along with other experts specific to geological exploration",
                         "completedObjectives": [
                             "Developed an advanced tool capable of calculating the probabilities of geological hypotheses based on approved Knowledge Templates.",
                             "Implemented a unified Database of Geological Analogs ensuring real-time data access and accurate analog-based calculations.",
@@ -304,14 +312,16 @@
                             "Achieved a positive feedback loop from initial user groups, validating the tool's user-friendliness and efficiency."
                         ],
                         "technologies": ["JavaScript", "TypeScript", "Node.js", "Python", "React", "Redux"],
-                        "tools": ["Jira", "Confluence", "Git"]
+                        "tools": ["Jira", "Confluence", "Git"],
+                        "classification": ["Geology", "Data", "Innovation"]
                     },
 
                     {
                         "id": "management-project-2",
-                        "label": "The Expert System Selects Technical Solutions for Oil Reservoir Development & Study",
+                        "role": "Project Manager",
+                        "label": "Expert System for Selecting Technical Solutions in Oil Reservoir Development",
                         "goal": "Develop and implement an advanced AI and ML-powered tool to optimize the planning and management of geological projects, providing project managers with strategic insights for project success and integrating the tool with current software and systems for seamless project management.",
-                        "team": "1 scrum team which included 1 Business Architect, 1 Business Analyst, 1 Frontend Developer, 1 Backend Developer, 1 UI Designer, 1 DevOps Engineer, 1 QA, complemented by domain-specific experts in geological exploration",
+                        "team": "Scrum team which included Business Architect, Business Analyst, Frontend Developer, Backend Developer, UI Designer, DevOps Engineer, QA, complemented by domain-specific experts in geological exploration",
                         "completedObjectives": [
                             "Developed an AI and ML algorithm capable of analyzing intricate geological data.",
                             "Integrated the advanced tool with existing software and systems for seamless user experience.",
@@ -322,14 +332,16 @@
                             "Enhanced the client's ability to optimize resources, improve project timelines, and reduce the risk of project failures using the new tool."
                         ],
                         "technologies": ["AI (Artificial Intelligence)", "ML (Machine Learning)", "JavaScript", "TypeScript", "Node.js", "Python", "React", "MobX"],
-                        "tools": ["Jira", "Confluence", "Git"]
+                        "tools": ["Jira", "Confluence", "Git"],
+                        "classification": ["Oil & Gas", "AI", "Optimization"]
                     },
 
                     {
                         "id": "management-project-3",
-                        "label": "Tool for Effective Exploration Project Planning & Management",
+                        "role": "Project Manager",
+                        "label": "Tool for Optimizing Geological Exploration Project Planning and Management",
                         "goal": "Develop a comprehensive tool that enhances and streamlines the planning and management processes within geological exploration, integrating multiple facets like geological knowledge, project administration, scenario modeling, risk analysis, Gantt charting, cost engineering, and others.",
-                        "team": "1 scrum team which included 1 Business Architect, 1 Business Analyst, 1 Frontend Developer, 1 Backend Developer, 1 UI Designer, 1 DevOps Engineer, complemented by domain-specific experts in geological exploration",
+                        "team": "Scrum team which included Business Architect, Business Analyst, Frontend Developer, Backend Developer, UI Designer, DevOps Engineer, complemented by domain-specific experts in geological exploration",
                         "completedObjectives": [
                             "Created a unified platform merging geological data, project administration tools, scenario modeling functions, and more.",
                             "Integrated an intuitive Gantt chart detailing mechanism, optimizing the visualization of project timelines.",
@@ -340,14 +352,16 @@
                             "Launched the tool with adherence to industry's best practices, receiving positive feedback for its transformative impact on geological exploration planning and management."
                         ],
                         "technologies": ["JavaScript", "TypeScript", "Node.js", "React", "Redux"],
-                        "tools": ["Jira", "Confluence", "Git"]
+                        "tools": ["Jira", "Confluence", "Git"],
+                        "classification": ["Geology", "Risk"]
                     },
 
                     {
                         "id": "management-project-4",
-                        "label": "Web application for Real Estate Investment Evaluation",
+                        "role": "Project Manager",
+                        "label": "Web Application for Real Estate Investment Attractiveness Analysis",
                         "goal": "Create a geoinformation software system to manage a database of existing construction projects and provide automated spatial analysis of land parcels' investment attractiveness for constructing multi-apartment residential complexes in the customer's regions of presence.",
-                        "team": "1 Scrum team comprised of 1 Project Manager, 1 Business Analyst, 1 Data Engineer, 1 Frontend Developer, 1 Backend Developer, 1 DevOps Engineer, 1 UX/UI Designer, 1 Business Architect",
+                        "team": "Scrum team comprised of Project Manager, Business Analyst, Data Engineer, Frontend Developer, Backend Developer, DevOps Engineer, UX/UI Designer, Business Architect",
                         "completedObjectives": [
                             "Enabled the display of construction projects on a map and maintained updated databases of the customer's and competitors' construction projects across multiple cities.",
                             "Facilitated automated spatial analysis of land parcels integrating data from various sources including internal and external datasets, attribute information, and both public and commercial map services.",
@@ -356,14 +370,16 @@
                             "Enabled users to assess the attractiveness of potential construction projects, decide on development types, and explore sales strategies."
                         ],
                         "technologies": ["Python", ".NET", "JavaScript"],
-                        "tools": ["Jira", "Confluence", "Git", "Microsoft Teams"]
+                        "tools": ["Jira", "Confluence", "Git", "Microsoft Teams"],
+                        "classification": ["Real Estate", "Analysis", "Investment"]
                     },
 
                     {
                         "id": "management-project-5",
-                        "label": "IT Strategy for the Fashion House",
+                        "role": "Project Manager",
+                        "label": "Developing IT Strategy for the Fashion House",
                         "goal": "Optimize the company's IT infrastructure, systems, and processes in alignment with the Fashion House's business goals.",
-                        "team": "1 scrum team comprised of 1 Project Manager, 1 Solution Architect, 1 Information Security Expert, 1 Business Analyst, multiple Data Engineers, 1 Business Architect",
+                        "team": "Scrum team comprised of Project Manager, Solution Architect, Information Security Expert, Business Analyst, multiple Data Engineers, Business Architect",
                         "completedObjectives": [
                             "Developed a high-level map of business processes, identified areas for improvement, and analyzed the client's digital maturity against international best practices.",
                             "Conducted a comprehensive evaluation of the current IT landscape, provided quick-win recommendations, and defined a target IT architecture following IBM standards.",
@@ -374,7 +390,8 @@
                             "Concluded on IT processes' alignment with IT department goals, evaluated IT processes, identified improvement areas, and developed a roadmap for implementation."
                         ],
                         "technologies": ["IBM standard IT architecture", "Data management systems", "10 EP reference model for information security"],
-                        "tools": ["Jira", "Confluence"]
+                        "tools": ["Jira", "Confluence"],
+                        "classification": ["Fashion", "IT", "Strategy"]
                     }
                 ]
             },
@@ -382,56 +399,11 @@
                 "label": "Development",
                 "content": [
                     {
-                        "id": "programming-project-1",
-                        "label": "Cognitive Cost Metrics Optimization System",
-                        "goal": "Enhancing the efficiency of managing capital projects by deploying automated optimization tools and cost analysis of construction objects.",
-                        "team": "1 scrum team (12 employees: 1 Project Manager, 2 Business Analysts, 2 Frontend Developers, 2 Backend Developers, 1 UI Designer, 1 UX Designer, 1 QA Engineer, 1 DevOps Engineer, 1 Solution Architect)",
-                        "completedObjectives": [
-                            "Automated generation of multiple cost-reduction variants for the project and construction objects, considering priority changes in parameters.",
-                            "Manual and automated searching for optimal values of construction object parameters.",
-                            "Automated dependency analysis of the cost of construction objects based on various parameters.",
-                            "Comparison of construction object cost calculations with templates in the Information System."
-                        ],
-                        "technologies": ["TypeScript", "React", "Node.js", "Redux"],
-                        "tools": ["Jira", "Confluence", "Git"]
-                    },
-
-                    {
-                        "id": "programming-project-2",
-                        "label": "Cognitive Planning and Control System",
-                        "goal": "Enhance the efficiency of project execution by leveraging historical project information and cognitive functions.",
-                        "team": "1 scrum team (13 employees: 1 Project Manager, 2 Business Analysts, 2 Frontend Developers, 2 Backend Developers, 1 UI Designer, 1 UX Designer, 2 QA Engineers, 1 DevOps Engineer, 1 Business Architect)",
-                        "completedObjectives": [
-                            "Processed and systematized historical data from completed projects.",
-                            "Enabled swift recalculations of alternative project trajectories based on historical insights.",
-                            "Introduced a \"hints\" feature to assist during project implementation, backed by ontology.",
-                            "Addressed challenges like overcoming fragmented data repositories, integrating cognitive functionalities into software, and incorporating \"what-if\" analysis.",
-                            "Contributed towards challenges by enriching data, developing a product for fragmented data analysis, and creating optimal project implementation algorithms.",
-                            "Set KPIs including streamlined project implementation timelines and reduced time spent on project data processing/analysis, even as data volume increases."
-                        ],
-                        "technologies": ["TypeScript", "React", "Node.js", "Redux"],
-                        "tools": ["Jira", "Confluence", "Git"]
-                    },
-
-                    {
-                        "id": "programming-project-3",
-                        "label": "Workplace For a Bank Employee",
-                        "goal": "Streamline the loan application process by automating decision-making based on clients' data, facilitating swift and efficient loan approvals.",
-                        "team": "2 scrum teams (20 employees: 1 Project Manager, 2 Business Analysts, 4 Frontend Developers, 4 Backend Developers, 1 UI Designer, 1 UX Designer, 2 QA Engineers, 2 DevOps Engineers, 2 Business and Solution Architects)",
-                        "completedObjectives": [
-                            "Transformed the loan application process to require only an identity card from clients.",
-                            "Automated evaluation of critical client data, including salary and credit history, to derive loan conditions.",
-                            "Drastically reduced the loan issuance time, with approvals now taking just 10-15 minutes."
-                        ],
-                        "technologies": ["TypeScript", "React", "Java", "Redux"],
-                        "tools": ["Jira", "Confluence", "BitBucket", "Webpack"]
-                    },
-
-                    {
                         "id": "programming-project-4",
-                        "label": "Digital Laboratory and IT-Architecture Development",
+                        "role": "Technical Leader",
+                        "label": "Developing Digital Laboratory and IT Architecture for Bank Transformation",
                         "goal": "Develop a comprehensive three-year business, digital, and IT transformation strategy to transform the client's bank into a leading digital player in the financial industry, enabling it to double its loan portfolio, tap into the SME market, and transition the majority of its customers' operations to digital channels.",
-                        "team": "In-house Digital Lab with 4 scrum teams (40 employees: 1 Project Manager, 4 Business Analysts, 8 Frontend Developers, 8 Backend Developers, 2 UI Designers, 2 UX Designers, 4 QA Engineers, 4 DevOps Engineers, 4 Business and Solution Architects)",
+                        "team": "In-house Digital Lab with 4 Scrum teams (40 employees: Project Manager, 4 Business Analysts, 8 Frontend Developers, 8 Backend Developers, 2 UI Designers, 2 UX Designers, 4 QA Engineers, 4 DevOps Engineers, 4 Business and Solution Architects)",
                         "completedObjectives": [
                             "Successfully established an in-house Digital Lab, fostering innovation using Design Thinking, Agile, and DevOps methodologies.",
                             "Launched several MVPs for the bank's newest digital products.",
@@ -441,14 +413,68 @@
                             "Positioned the client's bank as a leader in digital innovation within the financial industry."
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
-                        "tools": ["Jira", "Confluence", "Git", "Slack"]
+                        "tools": ["Jira", "Confluence", "Git", "Slack"],
+                        "classification": ["Banking", "Digitalization", "Innovation"]
+                    },
+
+                    {
+                        "id": "programming-project-1",
+                        "role": "Frontend developer",
+                        "label": "Cognitive Cost Optimization System",
+                        "goal": "Enhancing the efficiency of managing capital projects by deploying automated optimization tools and cost analysis of construction objects.",
+                        "team": "Scrum team (12 employees: Project Manager, 2 Business Analysts, 2 Frontend Developers, 2 Backend Developers, UI Designer, UX Designer, QA Engineer, DevOps Engineer, Solution Architect)",
+                        "completedObjectives": [
+                            "Automated generation of multiple cost-reduction variants for the project and construction objects, considering priority changes in parameters.",
+                            "Manual and automated searching for optimal values of construction object parameters.",
+                            "Automated dependency analysis of the cost of construction objects based on various parameters.",
+                            "Comparison of construction object cost calculations with templates in the Information System."
+                        ],
+                        "technologies": ["TypeScript", "React", "Node.js", "Redux"],
+                        "tools": ["Jira", "Confluence", "Git"],
+                        "classification": ["Finance", "AI", "Optimization"]
+                    },
+
+                    {
+                        "id": "programming-project-2",
+                        "role": "Frontend developer",
+                        "label": "Cognitive Project Planning and Control System",
+                        "goal": "Enhance the efficiency of project execution by leveraging historical project information and cognitive functions.",
+                        "team": "Scrum team (13 employees: Project Manager, 2 Business Analysts, 2 Frontend Developers, 2 Backend Developers, UI Designer, UX Designer, 2 QA Engineers, DevOps Engineer, Business Architect)",
+                        "completedObjectives": [
+                            "Processed and systematized historical data from completed projects.",
+                            "Enabled swift recalculations of alternative project trajectories based on historical insights.",
+                            "Introduced a \"hints\" feature to assist during project implementation, backed by ontology.",
+                            "Addressed challenges like overcoming fragmented data repositories, integrating cognitive functionalities into software, and incorporating \"what-if\" analysis.",
+                            "Contributed towards challenges by enriching data, developing a product for fragmented data analysis, and creating optimal project implementation algorithms.",
+                            "Set KPIs including streamlined project implementation timelines and reduced time spent on project data processing/analysis, even as data volume increases."
+                        ],
+                        "technologies": ["TypeScript", "React", "Node.js", "Redux"],
+                        "tools": ["Jira", "Confluence", "Git"],
+                        "classification": ["Projects", "AI", "Analytics"]
+                    },
+
+                    {
+                        "id": "programming-project-3",
+                        "role": "Frontend developer",
+                        "label": "Optimizing the Bank Employee's Workspace for Expedited Loan Processing",
+                        "goal": "Streamline the loan application process by automating decision-making based on clients' data, facilitating swift and efficient loan approvals.",
+                        "team": "2 Scrum teams (20 employees: Project Manager, 2 Business Analysts, 4 Frontend Developers, 4 Backend Developers, UI Designer, UX Designer, 2 QA Engineers, 2 DevOps Engineers, 2 Business and Solution Architects)",
+                        "completedObjectives": [
+                            "Transformed the loan application process to require only an identity card from clients.",
+                            "Automated evaluation of critical client data, including salary and credit history, to derive loan conditions.",
+                            "Drastically reduced the loan issuance time, with approvals now taking just 10-15 minutes."
+                        ],
+                        "technologies": ["TypeScript", "React", "Java", "Redux"],
+                        "tools": ["Jira", "Confluence", "BitBucket", "Webpack"],
+                        "classification": ["Banking", "Optimization", "Automation"]
                     },
 
                     {
                         "id": "programming-project-5",
-                        "label": "MVP Development of Digital and IT-architecture",
+                        "role": "Frontend developer",
+                        "label": "MVP Development for Bank's Digital Transformation",
                         "goal": "To pave the way for the bank's digital transformation by developing and piloting a MVP (Minimum Viable Product) of the digital and IT-architecture.",
-                        "team": "1 scrum team (10 employees: 1 Project Manager, 1 Business Analyst, 2 Frontend Developers, 2 Backend Developers, 1 UI Designer, 1 QA, 1 DevOps Engineer)",
+                        "team": "Scrum team (10 employees: Project Manager, Business Analyst, 2 Frontend Developers, 2 Backend Developers, UI Designer, QA, DevOps Engineer)",
                         "completedObjectives": [
                             "Designed and developed a clickable prototype simulating the bank's future digital platform.",
                             "Successfully launched an MVP of the digital and IT-architecture, meeting the initial requirements and objectives set by stakeholders.",
@@ -459,12 +485,14 @@
                             "Delivered comprehensive documentation and user manuals for bank staff, ensuring smooth onboarding and adoption of the platform."
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
-                        "tools": ["Jira", "Confluence", "Git"]
+                        "tools": ["Jira", "Confluence", "Git"],
+                        "classification": ["Banking", "Digital Transformation", "MVP"]
                     },
 
                     {
                         "id": "programming-project-6",
-                        "label": "Component Library for Customer",
+                        "role": "Frontend developer",
+                        "label": "Development of a Unified UI Component Library",
                         "goal": "To create a robust UI library that streamlines development, ensures consistency across applications, and maintains compatibility with legacy systems.",
                         "team": "In-house developers experienced with frontend technologies, actively collaborating with application developers for feedback and improvement",
                         "completedObjectives": [
@@ -474,28 +502,32 @@
                             "Broke down large applications into modular units for on-demand loading."
                         ],
                         "technologies": ["TypeScript", "React", "Redux"],
-                        "tools": ["Jira", "Confluence", "BitBucket"]
+                        "tools": ["Jira", "Confluence", "BitBucket"],
+                        "classification": ["IT", "UI/UX", "Library"]
                     },
 
                     {
                         "id": "programming-project-7",
-                        "label": "Internal Components Library",
+                        "role": "Frontend developer",
+                        "label": "Development of an Internal Component Library to Accelerate Prototyping",
                         "goal": "To create a robust and scalable components library that aligns with the business architecture, streamlining the process of product prototyping and development.",
-                        "team": "1 scrum team (8 employees: 1 Project Manager, 2 Business Analysts, 1 Frontend Developer, 1 Backend Developer, 1 UI Designer, 1 QA, 1 DevOps Engineer)",
+                        "team": "Scrum team (8 employees: Project Manager, 2 Business Analysts, Frontend Developer, Backend Developer, UI Designer, QA, DevOps Engineer)",
                         "completedObjectives": [
                             "Development and documentation of a component architecture that corresponds to the business architecture.",
                             "Effective decomposition, allocation, and prioritization of tasks to ensure timely completion and optimal resource utilization.",
                             "Creation of a comprehensive framework that aids in prototyping new products, ensuring consistency and reducing the time-to-market."
                         ],
                         "technologies": ["TypeScript", "React"],
-                        "tools": ["Jira", "Storybook", "GitHub"]
+                        "tools": ["Jira", "Storybook", "GitHub"],
+                        "classification": ["IT", "Prototyping", "Library"]
                     },
 
                     {
                         "id": "programming-project-8",
-                        "label": "Banking Business Online",
+                        "role": "Frontend developer",
+                        "label": "Next-Generation Online Bank for SMEs",
                         "goal": "Transformation and development of a new-generation online bank for corporate clients, catering specifically to small and medium-sized businesses, by Sberbank in collaboration with IBM's Interactive Experience (iX) subdivision.",
-                        "team": "Joint effort between Sberbank and IBM's iX team, including 1 Project Manager, multiple Frontend and Backend Developers, QA, Business Analysts, and UX and UI Designers, DevOps Engineers",
+                        "team": "Joint effort between Sberbank and IBM's iX team, including Project Manager, multiple Frontend and Backend Developers, QA, Business Analysts, and UX and UI Designers, DevOps Engineers",
                         "completedObjectives": [
                             "Prototyping products and altering their parameters according to business needs.",
                             "Developing the architecture for components and services.",
@@ -505,11 +537,13 @@
                             "Creation of a new-generation online bank alongside a store of both banking and non-banking services within the system."
                         ],
                         "technologies": ["TypeScript", "React", "Java"],
-                        "tools": ["Jira", "Confluence", "GitHub", "Slack", "Figma", "Jenkins"]
+                        "tools": ["Jira", "Confluence", "GitHub", "Slack", "Figma", "Jenkins"],
+                        "classification": ["Banking", "SMEs", "Digitalization"]
                     },
 
                     {
                         "id": "programming-project-9",
+                        "role": "Frontend developer",
                         "label": "Design Studios and Freelance Projects",
                         "goal": "Execution of project tasks in design studios and freelance orders with the main goal of providing high-quality web solutions that meet the unique needs of each client. The projects covered a wide range of tasks, from design to development and support, with a focus on adaptability, user-friendliness, and modern web standards.",
                         "team": "Independent work as a freelance frontend developer/designer, as well as collaboration with designers and backend developers within studio projects.",
@@ -519,7 +553,8 @@
                         ],
                         "technologies": ["JavaScript", "jQuery", "PHP", "HTML", "CSS", "Bitrix", "NetCat"],
                         "tools": ["Photoshop", "Sublime Text", "Dreamviewer", "Zeplin"],
-                        "imageGalleryKeys": ["studio_sibur", "fl_brand_art", "studio_slav_dvor", "studio_ecos", "studio_tnk", "fl_dreamline", "fl_home_sea", "fl_lansklad", "studio_uralkali"]
+                        "imageGalleryKeys": ["studio_sibur", "fl_brand_art", "studio_slav_dvor", "studio_ecos", "studio_tnk", "fl_dreamline", "fl_home_sea", "fl_lansklad", "studio_uralkali"],
+                        "classification": ["Freelance", "Web Development"]
                     }
                 ]
             },

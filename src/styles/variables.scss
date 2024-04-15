@@ -8,6 +8,7 @@ $font-family-heading: "Roboto", sans-serif;
 $transition-duration: .2s;
 
 // Font size
+$font-size-xxxs: rem(10px);
 $font-size-xxs: rem(12px);
 $font-size-xs: rem(14px);
 $font-size-s: rem(16px);
@@ -17,6 +18,7 @@ $font-size-xl: rem(40px);
 $font-size-xxl: rem(90px);
 
 // Line height
+$line-height-xxxs: $font-size-xxxs * 1.5;
 $line-height-xxs: $font-size-xxs * 1.5;
 $line-height-xs: $font-size-xs * 1.5;
 $line-height-s: $font-size-s * 1.5;

@@ -28,12 +28,14 @@ export type TTimelineItem = {
 export type TProject = {
     id: string;
     label: string;
+    role: string;
     goal: string;
     team: string;
     completedObjectives: string[];
     technologies: string[];
     tools: string[];
     imageGalleryKeys?: string[];
+    classification: string[];
 }
 
 type TItemCommon = {

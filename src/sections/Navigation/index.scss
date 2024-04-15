@@ -108,6 +108,11 @@
         font-size: $font-size-m;
         color: var(--color-text-primary);
         text-decoration: none;
+        transition: $transition-duration;
+
+        &:hover {
+            background-color: var(--color-bg-level-0);
+        }
     }
 
     &__settings {

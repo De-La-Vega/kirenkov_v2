@@ -14,7 +14,8 @@ type TProps = {
 
 export const PortfolioProject: React.FC<TProps> = ({ project }) => {
     const { t } = useTranslation();
-    const { goal, team, completedObjectives, technologies, tools, imageGalleryKeys } = project;
+    const { role, label, goal, team, completedObjectives, technologies, tools, imageGalleryKeys } = project;
+    const technologiesAndTools = [...technologies, ...tools];
 
     const imageGallery = useMemo(() => {
         if (imageGalleryKeys && imageGalleryKeys.length > 0) {
@@ -25,6 +26,11 @@ export const PortfolioProject: React.FC<TProps> = ({ project }) => {
 
     return (
         <div className="portfolio-project" role="tabpanel">
+            <div className="portfolio-project__name">{label}</div>
+
+            <div className="text-subheading">{t('portfolio.project.role')}</div>
+            <p>{role}</p>
+
             <div className="text-subheading">{t('portfolio.project.goal')}</div>
             <p>{goal}</p>
 
@@ -36,14 +42,9 @@ export const PortfolioProject: React.FC<TProps> = ({ project }) => {
                 {completedObjectives.map((completedObjective, index) => <li key={index}>{completedObjective}</li>)}
             </ol>
 
-            <div className="text-subheading">{t('portfolio.project.technologies')}</div>
-            <ul className="portfolio-project__technologies">
-                {technologies.map((technology, index) => <li key={index}>{technology}</li>)}
-            </ul>
-
-            <div className="text-subheading">{t('portfolio.project.tools')}</div>
-            <ul className="portfolio-project__tools">
-                {tools.map((tool, index) => <li key={index}>{tool}</li>)}
+            <div className="text-subheading">{t('portfolio.project.technologiesAndTools')}</div>
+            <ul>
+                {technologiesAndTools.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
 
             {imageGallery && imageGallery.length > 0 && (

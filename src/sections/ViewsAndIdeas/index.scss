@@ -11,13 +11,9 @@
     flex-wrap: wrap;
     grid-template-columns: repeat(3, 30%);
     gap: $base * 10 5%;
-
-    &,
-    &__badges {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
     &__link {
         display: block;
@@ -44,24 +40,8 @@
         }
     }
 
-    &__badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: $base * 2;
-        margin-bottom: $base * 4;
-        
-        li {
-            padding: $base $base * 2;
-            font-size: $font-size-xxs;
-            font-weight: $font-weight-500;
-            line-height: $line-height-xxs;
-            color: var(--color-text-badge);
-            text-transform: uppercase;
-            background-color: var(--color-bg-badge);
-        }
-    }
-
     &__label {
+        margin-top: $base * 4;
         font-size: $font-size-m;
         font-weight: $font-weight-600;
         line-height: $line-height-m;

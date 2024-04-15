@@ -1,0 +1,19 @@
+@use "../../styles/global" as *;
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $base * 2;
+    margin-top: $base;
+    
+    span {
+        padding: $base $base * 2;
+        font-size: $font-size-xxxs;
+        font-weight: $font-weight-500;
+        line-height: $line-height-xxxs;
+        color: var(--color-text-badge);
+        text-transform: uppercase;
+        background-color: var(--color-bg-badge);
+        border-radius: 4px;
+    }
+}

@@ -56,6 +56,9 @@
     --color-border-active-aside-btn: var(--primary);
     --color-text-aside-btn: var(--color-white-200);
     --color-text-hover-aside-btn: var(--primary);
+
+    // Secondary heading
+    --color-text-secondary-heading: var(--color-black-300);
 }
 
 [data-theme='dark'] {
@@ -90,4 +93,7 @@
     --color-border-active-aside-btn: var(--primary);
     --color-text-aside-btn: var(--color-white-200);
     --color-text-hover-aside-btn: var(--primary);
+
+    // Secondary heading
+    --color-text-secondary-heading: var(--color-white-800);
 }

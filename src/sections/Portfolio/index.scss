@@ -17,22 +17,31 @@ $types: (
     gap: $base * 10;
 }
 
+.portfolio__column {
+    flex-basis: 24%;
+
+    &_order-3 {
+        flex-grow: 1;
+    }
+
+    &-heading {
+        margin-bottom: $base * 5;
+        font-family: $font-family-heading;
+        font-size: rem(20px);
+        font-weight: $font-weight-500;
+        color: var(--color-text-secondary-heading);
+        text-transform: uppercase;
+    }
+}
+
 .portfolio-skills-list,
 .portfolio-projects-list {
     display: flex;
     flex-direction: column;
 }
 
-.portfolio-skills-list,
-.portfolio-projects-list,
 .portfolio-content,
 .portfolio-project {
-    flex-basis: 24%;
-}
-
-.portfolio-content,
-.portfolio-project {
-    flex-grow: 1;
     font-size: $font-size-s;
     line-height: $line-height-s;
 }
@@ -56,7 +65,7 @@ $types: (
     border-right: 2px solid transparent;
     border-bottom: 2px solid var(--primary);
     border-left: none;
-    transition: background-color $transition-duration;
+    transition: background-color $transition-duration, color $transition-duration;
 
     &:not(&_status-active):hover {
         background-color: var(--color-bg-level-1);
@@ -66,9 +75,9 @@ $types: (
         transform-origin: center bottom;
     }
 
-    &_status-active {
-        border-right-color: var(--primary);
+    &__label { display: block; }
 
+    &_status-active {
         #{$this}__icon { animation: wiggle-animation 1s ease; }
 
         &::before {
@@ -87,8 +96,14 @@ $types: (
     }
 }
 
+@mixin details-block {
+    padding-top: $base * 4;
+    border-top: 2px solid var(--primary);
+}
+
 .portfolio-content {
     @include article-typo;
+    @include details-block;
 
     &__video-gallery {
         display: grid;
@@ -118,6 +133,14 @@ $types: (
 
 .portfolio-project {
     @include article-typo;
+    @include details-block;
+
+    &__name {
+        font-size: $font-size-m;
+        font-weight: $font-weight-500;
+        line-height: $line-height-m;
+        
+    }
 
     &__gallery {
         display: grid;
@@ -159,6 +182,8 @@ $types: (
 
 @media (max-width: $screen-xs-max) {
     .portfolio { gap: $base * 5; }
-    .portfolio-skills-list { flex-basis: auto; }
+    .portfolio__column_order-1 { flex-basis: auto; }
+
+    .portfolio__column-heading,
     .portfolio-skills-list .portfolio-tab__label { display: none; }
 }

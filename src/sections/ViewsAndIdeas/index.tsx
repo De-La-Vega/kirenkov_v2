@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { ID } from '../../enums'
 import Image from '../../components/Image'
+import { Badges } from '../../components/Badges'
 import { Heading } from '../../components/Heading'
 import { getViewsAndIdeasData } from '../../data/viewsAndIdeas';
 
@@ -32,12 +33,9 @@ export const ViewsAndIdeas: React.FC = () => {
                                         className="views-and-ideas-list__image"
                                         imageObj={item.image}
                                     />
-                                    <ul 
-                                        className="views-and-ideas-list__badges"
-                                        aria-label={t('viewsAndIdeas.semanticDescriptions.tags')}
-                                    >
-                                        {item.tags.map((tag) => <li key={tag}>{tag}</li>)}
-                                    </ul>
+
+                                    <Badges list={item.tags} />
+
                                     <h2 className="views-and-ideas-list__label">{item.label}</h2>
                                 </a>
                             </article>
