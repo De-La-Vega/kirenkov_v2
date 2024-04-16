@@ -313,7 +313,7 @@
                         ],
                         "technologies": ["JavaScript", "TypeScript", "Node.js", "Python", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Geology", "Data", "Innovation"]
+                        "classification": ["Oil & Gas", "Geology"]
                     },
 
                     {
@@ -353,7 +353,7 @@
                         ],
                         "technologies": ["JavaScript", "TypeScript", "Node.js", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Geology", "Risk"]
+                        "classification": ["Oil & Gas", "Geology", "Risk"]
                     },
 
                     {
@@ -371,7 +371,7 @@
                         ],
                         "technologies": ["Python", ".NET", "JavaScript"],
                         "tools": ["Jira", "Confluence", "Git", "Microsoft Teams"],
-                        "classification": ["Real Estate", "Analysis", "Investment"]
+                        "classification": ["Real Estate", "Analysis"]
                     },
 
                     {
@@ -414,7 +414,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "Git", "Slack"],
-                        "classification": ["Banking", "Digitalization", "Innovation"]
+                        "classification": ["Banking", "Transformation"]
                     },
 
                     {
@@ -431,7 +431,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Node.js", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Finance", "AI", "Optimization"]
+                        "classification": ["Oil & Gas", "AI", "Optimization"]
                     },
 
                     {
@@ -450,7 +450,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Node.js", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Projects", "AI", "Analytics"]
+                        "classification": ["Oil & Gas", "AI", "Analytics"]
                     },
 
                     {
@@ -466,7 +466,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "BitBucket", "Webpack"],
-                        "classification": ["Banking", "Optimization", "Automation"]
+                        "classification": ["Banking", "Optimization"]
                     },
 
                     {
@@ -486,7 +486,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Banking", "Digital Transformation", "MVP"]
+                        "classification": ["Banking", "Transformation"]
                     },
 
                     {
@@ -503,7 +503,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "BitBucket"],
-                        "classification": ["IT", "UI/UX", "Library"]
+                        "classification": ["Banking", "Library"]
                     },
 
                     {

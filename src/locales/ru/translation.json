@@ -310,7 +310,7 @@
                         ],
                         "technologies": ["JavaScript", "TypeScript", "Node.js", "Python", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Геология", "Данные", "Инновация"]
+                        "classification": ["Нефтегаз", "Геология"]
                     },
                     {
                         "id": "management-project-2",
@@ -348,7 +348,7 @@
                         ],
                         "technologies": ["JavaScript", "TypeScript", "Node.js", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Геология", "Риск"]
+                        "classification": ["Нефтегаз", "Геология", "Риск"]
                     },
                     {
                         "id": "management-project-4",
@@ -365,7 +365,7 @@
                         ],
                         "technologies": ["Python", ".NET", "JavaScript"],
                         "tools": ["Jira", "Confluence", "Git", "Microsoft Teams"],
-                        "classification": ["Недвижимость", "Анализ", "Инвестиции"]
+                        "classification": ["Недвижимость", "Анализ"]
                     },
                     {
                         "id": "management-project-5",
@@ -407,7 +407,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "Git", "Slack"],
-                        "classification": ["Банки", "Цифровизация", "Инновация"]
+                        "classification": ["Банки", "Цифровизация"]
                     },
 
                     {
@@ -424,7 +424,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Node.js", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Финансы", "ИИ", "Оптимизация"]
+                        "classification": ["Нефтегаз", "ИИ", "Оптимизация"]
                     },
 
                     {
@@ -441,7 +441,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Node.js", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Проекты", "ИИ", "Аналитика"]
+                        "classification": ["Нефтегаз", "ИИ", "Аналитика"]
                     },
 
                     {
@@ -457,7 +457,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "BitBucket", "Webpack"],
-                        "classification": ["Банки", "Оптимизация", "Автоматизация"]
+                        "classification": ["Банки", "Оптимизация"]
                     },
 
                     {
@@ -477,7 +477,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Java", "Redux"],
                         "tools": ["Jira", "Confluence", "Git"],
-                        "classification": ["Банки", "Цифровизация", "MVP"]
+                        "classification": ["Банки", "Цифровизация"]
                     },
 
                     {
@@ -494,7 +494,7 @@
                         ],
                         "technologies": ["TypeScript", "React", "Redux"],
                         "tools": ["Jira", "Confluence", "BitBucket"],
-                        "classification": ["IT", "UI/UX", "Библиотека"]
+                        "classification": ["Банки", "Библиотека"]
                     },
 
                     {
