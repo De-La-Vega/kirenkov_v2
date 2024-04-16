@@ -39,6 +39,12 @@ export const ThemeProvider: React.FC<TProps> = ({ children }) => {
         const newTheme = theme === COLOR_THEME.LIGHT ? COLOR_THEME.DARK : COLOR_THEME.LIGHT;
         setTheme(newTheme);
         document.documentElement.setAttribute('data-theme', newTheme);
+
+        // Обновление метатега theme-color
+        const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeColorMeta) {
+            themeColorMeta.setAttribute('content', newTheme === COLOR_THEME.DARK ? '#1C1D20' : '#F9F9F9');
+        }
     };
 
     return (
