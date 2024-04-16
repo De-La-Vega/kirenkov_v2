@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kirenkov_v2/static/css/main.11c2a357.css",
-    "main.js": "/kirenkov_v2/static/js/main.dee77741.js",
+    "main.css": "/kirenkov_v2/static/css/main.ba0f7a9b.css",
+    "main.js": "/kirenkov_v2/static/js/main.a5deb803.js",
     "static/js/453.9859ad0a.chunk.js": "/kirenkov_v2/static/js/453.9859ad0a.chunk.js",
     "static/media/blogging-3.mp4": "/kirenkov_v2/static/media/blogging-3.65d0f41d1926b723cb03.mp4",
     "static/media/hero_previewRetina_1600x2000.png": "/kirenkov_v2/static/media/hero_previewRetina_1600x2000.5b5f6eb3acf72d2117f3.png",
@@ -421,12 +421,12 @@
     "static/media/views_and_ideas_id_3_preview_200x116.webp": "/kirenkov_v2/static/media/views_and_ideas_id_3_preview_200x116.1051f4eb36a736ccc54f.webp",
     "index.html": "/kirenkov_v2/index.html",
     "static/media/views_and_ideas_id_1_preview_200x134.webp": "/kirenkov_v2/static/media/views_and_ideas_id_1_preview_200x134.72143a0846e3c9a59832.webp",
-    "main.11c2a357.css.map": "/kirenkov_v2/static/css/main.11c2a357.css.map",
-    "main.dee77741.js.map": "/kirenkov_v2/static/js/main.dee77741.js.map",
+    "main.ba0f7a9b.css.map": "/kirenkov_v2/static/css/main.ba0f7a9b.css.map",
+    "main.a5deb803.js.map": "/kirenkov_v2/static/js/main.a5deb803.js.map",
     "453.9859ad0a.chunk.js.map": "/kirenkov_v2/static/js/453.9859ad0a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11c2a357.css",
-    "static/js/main.dee77741.js"
+    "static/css/main.ba0f7a9b.css",
+    "static/js/main.a5deb803.js"
   ]
 }

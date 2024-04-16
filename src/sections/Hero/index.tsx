@@ -98,16 +98,16 @@ export const Hero: React.FC = () => {
                     <div className="section-hero__content-right">
                         <picture>
                             {/* Для ретина десктопа */}
-                            <source media="(min-width: 1024px)" srcSet={`${hero_previewRetina_1600x2000_webp} 2x, ${hero_preview_800x1000_webp} 1x`} type="image/webp" />
-                            <source media="(min-width: 1024px)" srcSet={`${hero_previewRetina_1600x2000_png} 2x, ${hero_preview_800x1000_png} 1x`} type="image/png" />
+                            <source media="(min-width: 768px)" srcSet={`${hero_previewRetina_1600x2000_webp} 2x, ${hero_preview_800x1000_webp} 1x`} type="image/webp" />
+                            <source media="(min-width: 768px)" srcSet={`${hero_previewRetina_1600x2000_png} 2x, ${hero_preview_800x1000_png} 1x`} type="image/png" />
 
                             {/* Для мобильных устройств с ретина */}
-                            <source media="(max-width: 1023px)" srcSet={`${hero_preview_800x1000_webp} 2x, ${hero_mobile_preview_400x500_webp} 1x`} type="image/webp" />
-                            <source media="(max-width: 1023px)" srcSet={`${hero_preview_800x1000_png} 2x, ${hero_mobile_preview_400x500_png} 1x`} type="image/png" />
+                            <source media="(max-width: 767px)" srcSet={`${hero_preview_800x1000_webp} 2x, ${hero_mobile_preview_400x500_webp} 1x`} type="image/webp" />
+                            <source media="(max-width: 767px)" srcSet={`${hero_preview_800x1000_png} 2x, ${hero_mobile_preview_400x500_png} 1x`} type="image/png" />
 
                             {/* Для мобильных устройств без ретина */}
-                            <source media="(max-width: 1023px)" srcSet={hero_mobile_preview_400x500_webp} type="image/webp" />
-                            <source media="(max-width: 1023px)" srcSet={hero_mobile_preview_400x500_png} type="image/png" />
+                            <source media="(max-width: 767px)" srcSet={hero_mobile_preview_400x500_webp} type="image/webp" />
+                            <source media="(max-width: 767px)" srcSet={hero_mobile_preview_400x500_png} type="image/png" />
 
                             {/* Изображение по умолчанию */}
                             <img className="section-hero__img" src={hero_preview_800x1000_png} alt={t('hero.alt')} width="800" height="1000" />

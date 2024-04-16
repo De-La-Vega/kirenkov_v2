@@ -134,21 +134,22 @@ $types: (
     }
 }
 @media (max-width: $screen-xs-max) {
-    .skills__content-gallery {
-        grid-template-columns: repeat(2, 49%);
-        gap: $base * 5 2%;
-    }
-
-    .skills__content-image {
-        float: none;
-        margin-left: 0;
-        text-align: center;
-
-        img { margin: 0 auto; }
-    }
-
     .skills__tab {
         padding-right: 0;
         padding-left: 0;
+    }
+
+    .skills__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills__content-image {
+        align-self: center;
+    }
+
+    .skills__content-gallery {
+        grid-template-columns: repeat(2, 49%);
+        gap: $base * 5 2%;
     }
 }

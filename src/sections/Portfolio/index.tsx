@@ -1,6 +1,8 @@
 import React, { useCallback, useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons/faChevronDown';
 
 import { LOCAL_STORAGE_KEY, SKILLS_TYPE, ID } from '../../enums';
 import { Heading } from '../../components/Heading';
@@ -61,7 +63,28 @@ export const Portfolio: React.FC = () => {
                     })}
                 >
                     <div className="portfolio__column portfolio__column_order-1">
-                        <div className="portfolio__column-heading">{t('portfolio.subheading.fieldOfActivity')}</div>
+                        <div className="portfolio__column-heading">
+                            {t('portfolio.subheading.fieldOfActivity')}
+                        </div>
+
+                        <div className="custom-select">
+                            <select
+                                className="custom-select__list"
+                                name="portfolio-skills-list"
+                                value={portfolioType}
+                                onChange={(event) => handlePortfolioTypeClick(event.target.value as SKILLS_TYPE)}
+                            >
+                                {portfolioData.map((portfolioMainTab) => (
+                                    <option
+                                        key={portfolioMainTab.type}
+                                        value={portfolioMainTab.type}
+                                    >
+                                        {portfolioMainTab.label}
+                                    </option>
+                                ))}
+                            </select>
+                            <FontAwesomeIcon icon={faChevronDown} className="custom-select__icon" />
+                        </div>
 
                         <div className="portfolio-skills-list" role="tablist">
                             {portfolioData.map((portfolioMainTab) => (
@@ -79,7 +102,30 @@ export const Portfolio: React.FC = () => {
 
                     {projects && (
                         <div className="portfolio__column portfolio__column_order-2">
-                            <div className="portfolio__column-heading">{t('portfolio.subheading.projects')}</div>
+                            <div className="portfolio__column-heading">
+                                {t('portfolio.subheading.projects')}
+                            </div>
+
+                            {selectedProjectID && (
+                                <div className="custom-select">
+                                    <select
+                                        className="custom-select__list"
+                                        name="portfolio-projects-list"
+                                        value={selectedProjectID}
+                                        onChange={(event) => handlePortfolioProjectClick(event.target.value)}
+                                    >
+                                        {projects.map((project) => (
+                                            <option
+                                                key={project.id}
+                                                value={project.id}
+                                            >
+                                                {project.label}
+                                            </option>
+                                        ))}
+                                    </select>
+                                    <FontAwesomeIcon icon={faChevronDown} className="custom-select__icon" />
+                                </div>
+                            )}
 
                             <div className="portfolio-projects-list" role="tablist">
                                 {projects.map((project) => (
@@ -97,7 +143,9 @@ export const Portfolio: React.FC = () => {
                     )}
 
                     <div className="portfolio__column portfolio__column_order-3">
-                        <div className="portfolio__column-heading">{t('portfolio.subheading.details')}</div>
+                        <div className="portfolio__column-heading">
+                            {t('portfolio.subheading.details')}
+                        </div>
 
                         {selectedProject && <PortfolioProjectMemo project={selectedProject} />}
                         {activeItem?.content && <PortfolioContentMemo item={activeItem} />}
