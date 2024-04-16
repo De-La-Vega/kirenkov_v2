@@ -63,12 +63,13 @@ export const Portfolio: React.FC = () => {
                     })}
                 >
                     <div className="portfolio__column portfolio__column_order-1">
-                        <div className="portfolio__column-heading">
+                        <div className="portfolio__column-heading" id="skillsHeading">
                             {t('portfolio.subheading.fieldOfActivity')}
                         </div>
 
                         <div className="custom-select">
                             <select
+                                aria-labelledby="skillsHeading"
                                 className="custom-select__list"
                                 name="portfolio-skills-list"
                                 value={portfolioType}
@@ -102,13 +103,14 @@ export const Portfolio: React.FC = () => {
 
                     {projects && (
                         <div className="portfolio__column portfolio__column_order-2">
-                            <div className="portfolio__column-heading">
+                            <div className="portfolio__column-heading" id="projectsHeading">
                                 {t('portfolio.subheading.projects')}
                             </div>
 
                             {selectedProjectID && (
                                 <div className="custom-select">
                                     <select
+                                        aria-labelledby="projectsHeading"
                                         className="custom-select__list"
                                         name="portfolio-projects-list"
                                         value={selectedProjectID}

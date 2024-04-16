@@ -16,6 +16,7 @@ type TProps = {
 export const SkillsTab: React.FC<TProps> = ({ item, activeItemType, onClick }) => (
     <button
         role="tab"
+        aria-label={item.label}
         aria-selected={item.type === activeItemType}
         onClick={() => onClick(item.type)}
         className={classNames('skills__tab', {
