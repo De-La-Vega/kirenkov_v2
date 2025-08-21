@@ -9,7 +9,7 @@
     "hero": {
         "name": "Vitaliy \nKirenkov",
         "alt": "Vitaliy Kirenkov",
-        "position": ["Project Manager", "Technical Leader", "Youtuber", "Consultant"],
+        "position": ["Engineering Manager", "Technical Leader", "Youtuber", "Consultant"],
         "download-cv": "Download CV"
     },
 
@@ -46,12 +46,12 @@
                 "description": "Diving into the web world: startups and studios opened the doors to a place where code is art and deadlines are inevitable. Learning from the masters with a few bumps along the way. But who am I kidding? There were many bumps!"
             },
             "timeline-id-5": {
-                "heading": "Freelancing",
+                "heading": "Freelance",
                 "description": "The world of freelancing: website development became both my hobby and job. I have built over 200 websites."
             },
             "timeline-id-6": {
                 "heading": "Consulting",
-                "description": "Moving to the 'dark side' of consulting—more deadlines, more responsibility, and of course, more coffee. A new level in my career where every day is something better than in the movies."
+                "description": "Moving to the 'dark side' of consulting - more deadlines, more responsibility, and of course, more coffee. A new level in my career where every day is something better than in the movies."
             },
             "timeline-id-7": {
                 "heading": "RANEPA",
@@ -98,13 +98,13 @@
             },
             "timeline-id-18": {
                 "heading": "DreamArt",
-                "subheading": "Content Manager / Web Designer",
+                "subheading": "Content Manager / Markup Developer",
                 "description": "My first official job in IT. I started by filling websites with content and gradually moved to web design, discovering the world of web development."
             },
             "timeline-id-19": {
                 "heading": "QB",
-                "subheading": "Web Designer",
-                "description": "After graduation, I moved to Moscow where I met the head of the QB studio. I started working as a web designer full of new ideas and a resolve to grow."
+                "subheading": "Markup Developer",
+                "description": "After graduation, I moved to Moscow where I met the head of the QB studio. I started working as a markup developer full of new ideas and a resolve to grow."
             },
             "timeline-id-20": {
                 "heading": "DEFA",
@@ -142,20 +142,21 @@
             },
             "timeline-id-28": {
                 "heading": "IBM Russia",
-                "subheading": "Project Manager",
-                "description": "The variety of consulting projects became an excellent proving ground for development. Starting as a technical lead in the banking sector, I transitioned to the new role of Project Manager with a team of 6-8 people. Managing IT strategy became a new challenge, but with the support of a mentor, I successfully coped and continued to work with less consultation."
+                "subheading": "Delivery Manager",
+                "description": "The variety of consulting projects became an excellent proving ground for development. Starting as a technical lead in the banking sector, I transitioned to the new role of Delivery Manager with a team of 6-8 people. Managing IT strategy became a new challenge, but with the support of a mentor, I successfully coped and continued to work with less consultation."
             },
             "timeline-id-29": {
                 "description": "After the department at IBM closed, I used the time for rest and sports."
             },
             "timeline-id-30": {
                 "heading": "PwC",
-                "subheading": "Project Manager",
+                "subheading": "Engineering Manager",
                 "description": "Transitioning to PwC opened a new chapter in my career. Managing projects in the oil and gas and real estate development sectors brought new challenges. Project management in all its glory: from budgeting to signing off on documents. Working on projects using AI and ML with teams of up to 15 people was a significant step in my professional growth."
             },
             "timeline-id-31": {
-                "heading": "Self-Development",
-                "description": "I focused on improving skills and mastering new areas. I continue to learn and grow professionally, adapting to changes and exploring new horizons in the dynamically evolving world."
+                "heading": "Freelance",
+                "subheading": "Technical Consultant & Full-Stack Developer",
+                "description": "After many years in corporate consulting, I decided to change pace and immerse myself in the world of small projects and startups. This environment allowed me to combine consulting expertise with hands-on development: I helped teams with idea evaluation and building financial models, while simultaneously delving into the realm of cryptocurrencies and securities, where I pursued training and wrote several trading bots for myself. Within the framework of various projects, I also had the opportunity to engage in full-stack development, building marketing and analytics tools from scratch."
             },
             "timeline-id-32": {
                 "description": "Relocation to Moscow."
@@ -178,6 +179,9 @@
             "timeline-id-37": {
                 "heading": "Continuing Education",
                 "description": "After a break, I returned to training, continuing to improve my skills and character."
+            },
+            "timeline-id-38": {
+                "description": "Life's journey brought me back to my native places."
             }
         }
     },

@@ -52,6 +52,20 @@ export const Navigation: React.FC = () => {
         return () => setBodyStyles();
     }, [isNavActive]);
 
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Escape' && isNavActive) {
+                setIsNavActive(false);
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [isNavActive]);
+
     const toggleAdaptiveNav = (): void => {
         setIsNavActive((prev) => !prev);
     };

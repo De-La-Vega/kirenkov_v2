@@ -227,8 +227,9 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
     },
     {
         id: TIMELINE.Id31,
-        dateRange: [2024, 2025],
+        dateRange: [2024, 2026],
         content: t(`timeline.list.${TIMELINE.Id31}`, { returnObjects: true }),
+        informationType: TIMELINE_INFORMATION_TYPE.WORK,
         position: TIMELINE_ITEM_POSITION.RIGHT,
     },
     {
@@ -305,6 +306,13 @@ export const getTimelineData = (t: TFunction): TTimelineItem[] => [
         level: 1,
         image: getGallery(t)[TIMELINE.Id37],
     },
+    {
+        id: TIMELINE.Id38,
+        dateRange: [2024, 2024],
+        content: t(`timeline.list.${TIMELINE.Id38}`, { returnObjects: true }),
+        position: TIMELINE_ITEM_POSITION.RIGHT,
+        icon: faRoute,
+    },
 ];
 
 // Объект для динамических отступов
@@ -345,6 +353,7 @@ export const YEAR_OFFSETS: Record<number, number> = {
     2021: 160,
     2022: 160,
     2023: 160,
-    2024: 120,
-    2025: 0,
+    2024: 160,
+    2025: 160,
+    2026: 0,
 };
